@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script src="js/jquery1.42.min.js"></script>
+<script src="js/jquery.SuperSlide.2.1.1.js"></script>
+<style>
+/*public*/
+.left{float:left;}
+.right{ float:right;}
+*{ margin:0; padding:0; border:none; font-size:12px;}
+ul,li{ list-style:none;}
+.clear{ clear:both;}
+/*public end*/
+#content_body{ width:950px; margin:0 auto;}
+/*public cut_title*/
+.cut_title{ background:url(img/title01.gif) no-repeat; overflow:hidden; line-height:500px;}
+/*link*/
+#link{ position:relative;}
+#link .cut_title{ height:36px; background-position:0 -120px;}
+#link .cut_bottom{ border-bottom:1px solid rgb(51,51,51); height:15px;}
+#link .cut_body{ width:900px; margin:0 auto; }
+.cut_title .next{ display:block; height:24px; width:24px; position:absolute; left:0px; top:50px; background:url(img/nobgleft.gif) no-repeat;z-index:1;}
+.cut_title .prev{ display:block; height:24px; width:24px; position:absolute; right:0px; top:50px; background:url(img/nobg06.gif) no-repeat; z-index:1;}
+#link .pic_list{ margin-top:15px; position:relative;}
+.pic_list li{ width:128px; height:50px; float:left; z-index:-1;}
+</style>
+</head>
+
+<body>
+<div id="main">
+    
+    	<div id="content_title"></div>
+    	<div id="content_body">
+<!--尾巴部分-->
+            <div id="foot">
+            	<!--友情链接-->
+            	<div id="link">
+                	<div class="cut_title"><h3>合作伙伴</h3>
+                        <a class="next"></a>
+                        <a class="prev"></a>
+                    </div>
+                    <div class="cut_body">
+                    	<ul class="pic_list">
+                        	<li>
+                            <a href="#" title="链接" target="_blank"><img src="img/pic03.jpg" title="友情链接1" alt="友情链接1" width="86" height="49" /></a>
+                            </li>
+                            <li>
+                            <a href="#" title="链接" target="_blank"><img src="img/pic03.jpg" title="友情链接1" alt="友情链接1" width="86" height="49" /></a>
+                            </li>
+                            <li>
+                            <a href="#" title="链接" target="_blank"><img src="img/pic03.jpg" title="友情链接1" alt="友情链接1" width="86" height="49" /></a>
+                            </li>
+                            <li>
+                            <a href="#" title="链接" target="_blank"><img src="img/pic03.jpg" title="友情链接1" alt="友情链接1" width="86" height="49" /></a>
+                            </li>
+                            <li>
+                            <a href="#" title="链接" target="_blank"><img src="img/pic03.jpg" title="友情链接1" alt="友情链接1" width="86" height="49" /></a>
+                            </li>
+                            <li>
+                            <a href="#" title="链接" target="_blank"><img src="img/pic03.jpg" title="友情链接1" alt="友情链接1" width="86" height="49" /></a>
+                            </li>
+                            <li>
+                            <a href="#" title="链接" target="_blank"><img src="img/pic03.jpg" title="友情链接1" alt="友情链接1" width="86" height="49" /></a>
+                            </li>
+                            <li>
+                            <a href="#" title="链接" target="_blank"><img src="img/pic03.jpg" title="友情链接1" alt="友情链接1" width="86" height="49" /></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="clear cut_bottom"></div>
+                </div>
+                <!--友情链接 End-->
+                
+            </div>
+            <!--尾巴部分end-->
+            </div>
+        <div id="content_bottom"></div>
+
+    </div>
+            		<script type="text/javascript">
+		jQuery("#link").slide({mainCell:".cut_body ul",autoPlay:true,effect:"leftMarquee",vis:7,interTime:10});
+		</script>
+</body>
+</html>

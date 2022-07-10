@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>展商登记</title>
+    <meta content="yes" name="apple-mobile-web-app-capable"><!-- 这meta的作用就是删除默认的苹果工具栏和菜单栏允许全屏模式浏览-->
+    <meta name="apple-touch-fullscreen" content="yes"><!-- 开启对web app程序的支持  -->
+    <meta content="telephone=no,email=no" name="format-detection"><!-- iPhone会自动把你这个文字加链接样式、并且点击这个数字还会自动拨号！telephone=no就忽略页面中的数字识别为电话号码 ,email=no 忽略识别邮箱 -->
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+    <link rel="stylesheet" href="font/css/font-awesome.min.css"/>
+    <script src="js/reset.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/zepto.min.js"></script>
+    <!--search-->
+    <script type="text/javascript" src="js/seach2.js"></script>
+    <!--loand-->
+    <script type="text/javascript" src="js/loand.js"></script>
+    <!--back-->
+    <script src="js/back.js"></script>
+
+</head>
+<body>
+<div class="wapper">
+    <!--header-->
+    <div class="header bag-1c9d43">
+        <div class="header-top text-center text-fff  relative">
+            <a href="" class="blockbj2"></a>
+            <span class="f36">展商登记</span>
+            <a href="#" class="fktp"></a>
+        </div>
+    </div><br>
+    <div class="znsousu clearFloat relative p-lr-25 m-b-12">
+        <input type="text" class="stext" placeholder=" 请输入内容" autofocus  required/>
+        <input type="submit" class="ssubmit absolute bag-1c9d43" value="搜索"/>
+    </div>
+    <!--header end-->
+    <div class="hdbg">
+        <!--给我们留言-->
+        <div class="message p-lr-25">
+            <div>
+                <div class="ftable">
+                    <form action="" class="frtable" id="myform">
+                        <input type="text"  placeholder="单位名称" required class="nickname" id="user_dw"/>
+                        <input type="text"  placeholder="您的称呼" required class="nickname" id="user_name"/>
+                        <input type="number"  placeholder="手机号码" required class="phone" id="user_phone"/>
+                        <input type="email"placeholder="电子邮箱" required class="email" id="user_email"/>
+                    </form>
+                </div>
+                <br>
+                <input type="submit" class="msubmit" value="立即免费登记" onclick="toSubmit()"/>
+            </div>
+        </div>
+        <br>
+
+        <!--给我们留言 end-->
+    </div>
+    <!--返回顶部-->
+    <a href="#" id="scrollUp" style="position: fixed; z-index: 100;">
+        <i class="fa fa-angle-up"></i>
+    </a>
+    <!--返回顶部-->
+
+
+
+
+</div>
+
+</body>
+</html>

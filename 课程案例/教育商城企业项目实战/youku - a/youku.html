@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+	<head>
+		<!--声明当前页面的编码集：charset=gbk,gb2312(中文编码)，utf-8国际编码-->
+		<meta http-equiv="Content-Type" content="text/html; charset=gbk">
+		<!--当前页面的三要素-->
+		<title>javaWEb - 带A标签 - Arry老师</title>
+		<meta name="Keywords" content="关键词,关键词">
+		<meta name="description" content="">
+
+		<!--css,js-->
+		<style type="text/css">
+			*{margin:0;padding:0;}
+			body{font-size:12px;font-family:"微软雅黑";color:#666;}
+			.youku{width:860px;height:180px;margin:150px auto;}
+			.youku ul li{list-style:none;float:left;height:30px;}
+			.youku ul li a{font-size:14px;padding:0 25px;display:block;line-height:30px;
+				text-decoration:none;color:#666;
+			}
+
+			.youku ul .sel{background:#06a7e1;color:#fff;}
+			.youku .show{width:860px;height:150px;display:none;}
+			.youku .rb{background:#CCCCFF;display:block;}
+			.youku .hy{background:#993366;}
+			.youku .hlw{background:#999900;}
+			.youku .byr{background:#6666FF;}
+			.youku .will{background:#FFCC00;}
+			.clear{clear:both;}
+
+		</style>
+
+	</head>
+<body>
+
+	<div class="youku">
+		<ul>
+			<li>
+				<a href="#" class="sel">热播大片</a>
+			</li>
+			<li><a href="#">华语精选</a></li>
+			<li><a href="#">好莱坞精选</a></li>
+			<li><a href="#">变异人的世界</a></li>
+			<li><a href="#">即将上线</a></li>
+		</ul>
+		<div class="clear"></div>
+		<div class="show rb"></div>
+		<div class="show hy"></div>
+		<div class="show hlw"></div>
+		<div class="show byr"></div>
+		<div class="show will"></div>
+
+	</div>
+
+
+<!--引入jQuery的第三方类库-->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$(".youku").find("li a").hover(function(){
+			$("li a").removeClass("sel");
+			$(this).addClass("sel");
+			var _index = $(this).parent().index();
+			$(".show").hide().eq(_index).show();
+
+		});
+	});
+	
+</script>
+
+</body>
+</html>

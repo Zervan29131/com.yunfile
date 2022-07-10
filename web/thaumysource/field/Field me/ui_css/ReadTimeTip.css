@@ -1,0 +1,26 @@
+.ReadTimeTip::after {
+    content: "\e3004";
+}
+
+.ReadTimeTip::after,
+.ArchivTip::after,
+.SchedulTip::after,
+.CommentTip::after,
+.LockTip::after,
+.WarningTip::after {
+    align-self: center;
+    font-family: 'field-icon';
+}
+
+:after,
+ :before {
+    text-decoration: inherit;
+    vertical-align: inherit;
+}
+
+*,
+ :after,
+ :before {
+    background-repeat: no-repeat;
+    box-sizing: inherit;
+}

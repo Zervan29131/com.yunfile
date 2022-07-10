@@ -1,0 +1,763 @@
+<!doctype html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>潭州学院电商平台</title>
+		<meta name="Keywords" content="关键词,关键词">
+		<meta name="description" content="">
+
+		<style type="text/css">
+			*{margin:0;padding:0;}
+			body{font-size:12px;font-family:"微软雅黑";color:#666;background:#ededf0;}
+			ul{list-style:none;}
+			img{display:block;}
+
+			/*top start*/
+			.top{width:100%;height:54px;background:#2f333b;}
+			.top .t_logo{width:197px;height:54px;display:block;background:url("images/head-logo.jpg") no-repeat top center;float:left;}
+			.top .t_logo:hover{background-position:0 -54px;}
+			.top .t_login{height:54px;float:right;margin-right:6%;}
+			.top .t_login .l_desc li{float:left;padding:0 8px 0 8px;line-height:54px;color:#b8bbbf;}
+			.top .t_login .l_desc li a{font-size:14px;color:#b8bbbf;display:block;text-decoration:none;}
+			.top .t_login .l_desc li a:hover{color:#fff;}
+			/*end top*/
+
+			/*tools start*/
+			.tools{width:100%;height:75px;background:linear-gradient(#fff,#F4F4F7);}
+			.tools .t_nav{width:1200px;height:75px;margin:0 auto;}
+			.tools .t_nav .n_icon{width:448px;height:75px;float:left;}
+			.tools .t_nav .n_icon .i_con li{float:left;padding-right:50px;}
+			.tools .t_nav .n_icon .i_con li a{text-decoration:none;line-height:75px;display:inline-block;}
+			.tools .t_nav .n_icon .i_con li a:hover span{color:#6dc186;}
+			.tools .t_nav .n_icon .i_con li a i{width:26px;height:26px;display:inline-block;background:url("images/head-icon.png") no-repeat;margin-right:5px;vertical-align: middle;margin-top:-7px;}
+			.tools .t_nav .n_icon .i_con li a span{color:#8b8c8f;font-size:18px;}
+			.tools .t_nav .n_icon .i_con li a .c_index{background-position:0 -34px;}
+			.tools .t_nav .n_icon .i_con li .c_i:hover .c_index{background-position:0 -62px;}
+			.tools .t_nav .n_icon .i_con li a .c_vip{background-position:-29px -34px;}
+			.tools .t_nav .n_icon .i_con li .c_v:hover .c_vip{background-position:-29px -62px;}
+			.tools .t_nav .n_icon .i_con li a .c_free{background-position:-58px -34px;}
+			.tools .t_nav .n_icon .i_con li .c_f:hover .c_free{background-position:-58px -62px;}
+			.tools .t_nav .n_search{float:right;margin-top:16px;}
+			.tools .t_nav .n_search .s_box{width:493px;height:39px;border:3px solid #6dc186;float:left;position:relative;border-radius:4px;}
+			.tools .t_nav .n_search .s_box .b_btn{width:79px;height:45px;background:#6dc186;display:inline-block;font-size:18px;text-decoration:none;text-align:center;line-height:45px;color:#fff;position:absolute;right:-3px;top:-3px;border-radius: 0px 4px 4px 0px;}
+			.tools .t_nav .n_search .s_box .b_btn:hover{background:#4DB36B;}
+			.tools .t_nav .n_search .s_car{display:inline-block;background:#feaf51;float:left;font-size:18px;margin-left:10px;text-decoration:none;text-align:center;line-height:39px;color:#fff;padding: 3px 15px 3px 15px;border-radius:4px;}
+			.tools .t_nav .n_search .s_car:hover{background:#FEA436;}
+			.tools .t_nav .n_search .s_car .c_icon{width:24px;height:24px;display:inline-block;background:url("images/head-icon.png") no-repeat -87px -34px;vertical-align: middle;margin-top:-3px;margin-right: 3px;}
+			.tools .t_nav .n_search .s_box .b_txt{width:406px;height:39px;border:none;padding-left:10px;line-height:39px;outline:none;font-size:14px;font-family:"微软雅黑";}
+			.tools .t_nav .n_search .s_box .b_key{position:absolute;right:88px;top:10px;}
+			.tools .t_nav .n_search .s_box .b_key a{text-decoration:none;color:#6dc186;}
+			/*end tools*/
+
+			/*banner start*/
+			.banner{width:100%;background:#dbdbe1;padding: 40px 0 40px 0;}
+			.banner .b_con{width:1200px;height:367px;margin:0 auto;}
+			.banner .b_con .c_nav{width:308px;height:367px;float:left;background:#fff;border-radius:0 0 4px 4px;box-shadow: 0px 0px 5px 0px #ABABAF;}
+			.banner .b_con .c_banner{width:874px;height:367px;float:right;}
+			.banner .b_con .c_banner img{border-radius:4px;}
+			.banner .b_con .c_nav .n_all{width:100%;height:56px;border-top:4px solid #62c189;background:#f7f7f7;border-bottom:1px solid #E1E1E1;line-height:56px;}
+			.banner .b_con .c_nav .n_all span{font-size:22px;color:#62c189;padding-left:20px;}
+			.banner .b_con .c_nav .n_list li{border-bottom:1px solid #e1e1e1;height:101px;position:relative;}
+			.banner .b_con .c_nav .n_list li .l_box{padding: 20px 0 0 20px;position:absolute;top:0;left:0;z-index:0;}
+			.banner .b_con .c_nav .n_list li:hover .l_box_long{display:block;}
+			.banner .b_con .c_nav .n_list li .l_box .b_icon{width:43px;height:43px;background:url("images/head-icon.png") no-repeat;float:left;margin-top:10px;}
+			.banner .b_con .c_nav .n_list li .l_box .b_it{background-position: 0 -90px;}
+			.banner .b_con .c_nav .n_list li .l_box .b_skil{background-position: -45px -90px;}
+			.banner .b_con .c_nav .n_list li .l_box .b_language{background-position: 0px -176px;}
+			.banner .b_con .c_nav .n_list li .l_box .b_title{width:200px;height:60px;float:left;padding-left:20px;}
+			.banner .b_con .c_nav .n_list li .l_box .b_title h3{font-size:18px;font-weight:500;line-height:36px;}
+			.banner .b_con .c_nav .n_list li .l_box .b_title .t_con span {color:#e1e1e1;padding:0 16px}
+			.banner .b_con .c_nav .n_list li .l_box .b_title .t_con a{color:#8b8c8f;text-decoration:none;font-size:14px;}
+			.banner .b_con .c_nav .n_list li .l_box .b_more{width:6px;height:12px;background:url("images/head-icon.png") no-repeat -95px -62px;position:absolute;top:32px;right:16px;}
+
+
+			.banner .b_con .c_nav .n_list li .l_box_long{width:600px;height:81px;border:1px solid #6eb88c;background:#fff;margin-left: -1px;display:none;position:absolute;left:0;top:-1px;z-index:1;}
+			.banner .b_con .c_nav .n_list li .l_box_long{padding: 20px 0 0 20px;}
+			.banner .b_con .c_nav .n_list li .l_box_long .b_icon{width:43px;height:43px;background:url("images/head-icon.png") no-repeat;float:left;margin-top:10px;}
+			.banner .b_con .c_nav .n_list li .l_box_long .b_it{background-position: 0 -90px;}
+			.banner .b_con .c_nav .n_list li .l_box_long .b_skil{background-position: -45px -90px;}
+			.banner .b_con .c_nav .n_list li .l_box_long .b_language{background-position: 0px -176px;}
+			.banner .b_con .c_nav .n_list li .l_box_long .b_title{width:520px;height:80px;float:left;padding-left:20px;}
+			.banner .b_con .c_nav .n_list li .l_box_long .b_title h3{font-size:18px;font-weight:500;line-height:60px;width:140px;float:left;}
+			.banner .b_con .c_nav .n_list li .l_box_long .b_title .t_con{float:left;width:378px;line-height:32px;}
+			.banner .b_con .c_nav .n_list li .l_box_long .b_title .t_con span {color:#e1e1e1;padding:0 16px}
+			.banner .b_con .c_nav .n_list li .l_box_long .b_title .t_con a{color:#8b8c8f;text-decoration:none;font-size:14px;}
+			/*end banner*/
+
+			/*course start*/
+			.course{width:1200px;margin:60px auto;}
+			.course .c_title{width:100%;height:28px;}
+			.course .c_title h3{float:left;font-size:24px;width:130px;font-weight:500;color:#000;}
+			.course .c_title .t_type{float:left;}
+			.course .c_title .t_type ul li{width:72px;height:28px;float:left;text-align:center;line-height:28px;font-size:14px;cursor: pointer;}
+			.course .c_title .t_type .t_sel{background:#6eb88c;color:#fff;border-radius:4px;}
+			.course .c_title .t_more{font-size:14px;color:#8b8c8f;float:right;display:block;line-height:30px;text-decoration:none;}
+			.course .c_con .c_list li{width:280px;height:240px;float:left;margin: 28px 26px 0 0;position:relative;}
+			.course .c_con .c_list li:nth-child(4n){margin-right:0px;}
+			.course .c_con .c_list li:hover .l_yy{display:block;}
+			.course .c_con .c_list li .l_img img{border-radius: 5px 5px 0 0;}
+			.course .c_con .c_list li .l_title{width:260px;height:52px;background:#fff;line-height:52px;padding: 0 10px 0 10px;border-radius: 0 0 5px 5px;}
+			.course .c_con .c_list li .l_title a{font-size:14px;color:#3e4146;text-decoration:none;float:left;}
+			.course .c_con .c_list li .l_title span{font-size:18px;color:#62c189;float:right;}
+			.course .c_con .c_list li .l_yy{width:280px;height:138px;position:absolute;left:0;top:0;background:rgba(110,184,140,0.9);border-radius: 5px 5px 0 0;padding-top:50px;display:none;}
+			.course .c_con .c_list li .l_yy .y_text{color:#fff;text-align:center;font-size:14px;}
+			.course .c_con .c_list li .l_yy .y_text span{display:block;line-height:30px;    margin-bottom: 10px;}
+			.course .c_con .c_list li .l_yy .y_text a{width:110px;height:40px;display:block;border:1px solid #fff;margin:0 auto;line-height:40px;text-decoration:none;color:#fff;border-radius:5px;}
+			.course .c_con .c_list li .l_yy .y_text a:hover{background:#fff;color:#62c189;}
+			.course .l_num{width:270px;height:26px;background: rgba(0,0,0,0.6);color:#fff;line-height:26px;padding-left:10px;position:absolute;bottom:52px;left:0;}
+			/*end course*/
+			
+			/*footer start*/
+			.footer{width:100%;height:300px;}
+			.footer .f_link{width:100%;height:33px;border:1px solid #e1e1e1;}
+			.footer .f_link .l_con{width:1200px;text-align:center;line-height:33px;margin:0 auto;font-size:14px;}
+			.footer .f_link a{color:#3e4146;text-decoration:none;}
+			.footer .f_info{width:100%;height:194px;border-bottom:1px solid #e1e1e1;margin:0 auto;background:#f7f7f7;}
+			.footer .f_info .i_footer{width:1120px;height:74px;padding-top:55px;margin:0 auto;}
+			.footer .f_info .i_footer .f_box a{color:#8b8c8f;}
+			.footer .f_info .i_footer .f_box .b_icon i{width:34px;height:34px;display:block;background:url("images/bottom-icon.png") no-repeat; margin:20px 46px;float:left;}
+			.footer .f_info .i_footer .f_box .b_icon i:hover{background-position: 0px -36px;}
+			.footer .f_info .i_footer .f_box{width:300px;border-right:1px solid #e1e1e1;float:left;height:74px;position:relative;}
+			.footer .f_info .i_footer .f_box .b_con{padding-top:10px;font-size:14px;height:74px;}
+			.footer .f_info .i_footer .f_box .b_con a{font-size:14px;text-decoration:none;float:left;
+			display:inline-block;padding-right:30px;}
+			.footer .f_info .i_footer .f_box .b_icon .i_wx{background-position:-37px 0;}
+			.footer .f_info .i_footer .f_box .b_icon .i_wx:hover .w_qrcode{display:block;}
+			.footer .f_info .i_footer .f_box .b_icon .i_wx .w_qrcode{position:absolute;top:-109px;left:3px;display:none;}
+			.footer .f_info .i_footer .f_box .b_icon .i_wx:hover{background-position:-37px -36px;}
+			.footer .f_info .i_footer .f_box .i_txt{font-size:14px;text-decoration:none;display:inline-block;line-height:74px;}
+			.footer .f_info .i_footer .f_box .b_icon .i_tx{background-position:-74px 0;}
+			.footer .f_info .i_footer .f_box .b_icon .i_tx:hover{background-position:-74px -36px;}	
+			.footer .f_info .i_footer .f_txt{width:239px;}
+			.footer .f_info .i_footer .f_box .b_icon .t_tel{background-position:-111px 0;float:left;}
+			.footer .f_info .i_footer .f_box .b_icon .t_tel:hover{background-position:-111px -36px;}
+			.footer .f_info .i_footer .f_box .b_time{width:206px;height:60px;float:left;padding-top:10px;}
+			.footer .f_info .i_footer .f_time{width:334px;border:none;font-size:14px;}
+			.footer .f_copyright{text-align:center;line-height:70px;}
+			/*end footer*/
+
+			.clear{clear:both;}
+
+		</style>
+
+	</head>
+<body>
+
+	<!--top start-->
+	<div class="top">
+		<a href="#" class="t_logo"></a>
+		<div class="t_login">
+			<ul class="l_desc">
+				<li><a href="#">登录</a></li>
+				<li>|</li>
+				<li><a href="#">注册</a></li>
+			</ul>
+		</div>
+	</div>
+	<!--end top-->
+
+	<!--tools start-->
+	<div class="tools">
+		<div class="t_nav">
+
+			<!--n_icon start-->
+			<div class="n_icon">
+				<ul class="i_con">
+					<li>
+						<a href="#" class="c_i">
+							<i class="c_index"></i>
+							<span>首页</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="c_v">
+							<i class="c_vip"></i>
+							<span>VIP课程</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="c_f">
+							<i class="c_free"></i>
+							<span>免费体验课</span>
+						</a>
+					</li>
+
+				</ul>
+			</div>
+			<!--end n_icon-->
+
+			<!--n_search start-->
+			<div class="n_search">
+				<div class="s_box">
+					<a href="#" class="b_btn">搜索</a>
+					<input type="text" class="b_txt" placeholder="搜索你喜欢的课程"/>
+					<div class="b_key">
+						<a href="#">java</a>
+						<a href="#">php</a>
+						<a href="#">C++</a>
+						<a href="#">WEB前端</a>
+						<a href="#">软件测试</a>
+					</div>
+				</div>
+				<a href="#" class="s_car">
+					<i class="c_icon"></i>
+					购物车(<span>0</span>)
+				</a>
+
+			</div>
+			<!--end n_search-->
+
+		</div>
+	</div>
+	<!--end tools-->
+
+
+	<!--banner start-->
+	<div class="banner">
+		<div class="b_con">
+			<div class="c_nav">
+				<div class="n_all">
+					<span>全部课程</span>
+				</div>
+				<ul class="n_list">
+					<li>
+						<div class="l_box">
+							<div class="b_icon b_it"></div>
+							<div class="b_title">
+								<h3>IT培训</h3>
+								<div class="t_con"><a href="#">JAVA</a> <span>|</span> <a href="#">安卓</a> <span>|</span> <a href="#">PHP</a></div>
+							</div>
+							<div class="b_more"></div>
+						</div>
+
+						<!--l_box_long start-->
+						<div class="l_box_long">
+							<div class="b_icon b_it"></div>
+							<div class="b_title">
+								<h3>IT培训</h3>
+								<div class="t_con"><a href="#">JAVA</a> <span>|</span> <a href="#">安卓</a> <span>|</span> <a href="#">PHP</a> <span>|</span> <a href="#">游戏动漫</a> <span>|</span> <a href="#">软件测试</a> <span>|</span> <a href="#">WEB前端</a><span>|</span> <a href="#">C++</a>
+								</div>
+							</div>						
+						</div>
+						<!--end l_box_long-->
+				
+					</li>
+					<li>
+						<div class="l_box">
+							<div class="b_icon b_skil"></div>
+							<div class="b_title">
+								<h3>职业技能</h3>
+								<div class="t_con"><a href="#">JAVA</a> <span>|</span> <a href="#">安卓</a> <span>|</span> <a href="#">PHP</a></div>
+							</div>
+							<div class="b_more"></div>
+						</div>
+
+						<!--l_box_long start-->
+						<div class="l_box_long">
+							<div class="b_icon b_skil"></div>
+							<div class="b_title">
+								<h3>职业技能</h3>
+								<div class="t_con"><a href="#">JAVA</a> <span>|</span> <a href="#">安卓</a> <span>|</span> <a href="#">PHP</a> <span>|</span> <a href="#">游戏动漫</a> <span>|</span> <a href="#">软件测试</a> <span>|</span> <a href="#">WEB前端</a><span>|</span> <a href="#">C++</a>
+								</div>
+							</div>						
+						</div>
+						<!--end l_box_long-->
+
+					</li>
+					<li>
+						<div class="l_box">
+							<div class="b_icon b_language"></div>
+							<div class="b_title">
+								<h3>语言培训</h3>
+								<div class="t_con"><a href="#">JAVA</a> <span>|</span> <a href="#">安卓</a> <span>|</span> <a href="#">PHP</a></div>
+							</div>
+							<div class="b_more"></div>
+						</div>
+
+						<!--l_box_long start-->
+						<div class="l_box_long">
+							<div class="b_icon b_language"></div>
+							<div class="b_title">
+								<h3>语言培训</h3>
+								<div class="t_con"><a href="#">JAVA</a> <span>|</span> <a href="#">安卓</a> <span>|</span> <a href="#">PHP</a> <span>|</span> <a href="#">游戏动漫</a> <span>|</span> <a href="#">软件测试</a> <span>|</span> <a href="#">WEB前端</a><span>|</span> <a href="#">C++</a>
+								</div>
+							</div>						
+						</div>
+						<!--end l_box_long-->
+
+					</li>
+				</ul>
+			</div>
+			<div class="c_banner">
+				<img src="images/banner.png" alt="潭州学院" width="874" height="367" />
+			</div>
+		</div>
+
+	</div>
+	
+	<!--end banner-->
+
+	<!--course start-->
+	<div class="course">
+		<div class="c_title">
+			<h3>IT培训</h3>
+			<div class="t_type">
+				<ul>
+					<li class="t_sel">精选课程</li>
+					<li>师资力量</li>
+				</ul>
+			</div>
+			<a href="#" class="t_more">更多精品课程 &gt;&gt;</a>
+		</div>
+		<div class="clear"></div>
+		<div class="c_con">
+			<ul class="c_list">
+				<li>
+					<div class="l_img">
+						<img src="images/c_1.png" alt="网页制作零基础到项目实战" width="280" height="188" />
+					</div>
+					<p class="l_title">
+						<a href="#">网页制作基础到实战学习班</a>
+						<span>￥1580</span>
+					</p>
+					<div class="l_num">共150人购买</div>
+					<div class="l_yy">
+						<div class="y_text">
+							<span>课题：项目实战</span>
+							<a href="#">查看课程详情</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="l_img">
+						<img src="images/c_1.png" alt="网页制作零基础到项目实战" width="280" height="188" />
+					</div>
+					<p class="l_title">
+						<a href="#">网页制作基础到实战学习班</a>
+						<span>￥1580</span>
+					</p>
+					<div class="l_num">共150人购买</div>
+					<div class="l_yy">
+						<div class="y_text">
+							<span>课题：项目实战</span>
+							<a href="#">查看课程详情</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="l_img">
+						<img src="images/c_1.png" alt="网页制作零基础到项目实战" width="280" height="188" />
+					</div>
+					<p class="l_title">
+						<a href="#">网页制作基础到实战学习班</a>
+						<span>￥1580</span>
+					</p>
+					<div class="l_num">共150人购买</div>
+					<div class="l_yy">
+						<div class="y_text">
+							<span>课题：项目实战</span>
+							<a href="#">查看课程详情</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="l_img">
+						<img src="images/c_1.png" alt="网页制作零基础到项目实战" width="280" height="188" />
+					</div>
+					<p class="l_title">
+						<a href="#">网页制作基础到实战学习班</a>
+						<span>￥1580</span>
+					</p>
+					<div class="l_num">共150人购买</div>
+					<div class="l_yy">
+						<div class="y_text">
+							<span>课题：项目实战</span>
+							<a href="#">查看课程详情</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="l_img">
+						<img src="images/c_1.png" alt="网页制作零基础到项目实战" width="280" height="188" />
+					</div>
+					<p class="l_title">
+						<a href="#">网页制作基础到实战学习班</a>
+						<span>￥1580</span>
+					</p>
+					<div class="l_num">共150人购买</div>
+					<div class="l_yy">
+						<div class="y_text">
+							<span>课题：项目实战</span>
+							<a href="#">查看课程详情</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="l_img">
+						<img src="images/c_1.png" alt="网页制作零基础到项目实战" width="280" height="188" />
+					</div>
+					<p class="l_title">
+						<a href="#">网页制作基础到实战学习班</a>
+						<span>￥1580</span>
+					</p>
+					<div class="l_num">共150人购买</div>
+					<div class="l_yy">
+						<div class="y_text">
+							<span>课题：项目实战</span>
+							<a href="#">查看课程详情</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="l_img">
+						<img src="images/c_1.png" alt="网页制作零基础到项目实战" width="280" height="188" />
+					</div>
+					<p class="l_title">
+						<a href="#">网页制作基础到实战学习班</a>
+						<span>￥1580</span>
+					</p>
+					<div class="l_num">共150人购买</div>
+					<div class="l_yy">
+						<div class="y_text">
+							<span>课题：项目实战</span>
+							<a href="#">查看课程详情</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="l_img">
+						<img src="images/c_1.png" alt="网页制作零基础到项目实战" width="280" height="188" />
+					</div>
+					<p class="l_title">
+						<a href="#">网页制作基础到实战学习班</a>
+						<span>￥1580</span>
+					</p>
+					<div class="l_num">共150人购买</div>
+					<div class="l_yy">
+						<div class="y_text">
+							<span>课题：项目实战</span>
+							<a href="#">查看课程详情</a>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="clear"></div>		
+	</div>
+	<!--end course-->
+
+	<!--course start-->
+	<div class="course">
+		<div class="c_title">
+			<h3>职业技能</h3>
+			<div class="t_type">
+				<ul>
+					<li class="t_sel">精选课程</li>
+					<li>师资力量</li>
+				</ul>
+			</div>
+			<a href="#" class="t_more">更多精品课程 &gt;&gt;</a>
+		</div>
+		<div class="clear"></div>
+		<div class="c_con">
+			<ul class="c_list">
+				<li>
+					<div class="l_img">
+						<img src="images/c_1.png" alt="网页制作零基础到项目实战" width="280" height="188" />
+					</div>
+					<p class="l_title">
+						<a href="#">网页制作基础到实战学习班</a>
+						<span>￥1580</span>
+					</p>
+					<div class="l_num">共150人购买</div>
+					<div class="l_yy">
+						<div class="y_text">
+							<span>课题：项目实战</span>
+							<a href="#">查看课程详情</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="l_img">
+						<img src="images/c_1.png" alt="网页制作零基础到项目实战" width="280" height="188" />
+					</div>
+					<p class="l_title">
+						<a href="#">网页制作基础到实战学习班</a>
+						<span>￥1580</span>
+					</p>
+					<div class="l_num">共150人购买</div>
+					<div class="l_yy">
+						<div class="y_text">
+							<span>课题：项目实战</span>
+							<a href="#">查看课程详情</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="l_img">
+						<img src="images/c_1.png" alt="网页制作零基础到项目实战" width="280" height="188" />
+					</div>
+					<p class="l_title">
+						<a href="#">网页制作基础到实战学习班</a>
+						<span>￥1580</span>
+					</p>
+					<div class="l_num">共150人购买</div>
+					<div class="l_yy">
+						<div class="y_text">
+							<span>课题：项目实战</span>
+							<a href="#">查看课程详情</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="l_img">
+						<img src="images/c_1.png" alt="网页制作零基础到项目实战" width="280" height="188" />
+					</div>
+					<p class="l_title">
+						<a href="#">网页制作基础到实战学习班</a>
+						<span>￥1580</span>
+					</p>
+					<div class="l_num">共150人购买</div>
+					<div class="l_yy">
+						<div class="y_text">
+							<span>课题：项目实战</span>
+							<a href="#">查看课程详情</a>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<!--end course-->
+
+	<!--course start-->
+	<div class="course">
+		<div class="c_title">
+			<h3>语言培训</h3>
+			<div class="t_type">
+				<ul>
+					<li class="t_sel">精选课程</li>
+					<li>师资力量</li>
+				</ul>
+			</div>
+			<a href="#" class="t_more">更多精品课程 &gt;&gt;</a>
+		</div>
+		<div class="clear"></div>
+		<div class="c_con">
+			<ul class="c_list">
+				<li>
+					<div class="l_img">
+						<img src="images/c_1.png" alt="网页制作零基础到项目实战" width="280" height="188" />
+					</div>
+					<p class="l_title">
+						<a href="#">网页制作基础到实战学习班</a>
+						<span>￥1580</span>
+					</p>
+					<div class="l_num">共150人购买</div>
+					<div class="l_yy">
+						<div class="y_text">
+							<span>课题：项目实战</span>
+							<a href="#">查看课程详情</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="l_img">
+						<img src="images/c_1.png" alt="网页制作零基础到项目实战" width="280" height="188" />
+					</div>
+					<p class="l_title">
+						<a href="#">网页制作基础到实战学习班</a>
+						<span>￥1580</span>
+					</p>
+					<div class="l_num">共150人购买</div>
+					<div class="l_yy">
+						<div class="y_text">
+							<span>课题：项目实战</span>
+							<a href="#">查看课程详情</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="l_img">
+						<img src="images/c_1.png" alt="网页制作零基础到项目实战" width="280" height="188" />
+					</div>
+					<p class="l_title">
+						<a href="#">网页制作基础到实战学习班</a>
+						<span>￥1580</span>
+					</p>
+					<div class="l_num">共150人购买</div>
+					<div class="l_yy">
+						<div class="y_text">
+							<span>课题：项目实战</span>
+							<a href="#">查看课程详情</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="l_img">
+						<img src="images/c_1.png" alt="网页制作零基础到项目实战" width="280" height="188" />
+					</div>
+					<p class="l_title">
+						<a href="#">网页制作基础到实战学习班</a>
+						<span>￥1580</span>
+					</p>
+					<div class="l_num">共150人购买</div>
+					<div class="l_yy">
+						<div class="y_text">
+							<span>课题：项目实战</span>
+							<a href="#">查看课程详情</a>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<!--end course-->
+
+	<!--course start-->
+	<div class="course">
+		<div class="c_title">
+			<h3>兴趣爱好</h3>
+			<div class="t_type">
+				<ul>
+					<li class="t_sel">精选课程</li>
+					<li>师资力量</li>
+				</ul>
+			</div>
+			<a href="#" class="t_more">更多精品课程 &gt;&gt;</a>
+		</div>
+		<div class="clear"></div>
+		<div class="c_con">
+			<ul class="c_list">
+				<li>
+					<div class="l_img">
+						<img src="images/c_1.png" alt="网页制作零基础到项目实战" width="280" height="188" />
+					</div>
+					<p class="l_title">
+						<a href="#">网页制作基础到实战学习班</a>
+						<span>￥1580</span>
+					</p>
+					<div class="l_num">共150人购买</div>
+					<div class="l_yy">
+						<div class="y_text">
+							<span>课题：项目实战</span>
+							<a href="#">查看课程详情</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="l_img">
+						<img src="images/c_1.png" alt="网页制作零基础到项目实战" width="280" height="188" />
+					</div>
+					<p class="l_title">
+						<a href="#">网页制作基础到实战学习班</a>
+						<span>￥1580</span>
+					</p>
+					<div class="l_num">共150人购买</div>
+					<div class="l_yy">
+						<div class="y_text">
+							<span>课题：项目实战</span>
+							<a href="#">查看课程详情</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="l_img">
+						<img src="images/c_1.png" alt="网页制作零基础到项目实战" width="280" height="188" />
+					</div>
+					<p class="l_title">
+						<a href="#">网页制作基础到实战学习班</a>
+						<span>￥1580</span>
+					</p>
+					<div class="l_num">共150人购买</div>
+					<div class="l_yy">
+						<div class="y_text">
+							<span>课题：项目实战</span>
+							<a href="#">查看课程详情</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="l_img">
+						<img src="images/c_1.png" alt="网页制作零基础到项目实战" width="280" height="188" />
+					</div>
+					<p class="l_title">
+						<a href="#">网页制作基础到实战学习班</a>
+						<span>￥1580</span>
+					</p>
+					<div class="l_num">共150人购买</div>
+					<div class="l_yy">
+						<div class="y_text">
+							<span>课题：项目实战</span>
+							<a href="#">查看课程详情</a>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<!--end course-->
+
+	<!--footer start-->
+	<div class="footer">
+		<div class="f_link">
+			<div class="l_con">
+			友情链接： <a href="#">SEO研究中心</a> | <a href="#">考试在线</a> | <a href="#">腾讯课堂</a>
+			</div>
+		</div>
+		<div class="f_info">
+			<div class="i_footer">
+				<div class="f_box">
+					<a href="#" class="b_icon">
+						<i></i>
+					</a>
+					<div class="b_con">
+						<a href="#">了解潭州</a>
+						<a href="#">联系我们</a>
+						<a href="#">退款维权</a>
+						<a href="#">加入潭州</a>
+						<a href="#">学员风采</a>
+						<a href="#">学习课程</a>
+					</div>
+				</div>
+
+				<div class="f_box f_txt">
+					<a href="#" class="b_icon">
+						<i class="i_wx">
+							<div class="w_qrcode">
+								<img src="images/erweima.png" alt="扫一扫" width="119" height="130" />
+							</div>
+						</i>
+					</a>
+					<a href="#" class="i_txt">关注官方微信</a>
+				</div>
+
+				<div class="f_box f_txt">
+					<a href="#" class="b_icon">
+						<i class="i_tx"></i>
+					</a>
+					<a href="#" class="i_txt">进入腾讯课堂</a>
+				</div>
+
+				<div class="f_box f_time">
+					<a href="#" class="b_icon">
+						<i class="t_tel"></i>
+					</a>
+					<div class="b_time">
+						<p>联系Q Q：3115057393</p>
+						<p>联系客服：400 - 009 - 6359</p>
+						<p>周一至六9:30-23:00[仅收市话费]</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<p class="f_copyright">Copyright © 2013-2015 www.mooncollege.cn All Rights Reserved 版权所有：湖南潭州教育咨询有限公司 备案号：备13016338号</p>
+	</div>
+	<!--end footer-->
+
+</body>
+</html>

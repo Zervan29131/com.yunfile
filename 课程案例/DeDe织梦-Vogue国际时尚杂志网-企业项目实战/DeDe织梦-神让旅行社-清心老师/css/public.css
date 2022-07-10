@@ -1,0 +1,15 @@
+#WebCon{width:1000px;  margin:15px auto 0px;}
+#WebLeft{width:214px; float:left;}
+#WebRight{width:768px;  float:right;}
+
+#WebLeft #HotAddress{margin-top:15px;}
+#WebLeft #HotAddress .bor dl{ width:66px; float:left;margin:6px 0px 0px 4px;}
+
+#WebRight p.weblogo{height:35px; background:url("../images/weblogo.jpg");  font-size:12px; color:#666;
+				text-align:right;line-height:35px; padding-right:10px;}
+#WebRight p.weblogo span{color:#000; font-size:14px; font-weight:bold; float:left; padding-left:30px;}
+#WebRight p.weblogo a{color:#666; text-decoration:none;}
+#WebRight p.weblogo a:hover{color:#6aae05; font-weight:bold;}
+
+#WebRight #WebContent{min-height:600px; border:1px solid #c3c3c3; border-top:0px; padding:15px;
+					font-size:14px; line-height:30px;}

@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+/*public*/
+.left{float:left;}
+.right{ float:right;}
+*{ margin:0; padding:0; border:none; font-size:12px;}
+ul,li{ list-style:none;}
+.clear{ clear:both;}
+a{ text-decoration:none;}
+/*public end*/
+#content_body{ width:950px; margin:0 auto;}
+/*楼层A-right*/
+.pub-a_right{ width:230px;}
+.pub-a_right .right_title{ background:url(img/title02.gif) no-repeat scroll -420px -110px; height:25px;}
+.pub-a_right .box{ height:40px; background:url(img/bg24.png) no-repeat scroll 0 -440px;}
+.pub-a_right .box span{ display:block; text-align:center; width:40px; height:40px; line-height:40px; font-family:"Georgia"; font-weight:bold;}
+.pub-a_right .box a{ display:block; width:150px; margin-top:4px; height:32px; line-height:16px; text-align:center; color:rgb(51,51,51);}
+.pub-a_right .box a:hover{ color:rgb(204,0,0); text-decoration:underline;}
+.pub-a_right .on{ background-position:-260px -440px;}
+.pub-a_right .on span{ color:#FFF;}
+/*图文区*/
+.pub-a_right  .pic-text{ width:204px; margin:20px auto;}
+.pub-a_right  .pic-text img{ border:1px solid rgb(207,207,207);}
+.pub-a_right  .pic-text p{ width:114px;color:rgb(102,102,102);}
+/*图文区，结束*/
+/*楼层A-right end*/
+</style>
+<script src="js/jquery1.42.min.js"></script>
+<script src="js/jquery.SuperSlide.2.1.1.js"></script>
+
+</head>
+
+<body>
+<div id="main">
+    
+    	<div id="content_title"></div>
+    	<div id="content_body">
+        	<!--身体部分-->
+            <div id="body">
+            <!--演示楼层A-->
+            	<div class="contentA pub-a">
+                <!--A-右侧-->
+                    <div class="right pub-a_right">
+                    	<div class="right_title"></div>
+                        <div class="right_body">
+                            <!--第一选择项-->
+                            <!--选择项 title-->
+                            <div class="box">
+                            <span class="left box_start">3.3</span>
+                            <a class="left" href="#" title="晒厨房就有奖生活家享万元豪礼">晒厨房就有奖<br />生活家享万元豪礼</a>	
+                            <span class="right box_end">3.27</span>
+                            </div>
+                            <!--选择项 title end-->
+                            <!--图文区-->
+                            <div class="pic-text">
+                            <img class="left" src="img/qqqq.jpg" width="78" height="78" alt="晒厨房就有奖生活家享万元豪礼" title="晒厨房就有奖生活家享万元豪礼" />
+                            <p class="right">擦敞开心扉，运用天马行空的想象力，呈现你的厨房，15000元消费券等你来抢…</p>
+                            <div class="clear"></div>
+                            </div>
+                            <!--图文区，结束-->
+                            <!--第一选择项 end-->
+                            <!--第一选择项-->
+                            <!--选择项 title-->
+                            <div class="box">
+                            <span class="left box_start">3.3</span>
+                            <a class="left" href="#" title="晒厨房就有奖生活家享万元豪礼">晒厨房就有奖<br />生活家享万元豪礼</a>	
+                            <span class="right box_end">3.27</span>
+                            </div>
+                            <!--选择项 title end-->
+                            <!--图文区-->
+                            <div class="pic-text">
+                            <img class="left" src="img/qqqq.jpg" width="78" height="78" alt="晒厨房就有奖生活家享万元豪礼" title="晒厨房就有奖生活家享万元豪礼" />
+                            <p class="right">擦敞开心扉，运用天马行空的想象力，呈现你的厨房，15000元消费券等你来抢…</p>
+                            <div class="clear"></div>
+                            </div>
+                            <!--图文区，结束-->
+                            <!--第一选择项 end-->
+                            <!--第一选择项-->
+                            <!--选择项 title-->
+                            <div class="box">
+                            <span class="left box_start">3.3</span>
+                            <a class="left" href="#" title="晒厨房就有奖生活家享万元豪礼">晒厨房就有奖<br />生活家享万元豪礼</a>	
+                            <span class="right box_end">3.27</span>
+                            </div>
+                            <!--选择项 title end-->
+                            <!--图文区-->
+                            <div class="pic-text">
+                            <img class="left" src="img/qqqq.jpg" width="78" height="78" alt="晒厨房就有奖生活家享万元豪礼" title="晒厨房就有奖生活家享万元豪礼" />
+                            <p class="right">擦敞开心扉，运用天马行空的想象力，呈现你的厨房，15000元消费券等你来抢…</p>
+                            <div class="clear"></div>
+                            </div>
+                            <!--图文区，结束-->
+                            <!--第一选择项 end-->
+                        </div>
+                        <div class="right_bottom"></div>
+                    </div>
+                    <!--A-右侧 end-->
+                </div>
+            <!--演示楼层A end-->
+            </div>
+            <!--身体部分end-->
+        </div>
+        <div id="content_bottom"></div>
+</div>
+<script type="text/javascript">
+			jQuery(".right_body").slide({
+				titCell:".box", //鼠标触发对象
+				targetCell:".pic-text", //与titCell一一对应，第n个titCell控制第n个targetCell的显示隐藏
+				effect:"slideDown" //targetCell下拉效果
+				
+				});
+		</script>
+</body>
+</html>

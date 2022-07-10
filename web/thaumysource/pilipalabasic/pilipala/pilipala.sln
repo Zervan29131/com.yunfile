@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "pilipala", "pilipala\pilipala.sqlproj", "{B7CD14BE-8983-4307-B44C-116A2CE6A2DF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B7CD14BE-8983-4307-B44C-116A2CE6A2DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7CD14BE-8983-4307-B44C-116A2CE6A2DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7CD14BE-8983-4307-B44C-116A2CE6A2DF}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{B7CD14BE-8983-4307-B44C-116A2CE6A2DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7CD14BE-8983-4307-B44C-116A2CE6A2DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7CD14BE-8983-4307-B44C-116A2CE6A2DF}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F5F1E9A8-D2E2-423B-8BB7-72A4A318B93D}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,88 @@
+/*首页的js*/
+$("#header").find(".txt").focus(function(){  //获取焦点
+	$(".header-form").find(".datalist").show();
+})
+
+$("#header").find(".txt").blur(function(){  //失去焦点
+	$(".header-form").find(".datalist").hide();
+})
+
+
+var timer=null;
+$(".header-nav li").not(".unselected").hover(function(){	
+	clearTimeout(timer);
+	$(".details").animate({height:"230px"}).find("li").eq($(this).index()).show().siblings().hide();
+},function(){
+	fnHide();
+});
+
+$(".details li").hover(function(){
+	clearTimeout(timer);
+},function(){
+	fnHide();
+});
+
+function fnHide(){
+	timer=setTimeout(function(){
+		$(".details").animate({height:"0px"},200).find("li").hide();
+	},30);
+}
+
+
+$("#banner .aside-txt .topic").hover(function(){
+	$(this).find(".children-list").show()
+},function(){
+	$(this).find(".children-list").hide();
+})
+
+
+
+$(".banner-wrap").hover(function(){
+	$(".arrowBtn-left,.arrowBtn-right").show();
+},function(){$(".arrowBtn-left,.arrowBtn-right").hide();})
+
+var _index=0;
+$(".arrowBtn-right").click(function(){
+	_index++;
+	if (_index==$(".banner-wrap-pic li").size()) {
+		_index=0;
+	};
+	fnDo();
+});
+
+$(".arrowBtn-left").click(function(){
+	_index--;
+	if (_index<0) {
+		_index=$(".banner-wrap-pic li").size()-1;
+	};
+	fnDo();
+});
+
+function fnDo(){
+	$(".banner-wrap-pic li").css("left","0px").eq(_index).fadeIn().siblings().fadeOut();
+	$(".bBtn").find("li").eq(_index).addClass("active").siblings().removeClass("active");
+}
+
+$(".bBtn").find("li").click(function(){
+	if (_index != $(this).index()) {
+		var oneWidth=$(".banner-wrap-pic li").width();
+		var m = _index - $(this).index()>0 || -1;
+		$(".banner-wrap-pic li").eq(_index).animate({left:m*oneWidth},function(){ $(this).hide();
+		}).end().eq($(this).index()).show().css("left",-m*oneWidth).animate({left:0});
+		_index=$(this).index();
+		$(this).addClass("active").siblings().removeClass("active");
+	};
+});
+
+
+$(".star-goods .more").find("a").click(function(){
+	if ( $(this).not(".disClick") ) {
+		$(".star-goods-content").find("ul").css("margin-left",-1240*$(this).index()+"px");
+		$(this).addClass("disClick").siblings().removeClass("disClick");
+	};
+})
+
+
+$(".topic .more li").moususeover(function(){
+	$(".content-right").find("ul").eq($(this).index()).show().siblings().hide();
+})

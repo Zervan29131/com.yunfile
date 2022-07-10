@@ -1,0 +1,404 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=gbk">
+		<title>潭州学院-网页制作</title>
+		<meta name="Keywords" content="">
+		<meta name="description" content="">	
+		<style type="text/css">
+			*{margin:0px;padding:0px;}
+			body{font-size:12px;color:#666;font-family:"微软雅黑"; height:1500px;background:url("images/bg.png");}
+			img{border:none;}
+			/*header*/
+			.top{width:100%;background:#fff;}
+			.header{width:1000px;height:80px;margin:0 auto;}
+			.header .logo{float:left;}
+			.header .nav{float:left;}
+			.header .nav ul li{float:left;list-style:none;padding-top:30px;}
+			.header .nav ul li a{text-decoration:none;margin-left:30px;font-size:16px;color:#666;
+				display:block;padding-bottom:5px;}
+			.header .nav ul li a:hover{border-bottom:3px solid #DE3D3D;}
+			.header .nav ul li .nav_sel{border-bottom:3px solid #DE3D3D;}
+			.header .wb{float:right;}
+			.header .wb a{width:38px;height:38px;display:block;float:left;margin:30px 5px 0 0;position:relative;overflow:hidden;}
+			.header .wb a span{width:30px;height:80px;display:block;
+				background:url("images/wei.png") no-repeat;position:absolute;}
+			.header .wb a .sina{background-position:4px 0px;}
+			.header .wb a .tx{background-position:-38px 0px;}
+			.header .wb a .qq{background-position:-79px 0px;}
+			/*end header*/
+
+			/*banner*/
+			.banner{width:100%;height:25px;background:url("images/1.jpg") no-repeat top center;position:relative;padding-top:215px;}
+			/*.banner 
+			.btn{width:200px;height:30px;background:#CCCCFF;position:absolute;bottom:0px;left:50%;}
+			.banner .btn ul li{border:1px solid red;list-style:none;float:left;}*/
+
+			.banner 
+			.btn{width:87px;margin:0 auto;}
+			.banner .btn ul li{list-style:none;float:left;background:url("images/1.png") no-repeat;width:16px;height:16px;margin-left:5px;}
+			.banner .btn ul{padding:3px 14px;display:inline-block;
+				background:rgba(0,0,0,.5);border-radius: 11px;
+			}
+			.banner .btn ul .no{background:url("images/2.png") no-repeat;}
+
+			/*end banner*/
+			.course_index{width:1000px;height:219px;background:url("images/course-index.png") no-repeat;margin:50px auto;}
+			.course_index .course_day{width:935px;height:154px;
+				padding-top:65px;padding-left:65px;}
+			.course_index .course_day ul li{float:left;list-style:none;width:290px;height:100px;}
+			
+			.course_index .course_day ul li span{width:94px;height:94px;display:block;background:url("images/index_classet_btn.png") no-repeat;text-align:center;line-height:94px;font-size:26px;font-weight:bold;color:#fff;float:left;margin-right:10px;
+			}
+			.course_index .course_day ul li h3{margin:6px 0;font-size:16px;}
+			.course_index .course_day ul li .time1{background-position:-17px -10px;}
+			.course_index .course_day ul li .time2{background-position:-17px -105px;}
+			.course_index .course_day ul li .time3{background-position:-17px -200px;}	
+			
+			/*course_box*/
+			.course_box{width:1000px;height:210px;margin:0 auto;}
+			.course_box .box_left{width:42px;height:210px;float:left;}
+			.course_box .box_left a{width:42px;height:58px;display:block;margin-top:85px;background:url("images/pae.png") no-repeat 0 -106px;}
+			.course_box .box_left a:hover{background-position:0 0;}
+
+			.course_box .box_right{width:42px;height:210px;float:left;}
+			.course_box .box_right a{width:42px;height:58px;display:block;margin-top:85px;background:url("images/pae.png") no-repeat 0 -323px;}
+			.course_box .box_right a:hover{background-position:0 -213px;}
+
+
+			.course_box .box_center{width:916px;height:210px;float:left;overflow:hidden;position:relative;}
+			.course_box .box_center .course_list{width:304px;height:200px;float:left;background:url("images/bagj_03.png") no-repeat 0 bottom;}
+			.course_box .box_center .box_all{width:1220px;position:absolute;left:0px;}
+			.course_box .box_center .course_list .course_imgs{width:112px;margin-top:40px;float:left;}
+			.course_box .box_center .course_list .course_info{width:182px;height:200px;float:right;}
+			.course_box .box_center .course_list .course_info h3{font-size:14px;margin-top:60px;overflow:hidden;}
+			.course_box .box_center .course_list .course_info p{height:36px;overflow:hidden;margin:10px 0;}
+			.course_box .box_center .course_list .course_info a{text-decoration:none;background:#EC0201;color:#fff;padding:1px 10px;border-radius:6px;}
+			/* end course_box*/
+
+			
+			.course_btn{width:422px;height:41px;margin:80px auto;text-align:center;}
+			.course_btn a{height:41px;background:#dd4250;display:block;line-height:41px;
+			text-decoration:none;font-size:16px;color:#fff;font-weight:bold;border-radius:30px;}
+			.course_btn a:hover{background:#ec0201;}
+
+			/*pic*/
+			.tanzhou_pic{width:1000px;height:440px;background:#fff;margin:0 auto;border-radius:6px;}
+			.tanzhou_pic .title {width:1000px;height:50px;line-height:50px;}
+			.tanzhou_pic .title h2{font-size:16px;font-weight:bold;padding-left:10px;}
+			.tanzhou_pic .pic{width:1000px;height:360px;}
+			.tanzhou_pic .pic ul li{list-style:none;float:left;margin:0 0 20px 23px;}
+			
+			.tanzhou_pic .pic ul li a{width:100%;height:100%;display:block;position:relative;}
+			.tanzhou_pic .pic ul li a span{width:100%;height:100%;display:block;background: url("images/btn.png") no-repeat center; position:absolute;left:0;top:0;cursor: pointer;z-index:2;}
+			.tanzhou_pic .pic ul li a span:hover{display:block;}
+			/*end pic*/
+
+			.vip{width:1000px;height:285px;background:#fff;border-radius:6px;margin:80px auto;
+				padding-top:35px;}			
+			.vip .vip_left{width:480px;float:left;padding-left:20px;}
+			.vip .vip_left h3{font-size:20px;color:#646464;background:url("images/course_present.png") no-repeat;padding-left:35px;margin-bottom:5px;}
+			.vip .vip_left ul li{list-style:none;font-size:14px;line-height:26px;padding-left:35px;}
+			.vip .vip_left h4{font-size:20px;color:#646464;background:url("images/fee_icon.png") no-repeat;padding-left:35px;margin-bottom:5px;font-weight:300;margin-top:36px;}
+			.vip .vip_left .price{font-size:16px;}
+			.vip .vip_left .price .money{font-size:40px;font-weight:bold;color:#ff4401;}
+			.vip .vip_left .price .onetoone{border-left:1px solid #d2d2d2;padding-left:8px;margin-left:8px;}
+			.vip .vip_left .desc{font-size:16px;}
+
+
+			.vip .vip_right{width:300px;float:right;padding-left:100px;}
+			.vip .vip_right .qq{font-size:28px;}
+			.vip .vip_right .time{font-size:18px;font-weight:bold;color:#000;margin:32px 0;line-height:30px;}
+			.vip .vip_right .tel{font-size:18px;font-weight:bold;}
+			.vip .vip_right .tel span{font-size:40px;color:#ff4401;}
+
+			.footer{width:100%;height:50px;background:#fff;}
+			.footer p{line-height:50px;text-align:center;}
+
+		
+		</style>
+	<!--控制弹出框的样式-->
+	<link rel="stylesheet" type="text/css" href="css/box.css" >
+	</head>
+<body>
+	
+	<!--header start-->
+	<div class="top">
+		<div class="header">
+			<div class="logo">
+				<a href="#"><img src="images/logo.png" alt="潭州学院" width="215" height="66" /></a>
+			</div>
+			<div class="nav">
+				<ul>
+					<li><a href="#" class="nav_sel">首页</a></li>
+					<li><a href="#">网页制作4.0课程</a></li>
+					<li><a href="#">教程下载</a></li>
+					<li><a href="#">公开课</a></li>
+					<li><a href="#">联系我们</a></li>
+				</ul>
+			</div>
+			<div class="wb">
+				<a href="#" class="wb_sina"><span class="sina"></span></a>
+				<a href="#" class="wb_tx"><span class="tx"></span></a>
+				<a href="#" class="wb_qq"><span class="qq"></span></a>
+			</div>
+		</div>
+	</div>
+	<!--end header-->
+
+
+	<!--banner-->
+		<div class="banner">
+			<div class="btn">
+				<ul>
+					<li class="no" as="1"></li>
+					<li as="2"></li>
+				</ul>
+			</div>
+		</div>
+	<!--end banner-->
+
+	<!--course_index-->
+	<div class="course_index">
+		<div class="course_day">
+			<ul>
+				<li>
+					<span class="time1">22:00</span>
+					<p>开设课程：</p>
+					<h3>项目实战（网站开发）</h3>
+					<p>技术总监：Arry老师</p>
+				</li>
+				<li>
+					<span class="time2">20:00</span>
+					<p>开设课程：</p>
+					<h3>特训班（动态开发）</h3>
+					<p>项目经理：清心老师</p>				
+				</li>
+				<li>
+					<span class="time3">21:00</span>
+					<p>开设课程：</p>
+					<h3>VIP零基础系统学习班</h3>
+					<p>VIP高级讲师：木子老师</p>				
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!--end course_index-->
+
+	<div class="course_box">
+		<div class="box_left">
+			<a href="javascript:void(0);"></a>
+		</div>
+
+		<div class="box_center">
+			<div class="box_all">
+				
+				<div class="course_list">
+					<div class="course_imgs"><img src="images/txb.png" alt="特训班" width="112" height="144" /></div>
+					<div class="course_info">
+						<h3>特训班（独立动态网站开发）</h3>
+						<p title="HTML零基础到高级课程实战（全程20节课），独立设计编写模板，开发完整具有前后台的动态网站，存实战训练。">HTML零基础到高级课程实战（全程20节课），独立设计编写模板，开发完整具有前后台的动态网站，存实战训练。</p>
+						<a href="#">马上报名</a>
+					</div>
+				</div>
+				
+				<div class="course_list">
+					<div class="course_imgs"><img src="images/sj.png" alt="特训班" width="112" height="144" /></div>
+					<div class="course_info">
+						<h3>HTML5+css3手机网页制作</h3>
+						<p title="HTML零基础到高级课程实战（全程20节课），独立设计编写模板，开发完整具有前后台的动态网站，存实战训练。">HTML零基础到高级课程实战（全程20节课），独立设计编写模板，开发完整具有前后台的动态网站，存实战训练。</p>
+						<a href="#">马上报名</a>
+					</div>
+				</div>
+				
+				<div class="course_list">
+					<div class="course_imgs"><img src="images/seo.png" alt="特训班" width="112" height="144" /></div>
+					<div class="course_info">
+						<h3>SEO代码优化课程</h3>
+						<p title="HTML零基础到高级课程实战（全程20节课），独立设计编写模板，开发完整具有前后台的动态网站，存实战训练。">HTML零基础到高级课程实战（全程20节课），独立设计编写模板，开发完整具有前后台的动态网站，存实战训练。</p>
+						<a href="#">马上报名</a>
+					</div>
+				</div>
+				
+				<div class="course_list">
+					<div class="course_imgs"><img src="images/work.png" alt="特训班" width="112" height="144" /></div>
+					<div class="course_info">
+						<h3>就业、创业课程</h3>
+						<p title="HTML零基础到高级课程实战（全程20节课），独立设计编写模板，开发完整具有前后台的动态网站，存实战训练。">HTML零基础到高级课程实战（全程20节课），独立设计编写模板，开发完整具有前后台的动态网站，存实战训练。</p>
+						<a href="#">马上报名</a>
+					</div>
+				</div>
+
+
+
+			</div>
+		</div>
+		<div class="box_right">
+			<a href="javascript:;"></a>
+		</div>
+	</div>
+
+	<!--button-->
+	<div class="course_btn">
+		<a href="http://wpa.qq.com/msgrd?V=1&Uin=635900003&Site=web.tanzhouedu.com&Menu=yes">
+			马上咨询报名网页制作VIP &gt;&gt;
+		</a>
+	</div>
+	<!--end button-->
+
+	<div class="tanzhou_pic">
+		<div class="title"><h2>学院办公环境</h2></div>
+		<div class="pic">
+			<ul>
+				<li>
+					<a href="images/img/1.jpg">
+						<img src="images/img/s_1.jpg" alt="" width="220" height="165"/>
+					</a>
+				</li>
+				<li>
+					<a href="images/img/2.jpg">
+						<img src="images/img/s_2.jpg" alt="" width="220" height="165"/>
+					</a>
+				</li>
+				<li>
+					<a href="images/img/3.jpg">
+						<img src="images/img/s_3.jpg" alt="" width="220" height="165"/>
+					</a>
+				</li>
+				<li>
+					<a href="images/img/4.jpg">
+						<img src="images/img/s_4.jpg" alt="" width="220" height="165"/>
+					</a>
+				</li>
+				<li>
+					<a href="images/img/5.jpg">
+						<img src="images/img/s_5.jpg" alt="" width="220" height="165"/>
+					</a>
+				</li>
+				<li>
+					<a href="images/img/6.jpg">
+						<img src="images/img/s_6.jpg" alt="" width="220" height="165"/>
+					</a>
+				</li>
+				<li>
+					<a href="images/img/7.jpg">
+						<img src="images/img/s_7.jpg" alt="" width="220" height="165"/>
+					</a>
+				</li>
+				<li>
+					<a href="images/img/8.jpg">
+						<img src="images/img/s_8.jpg" alt="" width="220" height="165"/>
+					</a>
+				</li>	
+				
+			</ul>
+		</div>
+	</div>
+
+	
+	<div class="vip">
+		<div class="vip_left">
+			<h3>仅本期报名学员可免费参加以下付费学习班：</h3>
+			<ul>
+				<li>1. 特训班 (织梦DeDe独立开发动态网站20节课) 课表下载地址</li>
+				<li>2. SEO 代码优化课程</li>
+				<li>3. HTML5 + css3班 ，手机版网页制作</li>
+			</ul>
+			<h4>VIP课程收费</h4>
+			<p class="price"><span class="money">1580￥</span> <span class="onetoone">含一对一指导，解答</span></p>
+			<p class="desc">（名额有限，先到先得！）</p>
+		</div>
+		<div class="vip_right">
+			<p class="qq">报名QQ：635900003</p>
+			<p class="time">报名截止日期: <br />2014年2月28日</p>
+			<p class="tel">咨询电话：<br /><span>400-009-6359<span></p>
+		</div>
+		
+	</div>
+	
+	<div class="footer">
+		<p>
+			Copyright &copy; 2013-2014 <a href="http://web.tanzhouedu.com/">WEB.TANZHOUEDU.COM</a> All Rights Reserved 版权所有：湖南潭州教育咨询有限公司 备案号：备13016338号
+		</p>
+	</div>
+
+
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+	// web
+$(".wb a").each(function(index) {
+		$(this).hover(function(){
+				if(index==0){
+				$(this).css({"background-color":"#f75454"});
+				}
+				else if(index==1){
+				$(this).css({"background-color":"#0e71b7"});
+				}
+				else if(index==2){
+				$(this).css({"background-color":"#666"});
+				}
+				// 
+				$(this).css({"border-radius":4});
+				$(this).find('span').stop();
+				$(this).find('span').animate({'top':-43},"normal")}
+			,function(){
+				var nv = $(this);
+				$(this).find('span').css("opacity:",0.5).animate({'top':0},"normal",function(){nv.css({"background":"none","border-radius":4});	
+			});	
+	})
+});
+
+
+// banner
+$(function(){
+	$(".btn").find("li").mouseover(function(){
+		var code = $(this).attr("as");
+		//alert(code);
+		$(this).addClass("no").siblings().removeClass("no");
+		// fadeOut() 方法使用淡出效果来隐藏被选元素，假如该元素是隐藏的。
+		$(".banner").fadeOut(500,function(){
+			//fadeIn() 方法使用淡入效果来显示被选元素，假如该元素是隐藏的。
+			$(this).css("background","url(images/"+code+".jpg) no-repeat top center").fadeIn(500);
+		})
+	});
+});
+
+
+$(function(){
+var courselen = $(".box_center .course_list").length;
+//alert("courselist的个数："+courselen);
+$(".box_all").width(courselen*305)
+var yy = 1;
+	$(".box_left").click(function(){
+		var courselen=$(".box_center .course_list").length;
+		if(!$(".box_all").is(":animated")){
+			if(yy==1){
+				}else{
+					$(".box_all").animate({left:"+="+304})
+					yy--;
+				}	
+			}
+		})
+		$(".box_right").click(function(){
+		var courselen=$(".box_center .course_list").length;
+		if(!$(".box_all").is(":animated")){
+			if(yy==courselen-2){
+				}else{
+					$(".box_all").animate({left:"-="+304})
+					yy++
+					}	
+			}
+		})
+});
+
+</script>
+
+<!--自定义弹出框-->
+<script type="text/javascript" src="js/box.js"></script>
+<!--调用弹出框方法 ，读取大图片-->
+<script type="text/javascript">
+	$(function() {$('.tanzhou_pic a').lightBox();});
+</script>
+</body>
+</html>

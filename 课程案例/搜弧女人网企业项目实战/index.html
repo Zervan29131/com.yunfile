@@ -1,0 +1,497 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>搜狐女人</title>
+<meta name="keywords" content="搜狐女人" />
+<meta name="description" content="搜狐女人" />
+<style>
+/*public*/
+.left{float:left;}
+.right{ float:right;}
+*{ margin:0; padding:0; border:none; font-size:12px;}
+ul,li{ list-style:none;}
+.clear{ clear:both;}
+a{ text-decoration:none;}
+/*public end*/
+#content_body{ width:950px; margin:0 auto;}
+/*ToolBar*/
+.seach_nav{ width:100%; height:30px; background:rgb(45,45,45); position:fixed; top:0;}
+.innerToolBar{ width:950px; margin:0 auto;}
+.TB_logo{ width:85px; height:21px; margin-left:1px; margin-top:5px;}
+.TB_logo img{ border:0px;}
+.dropdown-menu{ width:18px; height:18px; background:rgb(169,169,169) url(img/icon_toolbar_arrow.png) no-repeat scroll 2px 2px; border:1px solid rgb(125,125,125); border-right:0px; margin-left:13px; display:block;  margin-top:5px;}
+/*表单*/
+.simple-email-wrapper{ margin-top:5px; border:1px solid rgb(125,125,125); height:18px; width:112px; position:relative;}
+.simple-pwd-wrapper{height:18px; width:82px; border:1px solid rgb(125,125,125); overflow:hidden; color:#333; position:relative; margin:5px 0 0 4px;}
+.user{ width:110px; height:16px; border:0;background:#FFF; position:absolute; color:#999; top:1px; left:1px;}
+.pwd{display:inline; height:16px; width:80px; background:#FFF;color:#999; position:absolute; left:1px; top:1px;}
+.simple-submit{ margin:5px 0 0 3px; background:url(img/btn_login_simple_130315.gif); width:40px; height:20px; color:#FFF;}
+/*表单 end*/
+.reg{ display:block;  margin:5px 10px 0 10px; color:rgb(149,149,149); text-decoration:none; line-height:20px;}
+.reg:hover{ text-decoration:underline;}
+.tb-nav{ display:block; height:24px; padding:5px 10px 0 10px; line-height:20px;  color:rgb(149,149,149); text-decoration:none;}
+.tb-nav:hover{ background:#FFF;}
+.weibo{ background:url(img/btn61x22.gif); width:56px; height:22px; color:#FFF; text-decoration:none; margin-top:5px; line-height:22px; padding-left:5px;}
+/*ToolBar end*/
+/*Head Nav*/
+.commend-headNav{ height:45px; margin-top:30px; line-height:45px;font-size:14px;}
+.commend-headNav a{color:#000; font-size:14px; text-decoration:none; margin:0 5px;}
+.commend-headNav a:hover{ color:rgb(204,0,0); text-decoration:underline;}
+.commend-headNav .first{ margin-left:0px;}
+.commend-headNav .last{ margin-right:0px;}
+/*Head Nav End*/
+/*导航*/
+.logo-nav{ height:105px; margin-top:5px;}
+.main_nav{ height:65px; background:url(img/bgx01.gif) repeat-x; background-position:bottom;}
+.nav_logo{ margin-top:8px; width:149px; text-align:center;}
+.nav{ height:58px; width:653px;}
+.nav li{ float:left; background:url(img/nobg01.gif) no-repeat; width:160px; height:58px; padding:0 1px; position:relative;}
+.nav em{ display:block; background:rgb(204,0,0); height:10px; width:160px; position:absolute;  top:105px; z-index:100; display:none;}
+.nav a{display:block; height:58px; width:160px;background:url(img/2d3c_8457db1e_1f53_7229_bb52_c7b39be791a8_1.gif) no-repeat;}
+.nav .a1{background-position:0 0;}
+.nav .a2{background-position:0 -70px;}
+.nav .a3{background-position:0 -140px;}
+.nav .a4{background-position:0 -210px;}
+.nav .on .a1{ background-position:-170px 0;}
+.nav .on .a2{background-position:-170px -70px;}
+.nav .on .a3{background-position:-170px -140px;}
+.nav .on .a4{ background-position:-170px -210px;}
+.on em{ display:block;}
+.nav_list{ width:119px; height:22px; border:1px solid rgb(186,186,186); text-align:center; background:rgb(204,0,0); color:#FFF; line-height:22px; margin-top:41px; margin-left:8px;}
+.sub_nav div{ height:40px; background:rgb(248,248,248); text-align:center; font-size:12px;}
+.sub_nav div a{ margin:0 12px; color:rgb(204,0,0); text-decoration:none; line-height:40px;}
+/*导航 end*/
+/*banner*/
+.banner .fi_ct{ position:relative;}
+.fi_ovl{ width:360px; height:92px; background:#C00; position:absolute; bottom:0; left:310px; filter:alpha(opacity:80);opacity:0.8;-moz-opacity:0.8; padding:15px 20px 10px 20px; color:#FFF;}
+.fi_ovl h2{  font-size:20px; text-align:center; font-weight:400; line-height:32px;}
+.fi_ovl span{ line-height:20px;}
+.ban_num{ width:411px; height:20px; margin:0 229px 0 310px; }
+.ban_num a{ display:block; background:#000; color:#FFF; width:65px; height:20px; float:left; text-align:center; line-height:20px; border-right:1px solid #FFF;}
+.ban_num .on{ width:136px; background:rgb(204,0,0);}
+/*banner end*/
+/*public cut_title*/
+.cut_title{ background:url(img/title01.gif) no-repeat; overflow:hidden; line-height:500px;}
+/*link*/
+#link{ position:relative;}
+#link .cut_title{ height:36px; background-position:0 -120px;}
+#link .cut_bottom{ border-bottom:1px solid rgb(51,51,51); height:15px;}
+#link .cut_body{ width:900px; margin:0 auto; }
+.cut_title .next{ display:block; height:24px; width:24px; position:absolute; left:0px; top:50px; background:url(img/nobgleft.gif) no-repeat;z-index:1;}
+.cut_title .prev{ display:block; height:24px; width:24px; position:absolute; right:0px; top:50px; background:url(img/nobg06.gif) no-repeat; z-index:1;}
+#link .pic_list{ margin-top:15px; position:relative;}
+.pic_list li{ width:128px; height:50px; float:left; z-index:-1;}
+/*link end*/
+/*copyright*/
+#copyright{ text-align:center; line-height:22px; font-size:12px; margin:20px 0;}
+#copyright a{ color:#333;}
+/*楼层A*/
+/*楼层A-left*/
+.pub-a .pub-a_left{ width:300px;}
+.pub-a .pub-a_left embed{ margin-top:15px;}
+.pub-a_left .title{ height:26px; background:url(img/title02.gif) no-repeat scroll 0 -310px; overflow:hidden; line-height:400px; margin-top:12px;}
+.pub-a_left .cons{ height:115px; background:#000; margin-top:6px;}
+.pub-a_left .bottom{ height:8px; line-height:8px; margin-top:8px;}
+.list_bg{ text-align:center;}
+.list_bg a{ color:#F00;}
+.list_bg a:hover{ text-decoration:underline;}
+.list_bg li{ background:url(http://women.sohu.com/upload/20130822womenindex/www/images/xx2.gif) repeat-x scroll center bottom; height:34px; line-height:34px;}
+/*楼层A-left end*/
+/*楼层A-center*/
+.pub-a_center{ margin-left:10px; width:400px; }
+.pub-a_center .center_title{ background:url(img/title02.gif) no-repeat scroll 0 -240px; height:25px;}
+.pub-a_center .box{ width:400px; padding:18px 0; background:url(img/bg24.png) no-repeat scroll 0 -50px; overflow:hidden;}
+.box .bt{ float:left; display:block; width:66px; height:66px; background:url(img/icon.gif) no-repeat; margin:2px 0 0 19px;}
+.box_txt{ width:270px; color:rgb(102,102,102);line-height:16px; margin-right:12px; overflow:hidden;}
+.box_txt a{ color:#000; line-height:16px;}
+/*楼层A-center end*/
+/*楼层A-right*/
+.pub-a_right{ width:230px;}
+.pub-a_right .right_title{ background:url(img/title02.gif) no-repeat scroll -420px -110px; height:25px;}
+.pub-a_right .box{ height:40px; background:url(img/bg24.png) no-repeat scroll 0 -440px;}
+.pub-a_right .box span{ display:block; text-align:center; width:40px; height:40px; line-height:40px; font-family:"Georgia"; font-weight:bold;}
+.pub-a_right .box a{ display:block; width:150px; margin-top:4px; height:32px; line-height:16px; text-align:center; color:rgb(51,51,51);}
+.pub-a_right .box a:hover{ color:rgb(204,0,0); text-decoration:underline;}
+.pub-a_right .on{ background-position:-260px -440px;}
+.pub-a_right .on span{ color:#FFF;}
+/*图文区*/
+.pub-a_right  .pic-text{ width:204px; margin:20px auto;}
+.pub-a_right  .pic-text img{ border:1px solid rgb(207,207,207);}
+.pub-a_right  .pic-text p{ width:114px;color:rgb(102,102,102);}
+/*图文区，结束*/
+/*楼层A-right end*/
+/*楼层A 结束*/
+</style>
+<script src="js/jquery1.42.min.js"></script>
+<script src="js/jquery.SuperSlide.2.1.1.js"></script>
+</head>
+
+<body>
+<div id="main">
+    
+    	<div id="content_title"></div>
+    	<div id="content_body">
+        	<!--页面头部-->
+          	<div id="header">
+                <!--导航-->
+    <div class="commend-headNav">
+                        <a href="#" class="first">首页</a>-<a href="#">新闻</a>-<a href="#">军事</a>-<a href="#">文化</a>-<a href="#">历史</a>-<a href="#">体育</a>-<a href="#">NBA</a>-<a href="#">视频</a>-<a href="#">娱乐</a>-<a href="#">财经</a>-<a href="#">股票</a>-<a href="#">IT</a>-<a href="#">汽车</a>-<a href="#">房产</a>-<a href="#">时尚</a>-<a href="#">女人</a>-<a href="#">男人</a>-<a href="#">母婴</a>-<a href="#">教育</a>-<a href="#">健康</a>-<a href="#">旅游</a>-<a href="#" class="last">BBS</a>
+                </div>
+                  <!--导航 end-->
+                <!--广告-->
+                    <embed src="video/950100.swf" width="950" height="100" />
+                 <!--广告 end-->
+                <!--导航选项卡--> 
+                 <div class="logo-nav">
+                    <!--导航上面-->
+                        <div class="main_nav">
+                            <!--导航logo-->
+                            <div class="left nav_logo">
+                                <img src="img/women_logo01.gif" width="108" height="45" />
+                            </div>
+                            <!--导航logo end-->
+                            <!--导航选项-->
+                            <div class="left nav">
+                            <ul>
+                                <li class="on">
+                                    <a href="#" class="a1"></a>
+                                    <em></em>
+                                </li>
+                                <li>
+                                    <a href="#" class="a2"></a>
+                                    <em></em>
+                                </li>
+                                <li>
+                                    <a href="#" class="a3"></a>
+                                    <em></em>
+                                </li>
+                                <li>
+                                    <a href="#" class="a4"></a>
+                                    <em></em>
+                                </li>
+                            </ul>
+                                
+                            </div>
+                            <!--导航选项 end-->
+                            <!--下拉list-->
+                            <div class="left nav_list">
+                                时尚矩阵兄弟频道
+                            </div>
+                            <!--下拉list end-->
+                        </div>
+                    <!--导航上面end-->
+                    <!--导航下面-->
+                        <div class="sub_nav">
+                            <div>
+                            <a href="http://women.sohu.com/meifu.shtml" target="_blank">护肤</a>/<a href="http://women.sohu.com/caizhuang.shtml" target="_blank">彩妆</a>/<a href="http://women.sohu.com/meifa.shtml" target="_blank">发型</a>/<a href="http://women.sohu.com/meitijianfei/" target="_blank">纤体</a>/<a href="http://women.sohu.com/xiangshuis/" target="_blank">香氛</a>/<a href="http://women.sohu.com/porch/" target="_blank">新品</a>/<a href="http://baodian.women.sohu.com/" target="_blank">化妆品库</a>/<a href="http://try.women.sohu.com/" target="_blank">产品试用</a>/<a href="http://women.sohu.com/s2013/2014sohubeauty/" target="_blank">我美丽我信赖</a>/<a href="http://women.sohu.com/selected/" target="_blank">beauty.专题集</a>
+                          </div>
+                           <div>
+                           <a href="http://women.sohu.com/sex-love/" target="_blank">锐话题</a>/<a href="http://women.sohu.com/lovewisdom/" target="_blank">爱情智慧</a>/<a href="http://women.sohu.com/wedding/" target="_blank">花嫁</a>/<a href="http://women.sohu.com/sex-love/" target="_blank">甲乙丙丁</a>/<a href="http://women.sohu.com/image/" target="_blank">美人专辑</a>/<a href="http://women.sohu.com/inhouse/" target="_blank">爱家</a>/<a href="http://women.sohu.com/housing-moving/" target="_blank">逗趣</a>/<a href="http://women.sohu.com/zhichang/" target="_blank">职场</a>/<a href="http://women.sohu.com/enjoy/" target="_blank">享乐</a>/<a href="http://women.sohu.com/positiveenergy/" target="_blank">专家专栏</a>/
+                           </div>
+                            <div>
+                              <a href="http://club.women.sohu.com/" target="_blank">社区</a>/<a href="http://daren.women.sohu.com/" target="_blank">达人影响力</a>/<a href="http://women.sohu.com/doriswilllist/" target="_blank">ICON购物清单</a>/<a href="http://women.sohu.com/s2013/joinsummercolors/" target="_blank">达人出街</a>/<a href="http://women.sohu.com/beautytrainingcamp/" target="_blank">达人美妍课堂</a>/<a href="http://women.sohu.com/s2013/stylistfashionhit/" target="_blank">达人潮流志</a>/<a href="http://women.sohu.com/s2012/beautymagic4s890/" target="_blank">天使爱美丽</a>
+                          </div>
+                            <div>
+                            <a href="http://women.sohu.com/s2013/featureseasons/" target="_blank">主题季</a>/<a href="http://women.sohu.com/s2014/renwuzhi/" target="_blank">beauty .人物志</a>/<a href="http://women.sohu.com/s2014/meirenji/" target="_blank">beauty .美人计</a>/<a href="http://women.sohu.com/s2014/meilizhenxiang/" target="_blank">美丽真相</a>/<a href="http://women.sohu.com/s2014/fashionshow/" target="_blank">大师de秀</a>/<a href="http://women.sohu.com/aboutloveandsex/" target="_blank">情爱解码</a>/<a href="http://women.sohu.com/fashionlifestyle/" target="_blank">尚生活</a>/<a href="http://women.sohu.com/infashion/" target="_blank">IN潮</a>/<a href="http://women.sohu.com/digitallife/" target="_blank">数说生活</a>
+                            </div>
+                        </div>
+                    <!--导航下面end-->
+                </div>
+            	<!--导航选项卡 end--> 
+                <!--轮播图-->
+                <div class="banner_main">
+                	<!--图文区-->
+                	<div class="banner">
+                    	<!--1-->
+                    	<div class="fi_ct">
+                            <img src="img/banner1.jpg" width="950" height="350"  alt="健美女郎托胸秀块肌 练就魔鬼身材" />
+                            <div class="fi_ovl">
+                            	<h2>健美女郎托胸秀块肌 练就魔鬼身材</h2>
+                                <span>德国健身女郎雷蒙娜-瓦莱丽在社交网站大晒自己的"八块肌"照片，引起网友热捧。为了防止傲人胸围挡住她的健身成果，她经常托起双峰以秀出惹人艳羡的8块肌。</span>
+                        	</div>
+                        </div>
+                        <!--1-->
+                        <!--2-->
+                    	<div class="fi_ct">
+                            <img src="img/banner1.jpg" width="950" height="350"  alt="健美女郎托胸秀块肌 练就魔鬼身材" />
+                            <div class="fi_ovl">
+                            	<h2>健美女郎托胸秀块肌 练就魔鬼身材</h2>
+                                <span>德国健身女郎雷蒙娜-瓦莱丽在社交网站大晒自己的"八块肌"照片，引起网友热捧。为了防止傲人胸围挡住她的健身成果，她经常托起双峰以秀出惹人艳羡的8块肌。</span>
+                        	</div>
+                        </div>
+                        <!--2-->
+                        <!--1-->
+                    	<div class="fi_ct">
+                            <img src="img/banner1.jpg" width="950" height="350"  alt="健美女郎托胸秀块肌 练就魔鬼身材" />
+                            <div class="fi_ovl">
+                            	<h2>健美女郎托胸秀块肌 练就魔鬼身材</h2>
+                                <span>德国健身女郎雷蒙娜-瓦莱丽在社交网站大晒自己的"八块肌"照片，引起网友热捧。为了防止傲人胸围挡住她的健身成果，她经常托起双峰以秀出惹人艳羡的8块肌。</span>
+                        	</div>
+                        </div>
+                        <!--1-->
+                        <!--2-->
+                    	<div class="fi_ct">
+                            <img src="img/banner1.jpg" width="950" height="350"  alt="健美女郎托胸秀块肌 练就魔鬼身材" />
+                            <div class="fi_ovl">
+                            	<h2>健美女郎托胸秀块肌 练就魔鬼身材</h2>
+                                <span>德国健身女郎雷蒙娜-瓦莱丽在社交网站大晒自己的"八块肌"照片，引起网友热捧。为了防止傲人胸围挡住她的健身成果，她经常托起双峰以秀出惹人艳羡的8块肌。</span>
+                        	</div>
+                        </div>
+                        <!--2-->
+                        <!--2-->
+                    	<div class="fi_ct">
+                            <img src="img/banner1.jpg" width="950" height="350"  alt="健美女郎托胸秀块肌 练就魔鬼身材" />
+                            <div class="fi_ovl">
+                            	<h2>健美女郎托胸秀块肌 练就魔鬼身材</h2>
+                                <span>德国健身女郎雷蒙娜-瓦莱丽在社交网站大晒自己的"八块肌"照片，引起网友热捧。为了防止傲人胸围挡住她的健身成果，她经常托起双峰以秀出惹人艳羡的8块肌。</span>
+                        	</div>
+                        </div>
+                        <!--2-->
+                    </div>
+                    <!--图文区 end-->
+                    <!--选择区-->
+                    <div class="ban_num">
+                    	<a>1</a>
+                        <a>2</a>
+                        <a>3</a>
+                        <a>4</a>
+                        <a>5</a>
+                    </div>
+                    <!--选择区 end-->
+                </div>
+                <!--轮播图 end-->
+            </div>
+            <!--页面头部end-->
+            <!--身体部分-->
+            <div id="body">
+            <!--演示楼层A-->
+            	<div class="contentA pub-a">
+                	<!--A-左侧-->
+                	<div class="left pub-a_left">
+                    <!--广告-->
+                    <embed src="video/300180.swf" width="300" height="180" />
+                    <!--广告 end-->
+                    <!--新视热点选项卡-->
+                    <div class="title"><h3><strong>新视热点</strong></h3></div>
+                    <div class="cons"></div>
+                    <div class="bottom"></div>
+                    <!--新视热点选项卡 end-->
+                    
+                    <div class="list_bg">
+                        <ul>
+                            <li><a href="#" title="《未来星有机 生而闪亮》掀户外亲子秀新热" target="_blank">《未来星有机 生而闪亮》掀户外亲子秀新热潮</a> </li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    </div>
+                    <!--A-左侧 end-->
+                    <!--A-中间-->
+                    <div class="left pub-a_center">
+                    	<div class="center_title"></div>
+                        <div class="center_body">
+                        	<!--小盒子-->
+                            <div class="box left">
+                            	<a class="bt bg1" href="#" title="木子很帅"></a>
+                                <div class="box_txt right">
+                                	<a href="#">攻克全身最难瘦的部位 打造美丽膝关节</a>
+                                    <p>
+                                    随着天气日益转暖，我们身上的衣物也跟着减少，裸露在外的肌肤一定要时刻保持光滑细腻。 膝盖是我们最容易忽略却极为重要...</p>
+                                </div>
+                            </div>
+                            <!--小盒子 end-->
+                            <!--小盒子-->
+                            <div class="box left">
+                            	<a class="bt bg1" href="#" title="木子很帅"></a>
+                                <div class="box_txt right">
+                                	<a href="#">攻克全身最难瘦的部位 打造美丽膝关节</a>
+                                    <p>
+                                    随着天气日益转暖，我们身上的衣物也跟着减少，裸露在外的肌肤一定要时刻保持光滑细腻。 膝盖是我们最容易忽略却极为重要...</p>
+                                </div>
+                            </div>
+                            <!--小盒子 end-->
+                            <!--小盒子-->
+                            <div class="box left">
+                            	<a class="bt bg1" href="#" title="木子很帅"></a>
+                                <div class="box_txt right">
+                                	<a href="#">攻克全身最难瘦的部位 打造美丽膝关节</a>
+                                    <p>
+                                    随着天气日益转暖，我们身上的衣物也跟着减少，裸露在外的肌肤一定要时刻保持光滑细腻。 膝盖是我们最容易忽略却极为重要...</p>
+                                </div>
+                            </div>
+                            <!--小盒子 end-->
+                            <!--小盒子-->
+                            <div class="box left">
+                            	<a class="bt bg1" href="#" title="木子很帅"></a>
+                                <div class="box_txt right">
+                                	<a href="#">攻克全身最难瘦的部位 打造美丽膝关节</a>
+                                    <p>
+                                    随着天气日益转暖，我们身上的衣物也跟着减少，裸露在外的肌肤一定要时刻保持光滑细腻。 膝盖是我们最容易忽略却极为重要...</p>
+                                </div>
+                            </div>
+                            <!--小盒子 end-->
+                            
+                        </div>
+                        <div class="center_bottom"></div>
+                    </div>
+                    <!--A-中间 end-->
+                   	<!--A-右侧-->
+                    <div class="right pub-a_right">
+                    	<div class="right_title"></div>
+                        <div class="right_body">
+                            <!--第一选择项-->
+                            <!--选择项 title-->
+                            <div class="box">
+                            <span class="left box_start">3.3</span>
+                            <a class="left" href="#" title="晒厨房就有奖生活家享万元豪礼">晒厨房就有奖<br />生活家享万元豪礼</a>	
+                            <span class="right box_end">3.27</span>
+                            </div>
+                            <!--选择项 title end-->
+                            <!--图文区-->
+                            <div class="pic-text">
+                            <img class="left" src="img/qqqq.jpg" width="78" height="78" alt="晒厨房就有奖生活家享万元豪礼" title="晒厨房就有奖生活家享万元豪礼" />
+                            <p class="right">擦敞开心扉，运用天马行空的想象力，呈现你的厨房，15000元消费券等你来抢…</p>
+                            <div class="clear"></div>
+                            </div>
+                            <!--图文区，结束-->
+                            <!--第一选择项 end-->
+                            <!--第一选择项-->
+                            <!--选择项 title-->
+                            <div class="box">
+                            <span class="left box_start">3.3</span>
+                            <a class="left" href="#" title="晒厨房就有奖生活家享万元豪礼">晒厨房就有奖<br />生活家享万元豪礼</a>	
+                            <span class="right box_end">3.27</span>
+                            </div>
+                            <!--选择项 title end-->
+                            <!--图文区-->
+                            <div class="pic-text">
+                            <img class="left" src="img/qqqq.jpg" width="78" height="78" alt="晒厨房就有奖生活家享万元豪礼" title="晒厨房就有奖生活家享万元豪礼" />
+                            <p class="right">擦敞开心扉，运用天马行空的想象力，呈现你的厨房，15000元消费券等你来抢…</p>
+                            <div class="clear"></div>
+                            </div>
+                            <!--图文区，结束-->
+                            <!--第一选择项 end-->
+                            <!--第一选择项-->
+                            <!--选择项 title-->
+                            <div class="box">
+                            <span class="left box_start">3.3</span>
+                            <a class="left" href="#" title="晒厨房就有奖生活家享万元豪礼">晒厨房就有奖<br />生活家享万元豪礼</a>	
+                            <span class="right box_end">3.27</span>
+                            </div>
+                            <!--选择项 title end-->
+                            <!--图文区-->
+                            <div class="pic-text">
+                            <img class="left" src="img/qqqq.jpg" width="78" height="78" alt="晒厨房就有奖生活家享万元豪礼" title="晒厨房就有奖生活家享万元豪礼" />
+                            <p class="right">擦敞开心扉，运用天马行空的想象力，呈现你的厨房，15000元消费券等你来抢…</p>
+                            <div class="clear"></div>
+                            </div>
+                            <!--图文区，结束-->
+                            <!--第一选择项 end-->
+                        </div>
+                        <div class="right_bottom"></div>
+                    </div>
+                    <!--A-右侧 end-->
+                    <div class="clear"></div>
+                </div>
+            <!--演示楼层A end-->
+            
+            </div>
+            <!--身体部分end-->
+            <!--尾巴部分-->
+            <div id="foot">
+            	<!--友情链接-->
+            	<div id="link">
+                	<div class="cut_title"><h3>合作伙伴</h3>
+                        <a class="next"></a>
+                        <a class="prev"></a>
+                    </div>
+                    <div class="cut_body">
+                    	<ul class="pic_list">
+                        	<li>
+                            <a href="#" title="链接" target="_blank"><img src="img/pic03.jpg" title="友情链接1" alt="友情链接1" width="86" height="49" /></a>
+                            </li>
+                            <li>
+                            <a href="#" title="链接" target="_blank"><img src="img/pic03.jpg" title="友情链接1" alt="友情链接1" width="86" height="49" /></a>
+                            </li>
+                            <li>
+                            <a href="#" title="链接" target="_blank"><img src="img/pic03.jpg" title="友情链接1" alt="友情链接1" width="86" height="49" /></a>
+                            </li>
+                            <li>
+                            <a href="#" title="链接" target="_blank"><img src="img/pic03.jpg" title="友情链接1" alt="友情链接1" width="86" height="49" /></a>
+                            </li>
+                            <li>
+                            <a href="#" title="链接" target="_blank"><img src="img/pic03.jpg" title="友情链接1" alt="友情链接1" width="86" height="49" /></a>
+                            </li>
+                            <li>
+                            <a href="#" title="链接" target="_blank"><img src="img/pic03.jpg" title="友情链接1" alt="友情链接1" width="86" height="49" /></a>
+                            </li>
+                            <li>
+                            <a href="#" title="链接" target="_blank"><img src="img/pic03.jpg" title="友情链接1" alt="友情链接1" width="86" height="49" /></a>
+                            </li>
+                            <li>
+                            <a href="#" title="链接" target="_blank"><img src="img/pic03.jpg" title="友情链接1" alt="友情链接1" width="86" height="49" /></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="clear cut_bottom"></div>
+                </div>
+                <!--友情链接 End-->
+                <!--版权所有-->
+                <div id="copyright">
+                <a href="javascript:void(0)" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.sohu.com');return" false;="">设置首页</a> - <a href="http://pinyin.sogou.com/" target="_blank" rel="nofollow">搜狗输入法</a> - <a href="http://pay.sohu.com/" target="_blank" rel="nofollow">支付中心</a> - <a href="http://hr.sohu.com" target="_blank" rel="nofollow">搜狐招聘</a> - <a href="http://ad.sohu.com/" target="_blank" rel="nofollow">广告服务</a> - <a href="http://sohucallcenter.blog.sohu.com/" target="_blan" rel="nofollow" k="">客服中心</a> - <a href="http://corp.sohu.com/s2006/contactus/" target="_blank" rel="nofollow">联系方式</a> - <a href="http://www.sohu.com/about/privacy.html" target="_blank" rel="nofollow">保护隐私权</a> - <a href="http://investors.sohu.com/" target="_blank" rel="nofollow">About SOHU</a> - <a href="http://corp.sohu.com/indexcn.shtml" target="_blank" rel="nofollow">公司介绍</a> - <a href="http://sitemap.sohu.com/" target="_blank">网站地图</a> - <a href="http://roll.sohu.com/" target="_blank">全部新闻</a> - <a href="http://blog.sohu.com/roll" target="_blank">全部博文</a><br/>
+              Copyright © 2014 Sohu.com Inc. All Rights Reserved. 搜狐公司 <a href="http://corp.sohu.com/s2007/copyright/" target="_blank" rel="nofollow">版权所有</a><br/>搜狐不良信息举报电话：010－62728061 举报邮箱：<a href="mailto:jubao@contact.sohu.com">jubao@contact.sohu.com</a></div>
+                <!--版权所有 End-->
+            </div>
+            <!--尾巴部分end-->
+        </div>
+        <div id="content_bottom"></div>
+        
+            <!--飘浮的ToolBar-->
+                <div class="seach_nav">
+                    <div class="innerToolBar">
+                        <!--logo-->
+                        <div class="left TB_logo">
+                            <a href="#" title="搜狐首页">
+                                <img src="img/sohu_channel_logo_0507.gif" width="85" height="21" alt="搜狐首页" title="搜狐首页" />
+                            </a>
+                        </div>
+                        <!--logo end-->
+                        <a class="left dropdown-menu">
+                        </a>
+                        <form>
+                            <div class="left simple-email-wrapper">
+                                <input type="text" value="用户名/邮箱/手机号" class="user" />
+                            </div>
+                            <div class="left simple-pwd-wrapper">
+                       		<input type="password" class="pwd" />
+                       		</div>
+                            <input type="submit" value="登录"  class="left simple-submit"/>
+                        </form>
+                        <a href="#" class="left reg">注册</a>
+                        <a href="#" class="left tb-nav tb-nav-inform">我的火狐</a>
+                        <a href="#" class="right weibo">进入微博</a>
+                    </div>
+                </div>
+                <!--飘浮的ToolBar end-->
+    </div>
+<!--合作伙伴-->
+<script type="text/javascript">
+		jQuery("#link").slide({mainCell:".cut_body ul",autoPlay:true,effect:"leftMarquee",vis:7,interTime:10});
+		</script>
+<!--合作伙伴 End-->
+<!--导航-->
+<script type="text/javascript">jQuery(".logo-nav").slide({titCell:".nav li", mainCell:".sub_nav",effect:"leftLoop"});</script>
+<!--导航end-->
+<!--幻灯片-->
+<script type="text/javascript">jQuery(".banner_main").slide({titCell:".ban_num a", mainCell:".banner"});</script>
+<!--幻灯片end-->
+<script type="text/javascript">
+			jQuery(".right_body").slide({
+				titCell:".box", //鼠标触发对象
+				targetCell:".pic-text", //与titCell一一对应，第n个titCell控制第n个targetCell的显示隐藏
+				effect:"slideDown" //targetCell下拉效果
+				
+				});
+		</script>
+</body>
+</html>

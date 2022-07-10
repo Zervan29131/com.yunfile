@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>javaWEB开发回到顶部小插件 - Arry老师</title>
+		<meta name="Keywords" content="关键词,关键词">
+		<meta name="description" content="">
+
+		<style type="text/css">
+			*{margin:0;padding:0;}
+			body{background:url("images/tz.png") no-repeat top center;height:3852px;}
+			
+			/*tz_top start*/
+			.tz_top{width:46px;height:44px;position:fixed;bottom:100px;right:20px;display:none;}
+			.tz_top a{width:46px;height:44px;display:block;background:url("images/kc_icon.png") no-repeat -102px -153px;}
+			.tz_top a:hover{background-position: -102px -202px;}
+			/*end tz_top*/
+
+		</style>
+
+	</head>
+<body>
+
+	<!--tz_top start-->
+	<div class="tz_top">
+		<a href="javascript:void(0);"></a>
+	</div>
+	<!--end tz_top-->
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+	
+	$(function(){
+
+		// 按钮淡入淡出
+		$(window).scroll(function(){
+			if($(window).scrollTop() >= 100){
+				$(".tz_top").fadeIn(500);
+			} else {
+				$(".tz_top").stop(true,true).fadeOut(500);
+			}
+		});
+		
+		// 回到顶部
+		$(".tz_top").click(function(){
+			$("html,body").animate({
+				scrollTop:0
+			},1000);
+		});
+	});
+
+
+</script>
+
+</body>
+</html>

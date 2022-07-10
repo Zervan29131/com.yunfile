@@ -1,0 +1,851 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <meta content="yes" name="apple-mobile-web-app-capable"><!-- 这meta的作用就是删除默认的苹果工具栏和菜单栏允许全屏模式浏览-->
+    <meta name="apple-touch-fullscreen" content="yes"><!-- 开启对web app程序的支持  -->
+    <meta content="telephone=no,email=no" name="format-detection"><!-- iPhone会自动把你这个文字加链接样式、并且点击这个数字还会自动拨号！telephone=no就忽略页面中的数字识别为电话号码 ,email=no 忽略识别邮箱 -->
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+    <link rel="stylesheet" href="font/css/font-awesome.min.css"/>
+    <script src="js/reset.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/zepto.min.js"></script>
+    <!--search-->
+    <script src="js/search.js"></script>
+    <!-- photoswipe -->
+    <link rel="stylesheet" href="css/photoswipe.css"/>
+    <script src="js/klass.min.js"></script>
+    <script src="js/photoswipe-1.0.11.min.js"></script>
+    <script src="js/pw.js"></script>
+    <!-- photoswipe end-->
+    <!--nav -->
+    <script type="text/javascript" src="js/swiper.jquery.js"></script>
+    <script type="text/javascript" src="js/nav2.js"></script>
+    <!--form-->
+    <script type="text/javascript" src="js/form.js"></script>
+
+    <!--back-->
+    <script src="js/back.js"></script>
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+<div class="wapper">
+    <!--header-->
+    <div class="header">
+        <div class="headerwdth p-lr-25">
+            <a href="" class="blockbja m-t-35 m-r-24"></a>
+            <a href="" class="logo m-t-20 m-r-25"><img src="images/logo.png" alt=""/></a>
+            <a class="sous m-t-35 m-r-25 floatLeft"></a>
+            <span class="m-t-30 f24  floatLeft"><a href="">中</a>/<a href="">EN</a> </span>
+            <a href="" class="iphone m-t-33 m-l-20 floatRight"></a>
+        </div>
+        <div class="znsousu clearFloat relative p-lr-25 m-b-12">
+            <input type="text" class="stext" placeholder=" 请输入内容" autofocus  required/>
+            <input type="submit" class="ssubmit absolute bag-1c9d43" value="搜索"/>
+        </div>
+    </div>
+    <!--header end-->
+    <!-- slide -->
+    <div id="focus" class="focus">
+        <div class="hd">
+            <ul>
+            </ul>
+        </div>
+        <div class="bd">
+            <ul id="Gallery" class="gallery">
+                <li>
+                    <a href="images/ind5.jpg"><img src="images/ind5.jpg" alt="1">
+                    </a>
+                </li>
+                <li>
+                    <a href="images/ind5.jpg"><img src="images/ind5.jpg" alt="2">
+                    </a>
+                </li>
+                <li>
+                    <a href="images/ind5.jpg"><img src="images/ind5.jpg" alt="3">
+                    </a>
+                </li>
+                <li>
+                    <a href="images/ind5.jpg"><img src="images/ind5.jpg" alt="4">
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <!-- TouchSlide -->
+    <script src="js/TouchSlide.js"></script>
+    <script>
+
+        /*banner滚动图片*/
+        TouchSlide({
+            slideCell : "#focus",
+            titCell : ".hd ul", // 开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+            mainCell : ".bd ul",
+            effect : "leftLoop",
+            autoPlay : true, // 自动播放
+            autoPage : true, // 自动分页
+            delayTime: 200, // 毫秒；切换效果持续时间（执行一次效果用多少毫秒）
+            interTime: 2500, // 毫秒；自动运行间隔（隔多少毫秒后执行下一个效果）
+            switchLoad : "_src" // 切换加载，真实图片路径为"_src"
+        });
+
+
+    </script>
+    <!-- slide end-->
+    <!--nav-->
+    <div class="navwidt relative">
+        <div class="nav">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">首页</div>
+                <div class="swiper-slide  actived">科技活动</div>
+                <div class="swiper-slide">国内科技</div>
+                <div class="swiper-slide">国际科技</div>
+                <div class="swiper-slide">首页</div>
+                <div class="swiper-slide">科技活动</div>
+                <div class="swiper-slide">国内科技</div>
+                <div class="swiper-slide">国际科技</div>
+				<div class="swiper-slide">国内科技</div>
+                <div class="swiper-slide">国际科技</div>
+				<div class="swiper-slide">国内科技</div>
+                <div class="swiper-slide">国际科技</div>
+            </div>
+            <div class="b-b-c8c8c8 m-lr-26"></div>
+            <div class="swxl bag-fff">
+                <div class="swkjhd m-lr-26" id="product" style="display: none;" _t_nav="product">
+                    <a href="" class="activee">北京国际都市... </a> / <a href="">国际农业综合培... </a> / <a href="">国际农业考察</a>
+                </div>
+
+            </div>
+        </div>
+        <script>
+            window.onload = function() {
+                var mySwiper1 = new Swiper('.nav',{
+                    freeMode : true,
+                    slidesPerView : 'auto'
+
+                });
+            }
+        </script>
+    </div>
+    <!--nav end-->
+    <div class="hui">
+
+    </div>
+
+    <div class="hdjs">
+        <h3 class="hdjsh3">活动介绍</h3>
+        <div class="hdjsp relative p-lr-25 f24 text-3c line-height-42">
+            &nbsp; &nbsp; &nbsp;为了贯彻落实党中央、国务院关于加快农业现代化建设及科技创新的要求，进一步展示国内外农业科技发展新方向，促进国际技术交流合作和先进理念模式推广，中国农业大学与北京市... <a
+                href="page.html" class="gengduo">更多>></a>
+        </div><br>
+    </div>
+    <div class="hui">
+
+    </div>
+    <div class="hdbg">
+        <h3 class="hdjsh3">活动报告 <a href="active.html" class="genduo">More+ </a></h3>
+        <!--content-list-->
+        <div class="content-list p-lr-25">
+            <ul>
+                <li>
+                    <a href="zxdy.html"><img src="images/tu.jpg" ></a>
+                    <dl>
+                        <dt><h4 class="m-b-12"><a href="zxdy.html" class="f24">同样是农民，差距咋就这么大呢？</a></h4></dt>
+                        <dd>发布时间：2016-03-18</dd>
+                        <dd>新西兰农民的收入非常稳定，一个农民年均...</dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt><h4 class="m-b-12"><a href="zxdy.html" class="f24">同样是农民，差距咋就这么大呢？</a></h4></dt>
+                        <dd>发布时间：2016-03-18</dd>
+                        <dd>新西兰农民的收入非常稳定，一个农民年均...</dd>
+                    </dl>
+                </li>
+                <li>
+                    <a href="zxdy.html"><img src="images/tu.jpg" alt=""></a>
+                    <dl>
+                        <dt><h4 class="m-b-12"><a href="zxdy.html" class="f24">同样是农民，差距咋就这么大呢？</a></h4></dt>
+                        <dd>发布时间：2016-03-18</dd>
+                        <dd>新西兰农民的收入非常稳定，一个农民年均...</dd>
+                    </dl>
+                </li>
+            </ul>
+        </div><br>
+        <!--content-list end-->
+    </div>
+
+    <div class="hui">
+
+    </div>
+    <div class="hdbg">
+        <h3 class="hdjsh3">专家观点 <a href="active.html" class="genduo">More+ </a></h3>
+        <!--content-list-->
+        <div class="content-list p-lr-25">
+            <ul>
+                <li>
+                    <a href="zxdy.html"><img src="images/tu.jpg" alt=""></a>
+                    <dl>
+                        <dt><h4 class="m-b-12"><a href="zxdy.html" class="f24">同样是农民，差距咋就这么大呢？</a></h4></dt>
+                        <dd>发布时间：2016-03-18</dd>
+                        <dd>新西兰农民的收入非常稳定，一个农民年均...</dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt><h4 class="m-b-12"><a href="zxdy.html" class="f24">同样是农民，差距咋就这么大呢？</a></h4></dt>
+                        <dd>发布时间：2016-03-18</dd>
+                        <dd>新西兰农民的收入非常稳定，一个农民年均...</dd>
+                    </dl>
+                </li>
+                <li>
+                    <a href="zxdy.html"><img src="images/tu.jpg" alt=""></a>
+                    <dl>
+                        <dt><h4 class="m-b-12"><a href="zxdy.html" class="f24">同样是农民，差距咋就这么大呢？</a></h4></dt>
+                        <dd>发布时间：2016-03-18</dd>
+                        <dd>新西兰农民的收入非常稳定，一个农民年均...</dd>
+                    </dl>
+                </li>
+            </ul>
+        </div><br>
+        <!--content-list end-->
+    </div>
+
+    <div class="hui">
+
+    </div><br>
+
+    <div class="thlgo p-lr-28">
+        <a href="">展商登记</a>
+        <a href="">观众登记</a>
+        <a href="">媒体登记</a>
+    </div>
+
+
+    <div class="jpzs">
+        <h3 class="hdjsh3">精品展示  <a href="showlist.html" class="genduo">More+ </a></h3>
+        <div class="p-lr-25">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="page.html"><img src="images/shufa.jpg" alt=""/></a>
+                        <span class="jpdispy">山西大禾现代农业...</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="page.html"><img src="images/shufa.jpg" alt=""/></a>
+                        <span class="jpdispy">山西大禾现代农业...</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="page.html"><img src="images/shufa.jpg" alt=""/></a>
+                        <span class="jpdispy">山西大禾现代农业...</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="page.html"><img src="images/shufa.jpg" alt=""/></a>
+                        <span class="jpdispy">山西大禾现代农业...</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="page.html"><img src="images/shufa.jpg" alt=""/></a>
+                        <span class="jpdispy">山西大禾现代农业...</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="page.html"><img src="images/shufa.jpg" alt=""/></a>
+                        <span class="jpdispy">山西大禾现代农业...</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="page.html"><img src="images/shufa.jpg" alt=""/></a>
+                        <span class="jpdispy">山西大禾现代农业...</span>
+                    </div>
+                </div>
+            </div>
+            <script>
+                var swiper = new Swiper('.swiper-container', {
+                    slidesPerView: 3,
+                    paginationClickable: true,
+                    spaceBetween: 30,
+                    loop: true
+                });
+            </script>
+        </div>
+
+    </div><br>
+    <div class="hui">
+
+    </div>
+    <!--国内科技-->
+    <div class="chinakj">
+        <h3 class="chh3">国内科技</h3>
+        <div class="chinatab">
+            <div class="tabs">
+                <a  class="active">新优品种</a>
+                <a  >先进技术</a>
+                <a >高科产品</a>
+                <a >知名企业</a>
+            </div>
+            <div class="hui">
+
+            </div><br>
+            <div  class="tabs-container swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="swlist">
+                            <ul>
+                                <li>
+                                    <a href="zxdy.html"><img src="images/tu.jpg" alt=""></a>
+                                    <dl>
+                                        <dt><h4 class="m-b-12"><a href="zxdy.html" class="f24">同样是农民，差距咋就这么大呢？</a></h4></dt>
+                                        <dd>发布时间：2016-03-18</dd>
+                                        <dd>新西兰农民的收入非常稳定，一个农民年均...</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt><h4 class="m-b-12"><a href="zxdy.html" class="f24">同样是农民，差距咋就这么大呢？</a></h4></dt>
+                                        <dd>发布时间：2016-03-18</dd>
+                                        <dd>新西兰农民的收入非常稳定，一个农民年均...</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <a href="zxdy.html"><img src="images/tu.jpg" alt=""></a>
+                                    <dl>
+                                        <dt><h4 class="m-b-12"><a href="zxdy.html" class="f24">同样是农民，差距咋就这么大呢？</a></h4></dt>
+                                        <dd>发布时间：2016-03-18</dd>
+                                        <dd>新西兰农民的收入非常稳定，一个农民年均...</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <a href="zxdy.html"><img src="images/tu.jpg" alt=""></a>
+                                    <dl>
+                                        <dt><h4 class="m-b-12"><a href="zxdy.html" class="f24">同样是农民，差距咋就这么大呢？</a></h4></dt>
+                                        <dd>发布时间：2016-03-18</dd>
+                                        <dd>新西兰农民的收入非常稳定，一个农民年均...</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt><h4 class="m-b-12"><a href="zxdy.html" class="f24">同样是农民，差距咋就这么大呢？</a></h4></dt>
+                                        <dd>发布时间：2016-03-18</dd>
+                                        <dd>新西兰农民的收入非常稳定，一个农民年均...</dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swlist">
+                            <ul>
+                                <li>
+                                    <a href="zxdy.html"><img src="images/tu.jpg" alt=""></a>
+                                    <dl>
+                                        <dt><h4 class="m-b-12"><a href="zxdy.html" class="f24">同样是农民，差距咋就这么大呢？</a></h4></dt>
+                                        <dd>发布时间：2016-03-18</dd>
+                                        <dd>新西兰农民的收入非常稳定，一个农民年均...</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt><h4 class="m-b-12"><a href="zxdy.html" class="f24">同样是农民，差距咋就这么大呢？</a></h4></dt>
+                                        <dd>发布时间：2016-03-18</dd>
+                                        <dd>新西兰农民的收入非常稳定，一个农民年均...</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <a href="zxdy.html"><img src="images/tu.jpg" alt=""></a>
+                                    <dl>
+                                        <dt><h4 class="m-b-12"><a href="zxdy.html" class="f24">同样是农民，差距咋就这么大呢？</a></h4></dt>
+                                        <dd>发布时间：2016-03-18</dd>
+                                        <dd>新西兰农民的收入非常稳定，一个农民年均...</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <a href="zxdy.html"><img src="images/tu.jpg" alt=""></a>
+                                    <dl>
+                                        <dt><h4 class="m-b-12"><a href="zxdy.html" class="f24">同样是农民，差距咋就这么大呢？</a></h4></dt>
+                                        <dd>发布时间：2016-03-18</dd>
+                                        <dd>新西兰农民的收入非常稳定，一个农民年均...</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt><h4 class="m-b-12"><a href="zxdy.html" class="f24">同样是农民，差距咋就这么大呢？</a></h4></dt>
+                                        <dd>发布时间：2016-03-18</dd>
+                                        <dd>新西兰农民的收入非常稳定，一个农民年均...</dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swlist">
+                            <ul>
+                                <li>
+                                    <a href="zxdy.html"><img src="images/tu.jpg" alt=""></a>
+                                    <dl>
+                                        <dt><h4 class="m-b-12"><a href="zxdy.html" class="f24">同样是农民，差距咋就这么大呢？</a></h4></dt>
+                                        <dd>发布时间：2016-03-18</dd>
+                                        <dd>新西兰农民的收入非常稳定，一个农民年均...</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <a href="zxdy.html"><img src="images/tu.jpg" alt=""></a>
+                                    <dl>
+                                        <dt><h4 class="m-b-12"><a href="zxdy.html" class="f24">同样是农民，差距咋就这么大呢？</a></h4></dt>
+                                        <dd>发布时间：2016-03-18</dd>
+                                        <dd>新西兰农民的收入非常稳定，一个农民年均...</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <a href="zxdy.html"><img src="images/tu.jpg" alt=""></a>
+                                    <dl>
+                                        <dt><h4 class="m-b-12"><a href="zxdy.html" class="f24">同样是农民，差距咋就这么大呢？</a></h4></dt>
+                                        <dd>发布时间：2016-03-18</dd>
+                                        <dd>新西兰农民的收入非常稳定，一个农民年均...</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt><h4 class="m-b-12"><a href="zxdy.html" class="f24">同样是农民，差距咋就这么大呢？</a></h4></dt>
+                                        <dd>发布时间：2016-03-18</dd>
+                                        <dd>新西兰农民的收入非常稳定，一个农民年均...</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <a href="zxdy.html"><img src="images/tu.jpg" alt=""></a>
+                                    <dl>
+                                        <dt><h4 class="m-b-12"><a href="zxdy.html" class="f24">同样是农民，差距咋就这么大呢？</a></h4></dt>
+                                        <dd>发布时间：2016-03-18</dd>
+                                        <dd>新西兰农民的收入非常稳定，一个农民年均...</dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swlist">
+                            <ul>
+                                <li>
+                                    <a href="zxdy.html"><img src="images/tu.jpg" alt=""></a>
+                                    <dl>
+                                        <dt><h4 class="m-b-12"><a href="zxdy.html" class="f24">同样是农民，差距咋就这么大呢？</a></h4></dt>
+                                        <dd>发布时间：2016-03-18</dd>
+                                        <dd>新西兰农民的收入非常稳定，一个农民年均...</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt><h4 class="m-b-12"><a href="zxdy.html" class="f24">同样是农民，差距咋就这么大呢？</a></h4></dt>
+                                        <dd>发布时间：2016-03-18</dd>
+                                        <dd>新西兰农民的收入非常稳定，一个农民年均...</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <a href="zxdy.html"><img src="images/tu.jpg" alt=""></a>
+                                    <dl>
+                                        <dt><h4 class="m-b-12"><a href="zxdy.html" class="f24">同样是农民，差距咋就这么大呢？</a></h4></dt>
+                                        <dd>发布时间：2016-03-18</dd>
+                                        <dd>新西兰农民的收入非常稳定，一个农民年均...</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <a href="zxdy.html"><img src="images/tu.jpg" alt=""></a>
+                                    <dl>
+                                        <dt><h4 class="m-b-12"><a href="zxdy.html" class="f24">同样是农民，差距咋就这么大呢？</a></h4></dt>
+                                        <dd>发布时间：2016-03-18</dd>
+                                        <dd>新西兰农民的收入非常稳定，一个农民年均...</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt><h4 class="m-b-12"><a href="zxdy.html" class="f24">同样是农民，差距咋就这么大呢？</a></h4></dt>
+                                        <dd>发布时间：2016-03-18</dd>
+                                        <dd>新西兰农民的收入非常稳定，一个农民年均...</dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hui">
+
+            </div>
+        </div>
+    </div>
+    <script>
+            var tabsSwiper = new Swiper('.tabs-container',{
+                speed:500,
+                onSlideChangeStart: function(){
+                    $(".tabs .active").removeClass('active')
+                    $(".tabs a").eq(tabsSwiper.activeIndex).addClass('active')
+                }
+            })
+            $(".tabs a").on('touchstart mousedown',function(e){
+                e.preventDefault()
+                $(".tabs .active").removeClass('active')
+                $(this).addClass('active')
+                tabsSwiper.slideTo( $(this).index() )
+            })
+            $(".tabs a").click(function(e){
+                e.preventDefault()
+            })
+    </script>
+    <!--国内科技 end-->
+
+    <!--国际科技-->
+    <div class="chinakj">
+        <h3 class="chh3">国内科技</h3>
+        <div class="chinatab">
+            <div class="tabs2">
+                <a  class="active">新优品种</a>
+                <a  >先进技术</a>
+                <a >高科产品</a>
+                <a >知名企业</a>
+            </div>
+            <div class="hui">
+
+            </div><br>
+            <div  class="tabs-container3 swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="swlist">
+                            <ul>
+                                <li>
+                                    <a href="zxdy.html"><img src="images/tu.jpg" alt=""></a>
+                                    <dl>
+                                        <dt><h4 class="m-b-12"><a href="zxdy.html" class="f24">同样是农民，差距咋就这么大呢？</a></h4></dt>
+                                        <dd>发布时间：2016-03-18</dd>
+                                        <dd>新西兰农民的收入非常稳定，一个农民年均...</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt><h4 class="m-b-12"><a href="zxdy.html" class="f24">同样是农民，差距咋就这么大呢？</a></h4></dt>
+                                        <dd>发布时间：2016-03-18</dd>
+                                        <dd>新西兰农民的收入非常稳定，一个农民年均...</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <a href=""><img src="images/tu.jpg" alt=""></a>
+                                    <dl>
+                                        <dt><h4 class="m-b-12"><a href="zxdy.html" class="f24">同样是农民，差距咋就这么大呢？</a></h4></dt>
+                                        <dd>发布时间：2016-03-18</dd>
+                                        <dd>新西兰农民的收入非常稳定，一个农民年均...</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <a href="zxdy.html"><img src="images/tu.jpg" alt=""></a>
+                                    <dl>
+                                        <dt><h4 class="m-b-12"><a href="zxdy.html" class="f24">同样是农民，差距咋就这么大呢？</a></h4></dt>
+                                        <dd>发布时间：2016-03-18</dd>
+                                        <dd>新西兰农民的收入非常稳定，一个农民年均...</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt><h4 class="m-b-12"><a href="zxdy.html" class="f24">同样是农民，差距咋就这么大呢？</a></h4></dt>
+                                        <dd>发布时间：2016-03-18</dd>
+                                        <dd>新西兰农民的收入非常稳定，一个农民年均...</dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swlist">
+                            <ul>
+                                <li>
+                                    <a href="zxdy.html"><img src="images/tu.jpg" alt=""></a>
+                                    <dl>
+                                        <dt><h4 class="m-b-12"><a href="zxdy.html" class="f24">同样是农民，差距咋就这么大呢？</a></h4></dt>
+                                        <dd>发布时间：2016-03-18</dd>
+                                        <dd>新西兰农民的收入非常稳定，一个农民年均...</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt><h4 class="m-b-12"><a href="zxdy.html" class="f24">同样是农民，差距咋就这么大呢？</a></h4></dt>
+                                        <dd>发布时间：2016-03-18</dd>
+                                        <dd>新西兰农民的收入非常稳定，一个农民年均...</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <a href="zxdy.html"><img src="images/tu.jpg" alt=""></a>
+                                    <dl>
+                                        <dt><h4 class="m-b-12"><a href="zxdy.html" class="f24">同样是农民，差距咋就这么大呢？</a></h4></dt>
+                                        <dd>发布时间：2016-03-18</dd>
+                                        <dd>新西兰农民的收入非常稳定，一个农民年均...</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <a href="zxdy.html"><img src="images/tu.jpg" alt=""></a>
+                                    <dl>
+                                        <dt><h4 class="m-b-12"><a href="zxdy.html" class="f24">同样是农民，差距咋就这么大呢？</a></h4></dt>
+                                        <dd>发布时间：2016-03-18</dd>
+                                        <dd>新西兰农民的收入非常稳定，一个农民年均...</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt><h4 class="m-b-12"><a href="zxdy.html" class="f24">同样是农民，差距咋就这么大呢？</a></h4></dt>
+                                        <dd>发布时间：2016-03-18</dd>
+                                        <dd>新西兰农民的收入非常稳定，一个农民年均...</dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swlist">
+                            <ul>
+                                <li>
+                                    <a href="zxdy.html"><img src="images/tu.jpg" alt=""></a>
+                                    <dl>
+                                        <dt><h4 class="m-b-12"><a href="zxdy.html" class="f24">同样是农民，差距咋就这么大呢？</a></h4></dt>
+                                        <dd>发布时间：2016-03-18</dd>
+                                        <dd>新西兰农民的收入非常稳定，一个农民年均...</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <a href="zxdy.html"><img src="images/tu.jpg" alt=""></a>
+                                    <dl>
+                                        <dt><h4 class="m-b-12"><a href="" class="f24">同样是农民，差距咋就这么大呢？</a></h4></dt>
+                                        <dd>发布时间：2016-03-18</dd>
+                                        <dd>新西兰农民的收入非常稳定，一个农民年均...</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <a href="zxdy.html"><img src="images/tu.jpg" alt=""></a>
+                                    <dl>
+                                        <dt><h4 class="m-b-12"><a href="zxdy.html" class="f24">同样是农民，差距咋就这么大呢？</a></h4></dt>
+                                        <dd>发布时间：2016-03-18</dd>
+                                        <dd>新西兰农民的收入非常稳定，一个农民年均...</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt><h4 class="m-b-12"><a href="zxdy.html" class="f24">同样是农民，差距咋就这么大呢？</a></h4></dt>
+                                        <dd>发布时间：2016-03-18</dd>
+                                        <dd>新西兰农民的收入非常稳定，一个农民年均...</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <a href="zxdy.html"><img src="images/tu.jpg" alt=""></a>
+                                    <dl>
+                                        <dt><h4 class="m-b-12"><a href="zxdy.html" class="f24">同样是农民，差距咋就这么大呢？</a></h4></dt>
+                                        <dd>发布时间：2016-03-18</dd>
+                                        <dd>新西兰农民的收入非常稳定，一个农民年均...</dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swlist">
+                            <ul>
+                                <li>
+                                    <a href="zxdy.html"><img src="images/tu.jpg" alt=""></a>
+                                    <dl>
+                                        <dt><h4 class="m-b-12"><a href="zxdy.html" class="f24">同样是农民，差距咋就这么大呢？</a></h4></dt>
+                                        <dd>发布时间：2016-03-18</dd>
+                                        <dd>新西兰农民的收入非常稳定，一个农民年均...</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt><h4 class="m-b-12"><a href="zxdy.html" class="f24">同样是农民，差距咋就这么大呢？</a></h4></dt>
+                                        <dd>发布时间：2016-03-18</dd>
+                                        <dd>新西兰农民的收入非常稳定，一个农民年均...</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <a href="zxdy.html"><img src="images/tu.jpg" alt=""></a>
+                                    <dl>
+                                        <dt><h4 class="m-b-12"><a href="zxdy.html" class="f24">同样是农民，差距咋就这么大呢？</a></h4></dt>
+                                        <dd>发布时间：2016-03-18</dd>
+                                        <dd>新西兰农民的收入非常稳定，一个农民年均...</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <a href="zxdy.html"><img src="images/tu.jpg" alt=""></a>
+                                    <dl>
+                                        <dt><h4 class="m-b-12"><a href="zxdy.html" class="f24">同样是农民，差距咋就这么大呢？</a></h4></dt>
+                                        <dd>发布时间：2016-03-18</dd>
+                                        <dd>新西兰农民的收入非常稳定，一个农民年均...</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt><h4 class="m-b-12"><a href="zxdy.html" class="f24">同样是农民，差距咋就这么大呢？</a></h4></dt>
+                                        <dd>发布时间：2016-03-18</dd>
+                                        <dd>新西兰农民的收入非常稳定，一个农民年均...</dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hui">
+
+            </div>
+        </div>
+    </div>
+    <script>
+            var tabsSwipera = new Swiper('.tabs-container3',{
+                speed:500,
+                onSlideChangeStart: function(){
+                    $(".tabs2 .active").removeClass('active')
+                    $(".tabs2 a").eq(tabsSwipera.activeIndex).addClass('active')
+                }
+            })
+            $(".tabs2 a").on('touchstart mousedown',function(e){
+                e.preventDefault()
+                $(".tabs2 .active").removeClass('active')
+                $(this).addClass('active')
+                tabsSwipera.slideTo( $(this).index() )
+            })
+            $(".tabs2 a").click(function(e){
+                e.preventDefault()
+            })
+    </script>
+
+     <!--国际科技 end-->
+    <!--需求成果-->
+    <div class="chinakj">
+        <div class="chinatab">
+            <div class="tabs3">
+                <a  class="active">交易成果</a>
+                <a  >需求展示</a>
+                <a >你问我答</a>
+            </div>
+            <div  class="tabs-container4 swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="goods-more-a clearFloat">
+                            <a href="page.html" class="p-t-20 p-b-20 m-l-25 m-r-25">
+                                <span>修文县“桃源八寨”国家农业科技示范园区总...</span>
+                            </a>
+                            <a href="page.html" class="p-t-20 p-b-20 m-l-25 m-r-25">
+                                <span>玉东小学学生到海峡两岸（广西玉林）农业合作...</span>
+                            </a>
+                            <a href="page.html" class="p-t-20 p-b-20 m-l-25 m-r-25">
+                                <span>黄松峪乡东沟村、黑豆峪村、黄松峪村</span>
+                            </a>
+                            <a href="page.html" class="p-t-20 p-b-20 m-l-25 m-r-25">
+                                <span>黑龙江龙煤矿业集团股份有限公司鸡西分公司</span>
+                            </a>
+                        </div>
+                        <div class="text-center">
+                            <a href="plist.html" class="f24 fb">More>> </a>
+                        </div><br>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="goods-more-a clearFloat">
+                            <a href="" class="p-t-20 p-b-20 m-l-25 m-r-25">
+                                <span>修文县“桃源八寨”国家农业科技示范园区总...</span>
+                            </a>
+                            <a href="" class="p-t-20 p-b-20 m-l-25 m-r-25">
+                                <span>玉东小学学生到海峡两岸（广西玉林）农业合作...</span>
+                            </a>
+                            <a href="" class="p-t-20 p-b-20 m-l-25 m-r-25">
+                                <span>黄松峪乡东沟村、黑豆峪村、黄松峪村</span>
+                            </a>
+                            <a href="" class="p-t-20 p-b-20 m-l-25 m-r-25">
+                                <span>黑龙江龙煤矿业集团股份有限公司鸡西分公司</span>
+                            </a>
+                        </div>
+                        <div class="text-center">
+                            <a href="" class="f24 fb">More>> </a>
+                        </div><br>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="goods-more-a clearFloat">
+                            <a href="" class="p-t-20 p-b-20 m-l-25 m-r-25">
+                                <span>修文县“桃源八寨”国家农业科技示范园区总...</span>
+                            </a>
+                            <a href="" class="p-t-20 p-b-20 m-l-25 m-r-25">
+                                <span>玉东小学学生到海峡两岸（广西玉林）农业合作...</span>
+                            </a>
+                            <a href="" class="p-t-20 p-b-20 m-l-25 m-r-25">
+                                <span>黄松峪乡东沟村、黑豆峪村、黄松峪村</span>
+                            </a>
+                            <a href="" class="p-t-20 p-b-20 m-l-25 m-r-25">
+                                <span>黑龙江龙煤矿业集团股份有限公司鸡西分公司</span>
+                            </a>
+                        </div>
+                        <div class="text-center">
+                            <a href="" class="f24 fb">More>> </a>
+                        </div><br>
+                    </div>
+                </div>
+            </div>
+            <div class="hui">
+
+            </div><br>
+        </div>
+    </div>
+    <script>
+
+            var tabsSwiperb = new Swiper('.tabs-container4',{
+                speed:500,
+                onSlideChangeStart: function(){
+                    $(".tabs3 .active").removeClass('active')
+                    $(".tabs3 a").eq(tabsSwiperb.activeIndex).addClass('active')
+                }
+            })
+            $(".tabs3 a").on('touchstart mousedown',function(e){
+                e.preventDefault()
+                $(".tabs3 .active").removeClass('active')
+                $(this).addClass('active')
+                tabsSwiperb.slideTo( $(this).index() )
+            })
+            $(".tabs3 a").click(function(e){
+                e.preventDefault()
+            })
+
+    </script>
+
+    <!--需求成果 end-->
+
+    <!--给我们留言-->
+    <div class="message p-lr-25">
+        <h3 class="f34 text-64 fn">给我们留言 <span class="f24">Give us a message</span></h3><br>
+        <div>
+            <div class="ftable">
+                <form action="" class="frtable" id="myform">
+                    <input type="text"  placeholder="姓名" required class="nickname" id="user_name"/>
+                    <input type="number"  placeholder="电话" required class="phone" id="user_phone"/>
+                    <input type="email"placeholder="邮箱" required class="email" id="user_email"/>
+                    <textarea name=""  rows="8" placeholder="留言内容"></textarea>
+                </form>
+            </div>
+            <br>
+            <input type="submit" class="msubmit" value="提交" onclick="toSubmit()"/>
+        </div>
+    </div>
+    <br>
+
+    <!--给我们留言 end-->
+
+
+    <!--footer-->
+
+    <!--footer end-->
+    <!--返回顶部-->
+    <a href="#" id="scrollUp" style="position: fixed; z-index: 100;">
+        <i class="fa fa-angle-up"></i>
+    </a>
+    <!--返回顶部-->
+</div>
+
+</body>
+</html>

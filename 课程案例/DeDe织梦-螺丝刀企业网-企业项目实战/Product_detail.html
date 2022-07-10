@@ -1,0 +1,233 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<!--声明当前页面的编码集GBK，gb2312(中文编码)，UTF-8(国际编码)-->
+	<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+	<!--这是当前页面的三要素-->
+	<title>好帮手网站首页</title>
+	<meta name="Keywords" content="html,css,透明滑动效果">
+	<meta name="description" content="描述内容">
+	<link rel="stylesheet" href="css/basic.css" />
+	<link rel="stylesheet" href="css/public.css" />
+	<SCRIPT src="js/jquery-1.2.6.pack.js" type=text/javascript></SCRIPT>
+<SCRIPT src="js/base.js" type=text/javascript></SCRIPT>
+ </HEAD>
+ <BODY>
+<!--头部开始-->
+<div id="Top"><div id="MidTop">
+	<a href=""><img src="images/banner.jpg" alt="好帮手-硬体装配制造厂" class="fleft"/></a>
+	<span><img src="images/tel.jpg"  alt="好帮手联系电话" /></span>
+<div style="clear:both"></div>
+
+	<!--导航开始-->
+	<div id="Logo">
+		<ul>
+			<li><a href="" class="first">—&nbsp&nbsp&nbsp&nbsp首页</a></li>
+			<li><a href="">电动螺丝刀</a></li>
+			<li><a href="">气动螺丝刀</a></li>
+			<li><a href="">螺丝机</a></li>
+			<li><a href="">资料下载</a></li>
+			<li><a href="">常见问题</a></li>
+			<li><a href="">售后服务</a></li>
+			<li><a href="">我们优势</a></li>
+			<li><a href="" class="last">联系我们&nbsp&nbsp&nbsp&nbsp—</a></li>
+		</ul>
+	</div>
+	<!--导航结束-->
+</div></div>
+<!--头部结束-->
+
+<!--内页主体内容开始-->
+<div id="webContent">
+	<!--电动螺丝刀形象区开始-->
+	<img src="images/index_conback1.jpg" />
+	<div id="web_proxx">
+		<div id="web_proxxL">
+			<p class="ptypenav"><span>电动螺丝刀</span> Electric screwdriver</p>
+			<p>装有调节和限制扭矩的机构，用于拧紧和旋松螺钉用的电动工具。该电动工具，主要用于装配线，是大部分生产企业必备的工具之一。产品质量需符合中华人民共和国机械行业标准 JB/T 10108 - 1999。</p>
+		</div>
+		<div id="web_proxxR"><img src="images/web_pro.jpg" /></div>
+	<div style="clear:both"></div></div><img src="images/index_conback2.jpg" />
+	<!--电动螺丝刀形象区结束-->
+		<div class="h20"></div>
+	<!--内容开始-->
+
+	<div id="Content_Detail">
+		<img src="images/index_conback1.jpg" />
+		<div id="content_D">
+			<!--面包屑导航开始-->
+			<div class="webNav">
+				<dl>
+					<dt>电动螺丝刀<span>Electric screwdriver</span></dt>
+					<dd>省时、省力、精准<br/>Saving time, effort, precise</dd>
+				</dl>
+				<div class="webNavTxt"><span>当前位置</span>:首页 >>电动螺丝刀</div>
+			<div style="clear:both"></div></div>
+			<!--面包屑导航结束-->
+
+			<!--产品内页描述开始-->
+			<div  id="Product_Deltail">
+				<div id="Product_Dt1">
+				<!--放大镜效效果开始-->
+				<div id=preview>
+
+	<div class=jqzoom id=spec-n1>
+	<IMG src="images/img04.jpg" jqimg="images/img04.jpg" width=494  height=400 />
+	</div>
+
+	<div id=spec-n5>
+		<div class=control id=spec-left><img src="images/left.jpg" /></div>
+		<div id=spec-list>
+			<ul class=list-h>
+				<li><img src="images/img01.jpg"> </li>
+				<li><img src="images/img02.jpg"> </li>
+				<li><img src="images/img03.jpg"> </li>
+				<li><img src="images/img04.jpg"> </li>
+				<li><img src="images/img01.jpg"> </li>
+				<li><img src="images/img02.jpg"> </li>
+				<li><img src="images/img03.jpg"> </li>
+				<li><img src="images/img04.jpg"> </li>
+				<li><img src="images/img01.jpg"> </li>
+				<li><img src="images/img02.jpg"> </li>
+				<li><img src="images/img03.jpg"> </li>
+				<li><img src="images/img04.jpg"> </li>
+			</ul>
+		</div>
+		<div class=control id=spec-right><img src="images/right.jpg" /></div>
+    </div>
+</div>
+				<!--放大镜效果结束-->
+				
+				</div>
+
+
+				<SCRIPT type=text/javascript>
+	$(function(){			
+	   $(".jqzoom").jqueryzoom({
+			xzoom:400,
+			yzoom:400,
+			offset:10,
+			position:"right",
+			preload:1,
+			lens:1
+		});
+		$("#spec-list").jdMarquee({
+			deriction:"left",
+			width:450,
+			height:116,
+			step:2,
+			speed:4,
+			delay:10,
+			control:true,
+			_front:"#spec-right",
+			_back:"#spec-left"
+		});
+		$("#spec-list img").bind("mouseover",function(){
+			var src=$(this).attr("src");
+			$("#spec-n1 img").eq(0).attr({
+				src:src.replace("\/n5\/","\/n1\/"),
+				jqimg:src.replace("\/n5\/","\/n0\/")
+			});
+			$(this).css({
+				"border":"1px solid #ff6600",
+				"padding":"2px"
+			});
+		}).bind("mouseout",function(){
+			$(this).css({
+				"border":"1px solid #ccc",
+				"padding":"2px"
+			});
+		});				
+	})
+	</SCRIPT>
+
+<SCRIPT src="js/lib.js" type=text/javascript></SCRIPT>
+<SCRIPT src="js/163css.js" type=text/javascript></SCRIPT>
+
+
+
+				<div id="Product_Dt2">
+					<dl>
+						<dt>所属类别：电动螺丝刀</dt>
+						<dd><h1>产品标题：瑞士马达电动螺丝刀</h1></dd>
+						<dd>产品型号：ASA-S2001M</dd>
+						<dd><div  class="ddl">产品特点：</div>
+						<div class="ddr">瑞士、日本无尘马达+变频稳压电源=保用3年1000万次<br/>
+		● 瑞士、日本原裝低慣量低鬆動馬達，專利馬達耗電、衝擊、
+		慣量僅有市售馬達的1/3 <br/>
+		● 無碳粉溢出設計馬達，沒有碳粉污染，尤其適用於5C產業電
+		子無塵式環境 <br/>
+		● 電源供應器內部自帶泵浦供氣，無段調速控制，轉速在300
+		～1000rpm之間自行選配 <br/>
+		● 吸嘴採用定位孔設計確保螺絲垂直鎖付，吸嘴內徑及伸縮長
+		度可依螺絲規格自由調整 
+		● 搭配專利螺絲整理盒提高螺絲拾取率，適用於牙徑3mm以
+		下細小及不銹鋼螺絲鎖付</div><div style="clear:both"></div></dd>
+					</dl>
+				<p class="pro_tel">订购热线：<span>188-3806-1033</span></p>
+				<p class="pro_zxbut"><a href=""><img src="images/but_zxprice.jpg" /></a></p>
+				
+				</div>
+			<div style="clear:both"></div></div>
+			<!--产品内页描述结束-->
+
+		</div>
+		<img src="images/index_conback2.jpg" />
+	</div>
+	<!--内容结束-->
+
+<!--产品详情内容开始-->
+<div id="pro_deltailCon">
+	<img src="images/index_conback1.jpg" />
+	<div id="pro_deltailContent">
+			<!--面包屑导航开始-->
+			<div class="webNav">
+				<dl><dt>电动螺丝刀<span>Electric screwdriver</span></dt></dl>	
+			
+			<div style="clear:both"></div></div>
+			<!--面包屑导航结束-->
+
+			jjjj<br/><br/>
+
+
+
+
+			<!--相关产品开始-->
+			<div id="xgPro">
+				<div class="webNav">
+				<dl><dt>跟此相关的产品<span>Related Products</span></dt></dl>
+				<div class="webNavTxt"><a href="">更多产品+</a></div>
+			<div style="clear:both"></div></div>
+
+				<ul>
+					<li><a href=""><img src="#" width="228" height="198" /></a></li>
+					<li><a href=""><img src="#" width="228" height="198" /></a></li>
+					<li><a href=""><img src="#" width="228" height="198" /></a></li>
+					<li><a href=""><img src="#" width="228" height="198" /></a></li>
+				</ul>
+
+			<div style="clear:both"></div></div>
+			<!--相关产品结束-->
+
+
+	</div>
+	<img src="images/index_conback2.jpg" /></div>
+<!--产品详情内容结束-->
+
+
+
+</div>
+<!--内页主体内容结束-->
+
+
+
+
+
+
+
+
+<!--网站底部开始-->
+<div id="Copy">Copyright 1999-2013 东莞高手机电有限公司 all rights reserved. 粤ICP备12023039号</div>
+<!--网站底部结束-->
+ </BODY>
+</HTML>

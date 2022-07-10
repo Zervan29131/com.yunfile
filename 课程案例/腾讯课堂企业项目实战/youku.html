@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+	<head>
+		<!--声明当前页面的编码集：charset=gbk,gb2312(中文编码)，utf-8国际编码-->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<!--当前页面的三要素-->
+		<title>youku标签页</title>
+		<meta name="Keywords" content="关键词,关键词">
+		<meta name="description" content="">
+
+		<!--css,js-->
+		<style type="text/css">
+			*{margin:0;padding:0}
+			body{
+				background:url(../../images/head2.jpg);
+				background-position:-140px -92px;
+				background-attachment:fixed;
+				font-family:"微软雅黑";
+			}
+			h1{text-align:center}
+			#youku{
+				width:860px;height:180px;
+				margin:20px auto;
+			}
+			#youku ul{
+				list-style:none;
+			}
+			#youku ul li{
+				float:left;height:30px;line-height:30px;padding:0 20px;font-size:14px;
+				text-decoration:none;color:#666;
+			}
+
+			#youku ul .sel{
+				background:#06a7e1;color:#fff;
+			}
+			#youku .content1{
+				background:#FF33FF;height:150px
+			}
+			#youku .content2{
+				background:#CC3366;height:150px
+			}
+			#youku .content3{
+				background:#66CCFF;height:150px
+			}
+			#youku .content4{
+				background:#33CC33;height:150px
+			}
+			#youku .content5{
+				background:#CC9900;height:150px
+			}
+			#youku .hide{
+				display:none;
+			}
+		</style>
+	</head>
+<body>
+	<h1>youku标签页</h1>
+	<div id="youku">
+		<ul>
+			<li class="sel">热播大片</li>
+			<li>华语精华</a></li>
+			<li>好莱坞精选</a></li>
+			<li>速度与激情</a></li>
+			<li>即将上线</a></li>
+		</ul>
+		<div style="clear:both"></div>
+		<div class="content1 hide" style="display:block"></div>
+		<div class="content2 hide"></div>
+		<div class="content3 hide"></div>
+		<div class="content4 hide"></div>
+		<div class="content5 hide"></div>
+	</div>
+<script type="text/javascript" src="../../js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		/*$("#youku li").hover(function(){
+			$("#youku li").removeClass("sel");
+			$(this).addClass("sel");
+			$(".hide").hide().eq($(this).index()).show();
+		})*/
+		
+		$("#youku li").hover(function(){
+			$(this).siblings().removeClass("sel");
+			$(this).addClass("sel");
+			$(".hide").hide().eq($(this).index()).show();
+		})
+	})
+</script>
+</body>
+</html>

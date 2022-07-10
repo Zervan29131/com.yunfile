@@ -1,0 +1,400 @@
+@charset "utf-8"; 
+/***
+*我们来完成iqiyi 爱奇艺网站
+*
+*公共样式区域
+关于兼容问题 大家可以尝试一下
+background:blue;/*Firefox背景变蓝色 所有浏览器都支持 
+background:red\9;/*IE8背景变红色 IE6、7、8、9支持覆盖上面样式 
+*background:black;/*IE7背景变黑色 IE6、7支持又一次覆盖上面样式
+_background:orange;/*IE6背景变橘色 紧IE6支持又一次覆盖上面样式
+http://www.kwstu.com/Admin/ViewArticle/201409011604277330
+**/
+body,div,h1,h2,h3,h4,h5,h6,hr,p,dl,dt,dd,ul,ol,li,button,input,textarea,form,th,td{margin:0;padding:0; font-size:14px; font-family:"微软雅黑";}
+/*居中的宽度 980pxl  为什么会变为1024*/
+body{ min-width:1024px;}
+.qypage-980{width:1024px; margin:0px auto;}
+.margin_t25{margin-top:25px;}
+.margin_l30{margin-left:30px;}
+.margin_l20{margin-left:20px !important;}
+.margin_l15{margin-left:15px;}
+.padding-b5{padding-bottom:5px;}
+.padding-t10{padding-top:10px;}
+li,ul,ol{list-style:none;}
+input{border: 0; }
+a{color:#333;     text-decoration: none;}
+.color_6{color:#666;}
+.color_9{color: #999;}
+.fs16 {
+    font-size: 16px!important;
+}
+.fs12{font-size:12px;}
+.text-center{text-align:center;}
+ a img{ transition: all .3s ease-out;}
+ a:hover img{transform: scale(1.2,1.2)}
+/*!important 样式最高级 不高于行内样式，如果行内样式也写上了，那就大于所有的了*/
+a:hover{color:#699f00 !important;}
+.border-be1{    border-bottom: 1px solid #e1e1e1 !important;}
+/*爱奇艺小图标样式 不同地方的小图片共用一个样式， 背景图定位 设置宽度和高度*/
+.site-icons{display: inline-block;
+    vertical-align: middle;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    cursor: pointer;
+    background: url("../images/site-icons-qyIndex.png") no-repeat;}
+/*浮动 和清除浮动*/
+.left{float:left;}
+.right{float:right;}
+.clear{clear:both;}
+/*爱奇艺头*/
+.i_top{height:60px; width:100%; background:#222222;border-bottom:1px solid #292929;}
+.i_top .logo{width:250px;}
+.i_top .logo a{display:block; float:left; padding:5px 0px 0px 5px;}
+.navTopTxt{width:300px; position:relative;    }
+.navTopTxt .in_text{ padding: 8px 0;text-indent: 9px;
+					color: #666;font-size: 14px; margin-top:10px;
+					width:100%;background:transparent;
+					height:20px; line-height:20px;outline: 0;
+					 background: #e3e3e3;
+    border: 1px solid #e8e8e8; border-radius:4px;
+	}
+.navTopTxt .in_botton{position: absolute; border-radius:0px 4px 4px 0px;
+					  right: -4px;
+					  top: 10px;
+					  width: 40px;
+						height: 38px;
+						background: url(../images/topNav-v2.png) no-repeat 0 -60px;
+	}
+.topLogin{width:460px; text-align:right;}
+.topLogin a{color:#ccc; font-size:14px; margin:0px 5px;   line-height: 60px;}
+.topLogin a i{ width: 17px;display: inline-block;    opacity: 0.8;
+    height: 12px;
+    background: url(../images/nav-upload.png) no-repeat 0 -1px;}
+.topLogin a:hover i{background: url(../images/nav-upload-green.png) no-repeat 0 -1px;}
+.topLogin a span{position:relative; width:8px; height:8px; background:#F45910; border-radius:50%;    top: -10px;    display: inline-block;
+    box-shadow: 0px 0px 3px #fff;}
+.topLogin a b{width:0; display: inline-block;
+    height:0; 
+    border-left:5px solid transparent;
+    border-right:5px solid transparent;
+    border-top:5px solid #999;}
+
+/*爱奇艺banner-*/
+.banner{width:100%; height:410px;position:relative;}
+.banner .bn_img{}
+.banner .bn_img li{width:100%; height:410px;}
+.banner .bn_img li.bg_1{background:url("../images/banner-01.jpg") no-repeat center;background-size: cover;}
+.bn_nav{position:absolute;  width: 247px; right:30px;bottom:22px;
+    height: 371px; background:url("../images/site-focuslist_bg_new.png");}
+.bn_nav ul{width: 218px;
+    margin: 20px auto 0px;}
+.bn_nav li {height:34px; padding-left:16px;}
+.bn_nav li:hover{background:#699f00;}
+.bn_nav li a{ line-height:34px; color:#fff;}
+.bn_nav li a:hover{color:#fff !important;}
+/*爱奇艺二级导航*/
+.menuListNew{width:100%; background:#000;padding:10px 0;}
+.menuListNew .site-main{padding:10px 0; border: 1px solid #5aa700; border-radius: 4px;  overflow:hidden;}
+.menuListNew .site-main ul{float:left; width:160px; padding-left:20px; background: url("../images/navMenu-line.png") no-repeat 0 -12px;}
+.menuListNew .site-main ul li{width:50%; line-height:25px; float:left;}
+.menuListNew .site-main ul li a{font-size:14px; color:#b3b3b3;}
+.menuListNew .site-main ul.nav_one{width:60px;}
+.menuListNew .site-main ul.nav_one li{width:100%;}
+.menuListNew .site-main ul.nav_two{width:120px;}
+.menuListNew .site-main ul.nav_three{width:90px;}
+.menuListNew .site-main ul.nav_four{width:90px;}
+.menuListNew .site-main ul.nav_five{width:100px;}
+.menuListNew .site-main ul.nav_six{width:160px;}
+.menuListNew .site-main ul.nav_seven{width:160px;}
+.menuListNew .site-main ul.nav_eight{width:80px;}
+
+/*爱奇艺列表 001*/
+.site{float:left;margin-right:25px; width:384px; }
+.main{float:right; width:200px; }
+.site_title{ font-size: 24px; color: #699f00;height:45px; line-height:45px; border-bottom: 2px solid #85ba4d;}
+.site_title a{font-size:14px;color: #699f00; padding-left:5px;}
+.site_title a.tips_btn{float:right;display: inline-block;    height: 24px; color:#666;    margin-top: 10px;
+    line-height: 22px;
+    padding-left: 8px;
+    text-align: left;
+    width: 56px;
+    border: 1px solid #e9e9e9;
+    border-radius: 20px;}
+.site_title a.tips_btn i{  background-position: -120px -400px;
+    height: 18px;}
+.site_title a.tips_btn:hover{    color: #fff;
+    background: #78b500;
+    border: 1px solid #78b500;}
+.site_title a.tips_btn:hover i{    background-position: -200px -1158px;}
+.title_h2{font-size:20px; padding:15px 0px 15px 25px;}
+.txt-item{margin-bottom:25px;}
+.txt-item li{height:32px; line-height:32px;overflow: hidden;
+    white-space: nowrap; font-size:16px;
+    text-overflow: ellipsis; /*3句话 超出部分  用...表示*/}
+.txt-item li i{    width: 13px;
+    height: 15px;
+    background-position: -100px -1420px;
+    margin-right: 10px;}
+.item_img{}
+.item_img dl{float:left; }
+.item_img dl dt{overflow:hidden;width:180px; height:101px;}
+.item_img dl dt img{width:180px; height:101px;}
+.item_img dl dd{height:30px;padding-left:5px; width:175px;line-height:30px;background:#f2f2f2;overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+.site-pic{margin-bottom:25px;position:relative; width:380px; height:252px;overflow:hidden;}
+.site-pic a img{width:380px; height:252px; }
+.site-title{position:absolute; bottom:0px; height:40px; line-height:40px; background:rgba(0,0,0,0.6); width:100%; color:#fff;}
+.site-title i{    display: block;  float: left;   background: url("../images/index-playBtn.png") no-repeat;    width: 32px;
+    height: 27px;  margin: 7px 7px 0 7px;}
+.site-title p{ float: left;overflow: hidden; white-space: nowrap; text-overflow: ellipsis;    width: 320px;
+}
+.main dl{margin:0px auto 20px auto;background:#f2f2f2; width:180px; }
+.main dl dt{width:180px; height:101px; overflow:hidden;}
+.main dl dt img{width:180px; height:101px;}
+.main dl dd{height:30px; line-height:30px;    text-indent: 4px;overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;}
+/*爱奇艺列表 002*/
+.site-outer{float:left;margin-right:25px; width:790px; }
+.outer_title{    border-bottom: 2px solid #8ac024;
+    margin-bottom: 25px;}
+.outer_title h3{ display: inline-block;    font-weight: normal;     background: url("../images/tit-playBtn.png") no-repeat 0 10px; padding-left:20px;}
+.outer_title h3 a{font-size:28px;color: #699f00;     line-height: 46px;}
+.outer_title h3 a span{font-size:14px;}
+.outer_title ul,.site_title ul{display: inline-block;}
+.outer_title ul li{display: inline-block;     background: url("../images/divide-i.png") no-repeat left 4px; padding:0px 10px 0px 25px;}
+.outer_title ul li.bgnone ,.site_title ul li.bgnone{background:none;}
+.site_title ul li{display: inline-block;background: url("../images/divide-i.png") no-repeat left 4px; height: 24px;padding:0px 10px 0px 25px;
+    line-height: 24px;}
+.site_title ul li a{color:#333;}
+
+.outer_bigimg{ width: 380px; float:left;}
+.outer_bigimg .piclist_pic{position:relative;}
+.outer_bigimg .piclist_pic{width:380px; height:270px; overflow:hidden;}
+.outer_bigimg .piclist_pic img{width:380px; height:270px;}
+.outer_bigimg .piclist_pic .icon-today{ width: 125px;
+    height: 45px; z-index:3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("../images/icon-today.png") no-repeat;}
+/*公用的*/
+ .mark-1080p{height: 16px;    width: 42px; position: absolute; left:10px; bottom:5px;  background: url("../images/video-marks-0623.png") no-repeat;
+    background-position: 0 -40px;border-radius:3px;}
+.title_right{ position: absolute; right:10px; bottom:5px; border-radius:3px;    background: rgba(0,0,0,.6);    padding:0px 5px; color:#fff; font-size:12px;}
+/*公用的 end*/
+.piclist_info{line-height: 20px;
+        padding: 10px 5px 5px; background: #f2f2f2;
+    border-bottom: 1px solid #ebebeb;}
+.outer_listimg{float:right;width:400px;}
+.piclist_info p{line-height:27px;}
+
+/*图文列表可以公用*/
+.listimg dl{float:left; margin-bottom:20px; margin-left:20px;}
+.listimg dl dt{position:relative; width:180px; height:101px; overflow:hidden;}
+.listimg dl dt img{width:180px; height:101px; }
+.listimg dl dd{line-height:27px; overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;padding-left:5px; background: #f2f2f2;    width: 175px; }
+/*图文列表可以公用 end*/
+/*侧边 图文 文列表*/
+.mod-picList{ background: #f2f2f2;
+    border-bottom: 1px solid #ebebeb; width:180px; margin:0px auto;
+}
+.mod-pic a{display:block;width:180px; height:101px; overflow:hidden;}
+.mod-pic img{width:180px; height:101px;}
+.mod-pic p{ border-bottom: 1px dotted #ccc;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 5px;}
+.mod-List {    padding: 4px 10px 13px;}
+.mod-List li{    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; height:34px; line-height:34px;}
+.mod-List li i{    width: 6px;
+    height: 6px;
+    background-position: -200px -700px;}
+/*爱奇艺脱口秀更多*/
+.wrapper dl.one{margin-left:0px;}
+.wrapper dl{margin-left:30px;}
+/*爱奇艺娱乐更多>-*/
+.wrapper_listimg{width:630px; float:right;}
+.wrapper_listimg dl{margin-left:30px;}
+.wrapper_listimg dl dd{ overflow: auto;
+    white-space: normal;}
+	/*自制标志*/
+.dubao{ width: 42px; position:absolute; right:0px; top:0px; z-index:5;    margin-right:0px;
+    height: 40px;
+    background-position: -100px -1200px;}
+	/*自制标志*/
+.icon-subject{position:absolute; right:0px; top:0px;    display: inline-block; font-style:normal ; width: 37px;height: 21px;line-height: 21px;font-size: 12px;text-align: center;overflow: hidden;background: #699f00; color: #fff;}
+/*猜你喜欢更多> */
+.live_listimg{width:100%;}
+.usr_live{width:180px; height:150px; background:#699f00;     margin-left: 30px; text-align:center;}
+.usr_live a{font-size:22px;line-height:150px;color: #fff;}
+.usr_live a:hover{color: #fff  !important;}
+/*结合php 读取数据 样式处理*/
+.php_morgin_none dl:nth-child(1){margin-left:0px;}
+.php_morgin_none dl:nth-child(6){margin-left:0px;}
+.cl_333{color: #333;}
+.cl_999{    color: #999;}
+/*爱频道*/
+.site-descr{width:150px; padding:15px; height:145px; float:left;background:#F2F2F2;margin-right:30px;}
+.site-descr:last-child{margin-right:0px;}
+.site-descr dl dt{  float:left;  width: 54px; border-radius:50%; height: 54px;}
+.site-descr dl dt img{width: 54px;height: 54px;  }
+.site-descr dl dd{float:right; width:90px; }
+.site-descr dl dd p{font-size:12px;}
+.site-descr dl dd p em{margin-left:6px;}
+.site-descr .btn-care{   }
+.site-descr .btn-care a{ width: 148px; display:block;    background-color: #699f00; color:#fff; text-align:center;
+    height: 26px; line-height:26px;
+    padding: 0;
+    border-radius: 3px;
+    line-height: 22px;}
+.site-descr .btn-care a:hover{color:#fff !important;}
+/*推广广告*/
+.theatre-label {
+    background: #8ac024;
+    width: 84px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    line-height: 22px;
+    border-radius: 4px 4px 0 0;
+}
+.banner_list{ height:140px;   padding: 10px 22px;
+    width: 980px; position:relative;
+    border: 1px solid #8ac024;
+    position: relative;
+    }
+.theatre-arrow{    width: 15px;position:absolute; top:50%;
+    height: 26px;
+    cursor: pointer;
+    text-indent: -999px;
+    margin-top: -13px;}
+.banner_list .pre{ left:5px;      background: url("../images/arrow-left.png") no-repeat 50%;  }
+.banner_list .next{ right:5px;     background: url("../images/arrow-right.png") no-repeat 50%;  }
+.banner_list .pre:hover{ background: url("../images/arrow-left-hover.png") no-repeat 50%;  }
+.banner_list .next:hover{background: url("../images/arrow-right-hover.png") no-repeat 50%;  }
+.shoufengq{ width: 940px; margin:0px auto; height:140px;overflow: hidden;position:relative; }
+.banner_list ul{width:5000px;}
+.banner_list ul li{float:left;width:170px; height:140px;overflow:hidden; margin-right:24px;transition:all 1s; }
+.banner_list ul li div{float:left;overflow:hidden;}
+.banner_list ul li .small{width:170px; height:140px; }
+.banner_list ul li .big{    margin-left: 20px; width:0px; transition:all 500ms;}
+.banner_list ul:hover li{width:0px; margin-right:0px;}
+.banner_list ul li:hover{width:930px;transition:all 500ms;  }
+.banner_list ul li:hover .big{width:740px; transition:all 1s;}
+.banner_list ul li:hover a img{transform: scale(1,1)}
+/*电影更多*/
+.move_list dl dt{width:180px;  height:236px;}
+.move_list dl dt img{width:180px; height:236px;}
+/*电影排行榜*/
+.film_list ul li{    position: relative;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 95%;
+    padding-right: 5%;
+    height: 21px;
+    margin-bottom: 10px;}
+.fs-icons{    font-style: normal;
+    display: inline-block;
+	border-radius: 3px;
+    width: 20px;    margin-right: 5px;
+    height: 20px;    text-align: center;
+    border: 0;
+    color: #fff;
+    line-height: 19px;
+    vertical-align: top;
+}
+.fs-hot{    background: #6fa900;}
+.fs-hot-gray{    background-color: #9e9e9e;}
+.unbiased-ico ,.ordinary-ico{
+    background-position: -34px -769px;
+	 margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 7px;
+    float: none;
+}
+.trendTag-ico {
+    width: 7px;
+    height: 8px;
+    float: right;
+    margin: 5px 0 0 0;
+    background-position: 0 -769px;
+    cursor: default;
+}
+.ordinary-ico{    background-position: -17px -769px;}
+/*3:2：2 动漫*/
+.col-4{width:210px}
+.col-1{width:400px;}
+.col-3{width:600px;}
+.col-2{width: 180px;}
+.site-piclist dl{margin-left:0px;}
+
+.sports_list dl dt{width:180px;  height:253px;}
+.sports_list dl dt img{width:180px; height:253px;}
+/*原创*/
+.icon-user{    background: url("../images/icon-user.png") no-repeat 0 0;
+    width: 11px;  height: 11px;  margin-right: 5px; display: inline-block;
+    vertical-align: middle;}
+.icon-dbut{display:none;width: 66px;  height: 20px;font-size:12px;    text-align: center;
+    float: right;line-height: 20px; padding: 0; border: 1px solid #679e00;
+    background: #699f00;color: #fff;border-radius: 3px;}
+.icon-dbut:hover{color:#fff !important;}
+.user-dbut:hover .icon-dbut{display:block;}
+/*订 用户*/
+.gurulist{background:#F2F2F2; overflow: auto; padding:10px;}
+.user_list{margin-bottom: 12px;overflow: auto;}
+.user_img{background:#fff;width:74px; height:74px; overflow:hidden;    border: 1px solid #d8d8d8;}
+.user_img img{width:64px; height:64px;padding:5px;}
+.user_list .icon-dbut{display:block; float: left;line-height: 20px;}
+.user_name{width:90px;}
+.user_name a{line-height:25px;}
+
+/* 频道*/
+.wrapper-piclist{float:left; width: 180px;padding-right: 30px;}
+.wrapper-piclist dt{position:relative; height:101px; width:180px; overflow:hidden;}
+.wrapper-piclist dt img{height:101px; width:180px;}
+.wrapper-piclist dt p{position:absolute; bottom:0px; height:30px; line-height:30px; background:rgba(0,0,0,0.5); width:100%; color:#fff;    overflow: hidden;    text-indent: 1em;
+    white-space: nowrap;
+    text-overflow: ellipsis;}
+.wrapper-piclist dd{}
+.wrapper-piclist dd a{ display:block; width:100%;   overflow: hidden;
+    white-space: nowrap;height:35px;line-height:35px;
+    text-overflow: ellipsis;    border-bottom: 5px solid #6ba400;
+    background: #8ac024; color:#Fff; font-size:20px; text-align:center;}
+.wrapper-piclist dd a span{font-size:14px;}
+.wrapper-piclist dd a:hover{opacity:0.8; color:#fff !important;}
+.padding-r{padding-right:0px;}
+/*爱奇艺动态*/
+.index-footer{background:#F7F7F7;    font-size: 12px;
+    border: 1px solid #e7e7e7; width:1024px; margin:30px auto;}
+
+.index-footer .mod_footer_partners{width:472px;   border-right: 1px solid #e7e7e7; margin-right:-1px; padding:20px; }
+.index-footer .mod_footer_news{width:472px;   padding:20px; }
+.index-footer h2{font-weight:100;}
+.index-footer .footer_title{font-size:24px;}
+.index-footer .more{font-size:12px; padding-left:20px;}
+.index-footer  .youqing{margin-top:30px;}
+.index-footer  .youqing li{width:90px; float:left;line-height:30px; font-size:12px;}
+.mod_footer_news ul{margin-top:30px;}
+.mod_footer_news ul li{width:190px;float:left;line-height:30px; font-size:12px;}
+/*小尾巴*/
+.footer{   
+    margin: 25px 0;
+    border-top: 1px solid #ccc;}
+.footer .footmenu { 
+    padding: 15px 0 10px 0; width:900px; margin:auto;
+   
+}
+.footer a{font-size:12px;padding:0px 12px;line-height:24px;}
+.footer .footmenu  a{border-right:1px solid #666;line-height:14px;}
+.footer .footmenu  a.border-r-n{border-right:none;}
+.footer_links{text-align:center;}
+.fonter_bei{overflow:auto;}
+.fonter_bei a{display:block; float:left; }

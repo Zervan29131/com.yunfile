@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+	<head>
+		<!--声明当前页面的编码集：charset=gbk,gb2312(中文编码)，utf-8国际编码-->
+		<meta http-equiv="Content-Type" content="text/html; charset=gbk">
+		<!--当前页面的三要素-->
+		<title>javaWEb - 不带A标签 - Arry老师</title>
+		<meta name="Keywords" content="关键词,关键词">
+		<meta name="description" content="">
+
+		<!--css,js-->
+		<style type="text/css">
+			*{margin:0;padding:0;}
+			body{font-size:12px;font-family:"微软雅黑";color:#666;}
+			.youku{width:860px;height:180px;margin:150px auto;}
+			.youku ul li{list-style:none;float:left;height:30px;
+				font-size:14px;line-height:30px;padding:0 20px;
+			}
+			.youku ul .sel{background:#06a7e1;color:#fff;}
+			/**/
+			.youku .show{width:860px;height:150px;display:none;opacity:0}
+			.youku .rb{background:#CCCCFF;display:block;}
+			.youku .hy{background:#993366;}
+			.youku .hlw{background:#999900;}
+			.youku .byr{background:#6666FF;}
+			.youku .will{background:#FFCC00;}
+			.clear{clear:both;}
+
+		</style>
+
+	</head>
+<body>
+
+	<div class="youku">
+		<ul>
+			<li class="sel">热播大片</li>
+			<li>华语精选</li>
+			<li>好莱坞精选</li>
+			<li>变异人的世界</li>
+			<li>即将上线</li>
+		</ul>
+		<div class="clear"></div>
+		<div class="show rb" style="opacity:1"></div>
+		<div class="show hy"></div>
+		<div class="show hlw"></div>
+		<div class="show byr"></div>
+		<div class="show will"></div>
+
+	</div>
+
+
+	<div class="youku">
+		<ul>
+			<li class="sel">热播大片</li>
+			<li>华语精选</li>
+			<li>好莱坞精选</li>
+			<li>变异人的世界</li>
+			<li>即将上线</li>
+		</ul>
+		<div class="clear"></div>
+		<div class="show rb"  style="opacity:1"></div>
+		<div class="show hy"></div>
+		<div class="show hlw"></div>
+		<div class="show byr"></div>
+		<div class="show will"></div>
+
+	</div>
+
+	<div class="youku">
+		<ul>
+			<li class="sel">热播大片</li>
+			<li>华语精选</li>
+			<li>好莱坞精选</li>
+			<li>变异人的世界</li>
+			<li>即将上线</li>
+		</ul>
+		<div class="clear"></div>
+		<div class="show rb"  style="opacity:1"></div>
+		<div class="show hy"></div>
+		<div class="show hlw"></div>
+		<div class="show byr"></div>
+		<div class="show will"></div>
+
+	</div>
+
+
+<!--引入jQuery的第三方类库-->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+/*	$(function(){
+		$(".youku").find("li").hover(function(){
+			var $this = $(this);
+			$this.addClass("sel").siblings().removeClass("sel");
+			$(".show").hide().eq($this.index()).fadeTo(300,1);
+		});
+	}); */
+
+	$(function(){
+		$(".youku").each(function(){
+			var $parent = $(this);
+			$parent.find("li").hover(function(){
+				var $this = $(this);
+				$this.addClass("sel").siblings().removeClass("sel");
+				$parent.find(".show").hide().eq($this.index()).fadeTo(300,1);
+			});		
+		});
+	});
+	
+</script>
+
+</body>
+</html>

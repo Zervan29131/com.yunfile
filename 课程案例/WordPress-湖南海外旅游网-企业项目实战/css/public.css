@@ -1,0 +1,199 @@
+/*内页主体样式*/
+img{border:0px;}
+.webBody{background:#f4f4f4;}
+/*面包屑导航样式*/
+.webLogo {width:1000px; height:68px;  margin:0px auto; border-bottom:2px solid #dd85b3;
+			background:url("../images/position.png") no-repeat left center;	font-size:14px;
+			line-height:68px; text-indent:20px;}
+.webLogo a{color:#666; text-decoration:none; }
+.webLogo a:hover{color:#e20076; text-decoration:underline;}
+
+#WebCon{width:1000px;  background:url("../images/webbg1.png") no-repeat,
+									url("../images/webbg2.png") no-repeat right top #fff; margin:0px auto; 
+									padding-top:1px;}
+#web_Menu{width:940px; margin:30px auto 15px;}
+#web_Menu dl{width:100%;height:30px;  margin-bottom:5px;}
+#web_Menu dl dt{width:180px; height:30px; background:#ededed; float:left; font-size:14px;
+				text-align:center;line-height:30px; font-weight:bold;}
+#web_Menu dl dt a{display:block; color:#000; text-decoration:none; cursor:default;/*鼠标状态*/}
+#web_Menu dl dt a:hover{background:#e10076; color:#fff;}
+#web_Menu dl dd{width:758px;height:30px; background:#f4f4f4; float:right; line-height:30px; }
+#web_Menu dl dd a{font-size:14px; color:#000;text-decoration:none;
+					float:left; padding:0px 10px;}
+#web_Menu dl dd a:hover{color:#e10076;}
+
+/*第页第一部分样式*/
+#webPart1{width:940px;margin:0px auto 40px;}
+img.webbg3{ display:block;margin:0px auto;}
+/*左边轮播器样式*/
+#webPart1_l{width:361px; height:270px; float:left; position:relative;}
+#webPart1_l .webAdvcon{width:361px;height:270px;  position:relative;/*相对定位元素*/overflow:hidden;}
+#webPart1_l .webAdvcon img{position:absolute;/*绝对定位*/ /*left top bottom right*/}
+
+#webPart1_l ul.webAdvbutton{width:105px; height:25px;position:absolute; bottom:5px;
+							right:0px; z-index:333;}
+#webPart1_l ul.webAdvbutton li{width:20px; height:20px; background:rgba(255,255,255,0.5); float:left;
+					border:1px solid #fff; margin:0px 2px; font-size:12px; text-align:center;
+					line-height:20px; cursor:pointer;}
+#webPart1_l ul.webAdvbutton li.hover{background:#f66e08;color:#fff; border:1px solid #e63003;}
+
+#webPart1_l dl.text{width:361px; height:38px; background:rgba(0,0,0,0.5); overflow:hidden; 
+					position:absolute; left:0px; bottom:0px; z-index:22;}
+#webPart1_l dl.text dd{height:38px; color:#fff; font-size:14px; line-height:38px;
+					text-indent:10px;}
+
+
+
+
+
+#webPart2_r{width:568px; height:270px; background:#f9f9f9; float:right; border:1px dashed #e20076;
+			position:relative;}
+#webPart2_r img.dirl{position:absolute; left:0px; top:100px;}
+#webPart2_r img.dirr{position:absolute; right:0px; top:100px;}
+#webPart2_r #webPart2_Scroll{width:504px; height:210px; overflow:hidden;/*隐藏*/ margin:40px auto 0px; position:relative;}
+#webPart2_r #webPart2_Scroll .webPart2_ScrollCon{width:1000%;height:210px; position:absolute; 
+								left:0px;/*滚动就是改变他的值*/}
+#webPart2_r #webPart2_Scroll .webPart2_ScrollCon dl{width:150px;height:210px; float:left; margin:0px 9px;}
+#webPart2_r #webPart2_Scroll .webPart2_ScrollCon dl dt{width:150px; height:150px; background:yellow;}
+#webPart2_r #webPart2_Scroll .webPart2_ScrollCon dl dd{font-size:12px; text-align:center; height:25px;
+							line-height:25px;}
+#webPart2_r #webPart2_Scroll .webPart2_ScrollCon dl dd a{color:#000; text-decoration:none;}
+#webPart2_r #webPart2_Scroll .webPart2_ScrollCon dl dd a:hover{color:#e10076;}
+#webPart2_r #webPart2_Scroll .webPart2_ScrollCon dl dd span{color:#e10076; font-weight:bold;}
+
+
+
+/*内页第二部分的样式*/
+.webProduct{width:950px; height:500px; margin:0px auto 20px;}
+.webProduct p.Product_Title{height:49px; background:url("../images/web_ht.jpg"); 
+							line-height:49px; text-align:right; padding-right:10px; }
+.webProduct p.Product_Title span{font-size:20px; font-weight:bold; float:left;}
+.webProduct p.Product_Title span font{ font-size:30px;color:#fff;width:41px;display:inline-block;text-align:center; padding-right:10px;}
+.webProduct p.Product_Title a{color:#666; text-decoration:none;  font-size:14px; margin:0px 5px;}
+.webProduct p.Product_Title a:hover{color:#e10076;}
+
+
+.webProduct dl{width:280px; height:370px; border:5px solid #e10076; border-left:1px dashed #e10076;
+				border-right:1px dashed #e10076; float:left; margin:30px 16px; border-radius:5px;}
+.webProduct dl dt{text-align:center; padding-top:5px;}
+.webProduct dl dd.title{height:45px; font-size:14px; text-align:center; line-height:45px;}
+.webProduct dl dd.title a{color:#000; text-decoration:none;}
+.webProduct dl dd.title a:hover{color:#e10076;}
+.webProduct dl dd.price{width:137px; height:38px; background:#e10076; margin:0px auto; border-radius:10px;
+						color:#fff; font-size:16px; text-align:center;line-height:38px;}
+
+
+/*风景详细页-----第一部分样式*/
+#Deltail_part1{width:950px; height:500px; margin:15px auto 25px;}
+#Deltail_part1 .Deltail_part1_L{width:420px; height:500px;  float:left;}
+#Deltail_part1 .Deltail_part1_R{width:480px; height:500px;float:right;}
+/*图片选项卡样式*/
+#Deltail_part1 .Deltail_part1_L .Deltail_img{width:420px; height:420px; background:#00FF66; overflow:hidden;}
+#Deltail_part1 .Deltail_part1_L .Deltail_but{padding-top:10px; height:60px;}
+#Deltail_part1 .Deltail_part1_L .Deltail_but img{float:left; margin-right:5px;}
+#Deltail_part1 .Deltail_part1_L .Deltail_but img.hover{border:2px solid red;}
+
+
+/*右边详细内容样式*/
+#Deltail_part1 .Deltail_part1_R h1{font-size:22px; color:#e10076; height:45px; line-height:45px;}
+#Deltail_part1 .Deltail_part1_R p.info{font-size:14px; line-height:25px;}
+#Deltail_part1 .Deltail_part1_R p.info span{color:#e10076;}
+#Deltail_part1 .Deltail_part1_R p.common{line-height:30px; font-size:14px; }
+#Deltail_part1 .Deltail_part1_R p.common font{font-weight:bold;}
+#Deltail_part1 .Deltail_part1_R p.common span{color:#e10076; font-size:30px;}
+#Deltail_part1 .Deltail_part1_R p.paddTop{padding-top:10px;}
+#Deltail_part1 .Deltail_part1_R p.bor{ border-bottom:1px dotted #666; padding-bottom:10px;}
+#Deltail_part1 .Deltail_part1_R p.common img{margin-right:3px;}
+#Deltail_part1 .Deltail_part1_R p.common span.priceType{width:48px; height:29px; font-size:14px; color:#666;
+											display:inline-block; text-align:center; line-height:29px; background:url("../images/xlxqctxsbg.png");}
+#Deltail_part1 .Deltail_part1_R p.but{padding-top:25px;}
+#Deltail_part1 .Deltail_part1_R p.but img{float:left;margin-right:10px;}
+
+
+/*详细内容样式*/
+#Deltail_Con{width:950px;  margin:0px auto; padding-bottom:30px;}
+#Deltail_Con ul.Deltail_Menu{border-bottom:2px solid #e10076; height:35px;}
+#Deltail_Con ul.Deltail_Menu li{width:85px;height:35px; float:left; text-align:center;
+				line-height:35px; font-size:14px; margin-right:10px;}
+#Deltail_Con ul.Deltail_Menu li a{color:#000; text-decoration:none; background:#FF99CC; display:block; border-radius:5px 5px 0px 0px;}
+#Deltail_Con ul.Deltail_Menu li a:hover,#Deltail_Con ul li a.hover{background:#e10076; color:#fff;}
+
+
+#Deltail_Con .Deltail_Common{border:1px solid #e10076; margin-top:30px; font-size:14px; line-height:25px;}
+#Deltail_Con .Deltail_Common h2.Deltail_title{font-size:14px; color:#fff; background:#e10076; line-height:30px;
+					text-indent:10px;}
+#Deltail_Con .Deltail_Common .Deltail_Common_con{padding:20px;}
+
+
+/*内页签证样式*/
+.web_Qz{width:950px; height:600px; margin:10px auto; }
+.web_Qz dl{width:450px; height:123px; border:1px dashed #ddd; padding:15px 5px; float:left;
+				margin:15px 6px;}
+.web_Qz dl dt{width:170px;height:113px; float:left;border:1px solid #ddd; padding:4px;}
+.web_Qz dl dt img{/*border:1px solid #ddd; padding:4px; 加给img 或 dt 都可以*/}
+.web_Qz dl dd{width:250px; font-size:14px; float:right;  line-height:25px;
+			color:#666;}
+.web_Qz dl dd span{margin-right:10px;}
+.web_Qz dl dd span font{color:#e10076;}
+.web_Qz dl dd.title{font-size:16px; color:#e10076; line-height:45px; }
+
+
+/*签证详细内容页样式*/
+#Web_QzDeltail{width:950px;  margin:0px auto;}
+#Web_QzDeltail dl{height:176px;  padding:15px 5px; float:left;
+				margin:15px 6px; }
+#Web_QzDeltail dl dt{width:250px;height:166px; float:left;border:1px solid #ddd; padding:4px;}
+#Web_QzDeltail dl dt img{/*border:1px solid #ddd; padding:4px; 加给img 或 dt 都可以*/}
+#Web_QzDeltail dl dd{width:640px; font-size:14px; float:right;  line-height:25px;
+			color:#666; }
+#Web_QzDeltail dl dd span{margin-right:10px;}
+#Web_QzDeltail dl dd span font{color:#e10076;}
+#Web_QzDeltail dl dd.title{font-size:16px; color:#e10076; line-height:30px; }
+#Web_QzDeltail dl dd.but{ padding-top:5px;}
+
+/*签证栏目样式*/
+#Web_QzDeltail .Web_QzNav{height:55px;  border-top:1px dashed #e10076;border-bottom:1px dashed #e10076;}
+#Web_QzDeltail .Web_QzNav font{background:#e10076; width:120px; height:55px; display:inline-block; color:#fff;
+						text-align:center;line-height:55px; float:left;}
+#Web_QzDeltail .Web_QzNav span{width:120px; margin:0px 10px; height:35px; display:inline-block;
+								line-height:35px; text-align:center; float:left; margin-top:10px; cursor:pointer;}
+#Web_QzDeltail .Web_QzNav span.hover{background:#666; color:#fff;}
+
+
+.Web_QzScroll{width:950px; margin:25px 0px;height:500px; 
+				overflow:hidden;/*overflow-y:scroll;竖直方向内容超过其高度，出现滚动条*/}
+.Web_QzScroll .Web_QzScrollCon{height:500px;}
+.web_QzDeltailInfo{padding-bottom:35px;}
+.web_QzDeltailInfo span{color:#fff; width:80px; height:30px; display:inline-block;line-height:30px;text-align:center;background:#e10076;}
+.web_QzDeltailInfo p{line-height:35px;}
+
+
+/*搜索页列表样式*/
+.web_Search{width:950px; margin:0px auto;}
+.web_Search dl{margin:15px 0px; height:297px; border-bottom:1px dashed #ddd;}
+.web_Search dl dt{width:270px; height:270px; border:1px solid #ddd; padding:5px; float:left;}
+.web_Search dl dd{width:650px; float:right;}
+.web_Search dl dd.title{line-height:35px;font-size:16px; }
+.web_Search dl dd.title a{color:#e10076; }
+.web_Search dl dd{line-height:25px; font-size:14px;}
+.web_Search dl dd a{text-decoration:none; color:#666;}
+.web_Search dl dd.info{padding:10px 0px;}
+.web_Search dl dd font{font-size:24px;color:#e10076;}
+.web_Search dl dd span{color:#666;}
+.web_Search dl dd.more{text-align:right; }
+.web_Search dl dd.more a{border-radius:5px;text-align:center;color:#fff; display:inline-block;
+			width:130px;height:30px; background:#e10076;}
+
+/*搜索结果页样式*/
+#web_Search{width:950px;  margin:0px auto; padding-bottom:30px;}
+#web_Search dl{height:305px; padding-top:20px; border-bottom:1px dashed #ddd; }
+#web_Search dl dt{width:270px; height:270px; border:1px solid #ddd;  padding:5px; float:left; }
+#web_Search dl dd{width:650px; line-height:30px;float:right; font-size:14px;}
+#web_Search dl dd.title{line-height:35px; font-size:18px;}
+#web_Search dl dd.title a{color:#e10076; text-decoration:none;}
+#web_Search dl dd.info{font-size:14px; color:#666; line-height:25px; padding:10px 0px;}
+#web_Search dl dd font{font-size:24px; color:#e10076;}
+#web_Search dl dd span{color:#666;}
+#web_Search dl dd.more{text-align:right; }
+#web_Search dl dd.more a{display:inline-block;width:150px; height:30px; background:#e10076; color:#fff;
+						text-align:center; text-decoration:none; border-radius:5px;

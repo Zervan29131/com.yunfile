@@ -1,0 +1,140 @@
+@charset "gb2312";
+/*内页样式开始*/
+div.h20{height:20px;}
+
+/*放大镜效果样式*/
+#preview{ float:none; margin:0px auto; text-align:center; width:494px; padding-top:10px;}
+.jqzoom{ width:494px; height:400px; position:relative;}
+
+.zoomdiv{ left:859px; height:400px; width:400px;}
+.list-h li{ float:left;}
+#spec-n5{width:494px; height:118px; padding-top:32px; overflow:hidden;  }
+#spec-left{ background:url(images/left.gif) no-repeat; width:19px;padding-right:3px; height:76px; padding-top:40px; float:left; cursor:pointer; margin-top:5px;}
+#spec-right{background:url(images/right.gif) no-repeat; width:19px; padding-left:3px; height:76px; padding-top:40px;float:left;cursor:pointer; margin-top:5px;}
+#spec-list{ width:450px; float:left; overflow:hidden;  display:inline;}
+#spec-list ul li{ float:left; margin-right:0px; display:inline; width:142px; padding:0px 3px 0px 5px; }
+#spec-list ul li img{ padding:2px; border:1px solid #ccc; width:136px; height:110px;}
+
+/*jqzoom Download by http://down.liehuo.net*/
+.jqzoom{position:relative;padding:0;}
+.zoomdiv{z-index:100;position:absolute;top:1px;left:0px;width:400px;height:400px;background:url(i/loading.gif) #fff no-repeat center center;border:1px solid #e4e4e4;display:none;text-align:center;overflow: hidden;}
+.bigimg{width:800px;height:800px;}
+.jqZoomPup{z-index:10;visibility:hidden;position:absolute;top:0px;left:0px;width:50px;height:50px;border:1px solid #aaa;background:#FEDE4F 50% top no-repeat;opacity:0.5;-moz-opacity:0.5;-khtml-opacity:0.5;filter:alpha(Opacity=50);cursor:move;}
+#spec-list{ position:relative; width:450px; }
+#spec-list div{ margin-top:0;*margin-left:0;}
+
+
+
+
+/*产品列表页样式=================*/
+#webContent{width:1000px; margin:0px auto; padding-top:15px; }
+#webContent #web_proxx{background-color:#fafafa;border:1px solid #cbcbcb; border-top:0px; border-bottom:0px;}
+#webContent #web_proxx #web_proxxL{width:580px;float:left;
+padding:30px 0px 30px 20px;}
+#webContent #web_proxx #web_proxxR{width:301px;float:right; 
+padding:10px 20px 0px 0px; border:1px solid red;}
+#web_proxx #web_proxxL h1{color:#a8a8a8; font-size:30px;font-family:"Arial";
+font-weight:100;padding-bottom:20px; }
+#web_proxx #web_proxxL h1 span{font-size:36px; color:#f00; font-family:"楷体";
+font-weight:bold;}
+#web_proxx #web_proxxL p{color:#5d5d5d; font-size:16px; font-family:"微软雅黑";line-height:30px;}
+/*内页产品分类导航样式*/
+#web_proType{height:39px; padding:18px 0px 18px 20px;}
+#web_proType dl dt{color:#222; font-size:20px; font-family:"微软雅黑"; float:left; height:39px; line-height:39px;}
+#web_proType dl dd{float:left; height:39px;  line-height:39px; width:150px; padding-left:9px;}
+#web_proType dl dd a{display:block;background:url("../images/web_protype1.jpg");
+text-align:center; color:#232323; font-size:16px;font-family:"微软雅黑";}
+#web_proType dl dd a:hover{color:#fff; background:url("../images/web_protype2.jpg");}
+
+
+/*内容样式*/
+#Content_Detail{width:1000px; margin:0px auto; }
+#Content_Detail #content_D{background-color:#fff; border:1px solid #cbcbcb; border-top:0px; border-bottom:0px;
+padding:20px;}
+/*面包屑导航样式*/
+.webNav{background:url('../images/webNavback.jpg') no-repeat bottom left;
+padding-bottom:17px; }
+.webNav dl{width:470px; float:left;}
+.webNav dl dt{ float:left;color:#5d5d5d;font-size:24px;font-family:"微软雅黑";}
+.webNav dl dt span{color:#a8a8a8; font-size:18px; padding-left:10px;}
+.webNav dl dd{float:left; color:#a8a8a8; font-family:"微软雅黑";font-size:12px; padding-left:20px;
+}
+
+ .webNav div.webNavTxt{float:right;color:#5d5d5d;font-size:14px; 
+font-family:"微软雅黑"; }
+ .webNav div.webNavTxt span{color:#ff0000;}
+ .webNav div.webNavTxt a{color:#ff0000;}
+
+/*产品列表样式*/
+#web_ProList dl{width:318px; float:left; height:137px; padding:15px 0px 11px 0px;}
+#web_ProList dl dt{width:157px;height:137px;float:left;padding-right:10px;}
+#web_ProList dl dt img{border:1px solid #cbcbcb;}
+#web_ProList dl dd{float:left;font-family:"微软雅黑"; width:145px;font-size:12px;}
+#web_ProList dl dd.ti a{color:#5d5d5d;font-size:14px;}
+#web_ProList dl dd.des{color:#5d5d5d; padding-top:6px; height:93px;}
+#web_ProList dl dd.more a{color:#f00;}
+
+
+/*产品内页详细描述*/
+#Product_Deltail #Product_Dt1{width:495px;float:left; }
+#Product_Deltail #Product_Dt2{width:455px; height:555px; float:right; }
+
+#Product_Deltail #Product_Dt2 dl dt {height:40px;line-height:40px; color:#5d5d5d; 
+font-size:18px; font-family:"微软雅黑"; background:url('../images/pxxgray.jpg') no-repeat left bottom;}
+#Product_Deltail #Product_Dt2 dl dd{color:#5d5d5d; line-height:30px; font-size:16px; font-family:"微软雅黑";}
+#Product_Deltail #Product_Dt2 dl dd h1{font-size:16px;  font-weight:100; padding-top:10px; }
+#Product_Deltail #Product_Dt2 dl dd div.ddl{width:80px;float:left;}
+#Product_Deltail #Product_Dt2 dl dd div.ddr{width:375px;float:right; font-size:14px;
+line-height:25px;}
+#Product_Deltail #Product_Dt2 p.pro_tel{font-size:24px;font-family:"微软雅黑";
+text-align:center; padding:60px 0px 27px 0px; }
+#Product_Deltail #Product_Dt2 p.pro_tel span{color:#f00;}
+#Product_Deltail #Product_Dt2 p.pro_zxbut img{margin:0px auto; }
+
+/*产品详情样式*/
+#pro_deltailCon{padding-top:20px;}
+#pro_deltailCon #pro_deltailContent{background-color:#fff;border:1px solid #cbcbcb; border-top:0px; border-bottom:0px;
+padding:20px;}
+
+
+
+#web_proxx #web_proxxL p.ptypenav{color:#a8a8a8; font-size:30px;font-family:"Arial";
+font-weight:100;padding-bottom:20px; }
+#web_proxx #web_proxxL p.ptypenav span{font-size:36px; color:#f00; font-family:"楷体";
+font-weight:bold;}
+
+
+/*相关产品样式*/
+#xgPro ul li img{border:1px solid #cacaca; }
+#xgPro ul li{width:230px; height:200px; float:left; list-style-type:none;
+padding:24px 5px 0px 4px;}
+
+
+/*新闻列表页样式*/
+#web_proxx #web_proxxL p.newsti{font-size:26px; color:#f00; font-family:"微软雅黑"; }
+#web_proxx #web_proxxL p.newsdes{padding-top:10px;}
+
+/*新闻列表样式*/
+#NewsList dl{height:136px;  padding-top:16px; border-bottom:1px dashed #e6e6e6;}
+#NewsList dl dt{float:left; width:122px; height:122px; padding-right:8px;}
+#NewsList dl dd.ti{font-size:18px;font-family:"微软雅黑"; font-weight:bold;
+padding-bottom:15px;}
+#NewsList dl dd.ti a{color:#4c4c4c;}
+#NewsList dl dd{font-size:14px;font-family:"微软雅黑";line-height:25px;}
+#NewsList dl dd.des{height:60px;}
+#NewsList dl dd.des a{color:#5d5d5d; }
+#NewsList dl dd.wd font{color:#f00;}
+#NewsList dl dd a:hover{text-decoration:underline;}
+
+
+/*新闻详细页样式*/
+#NewsDetail {}
+#NewsDetail h1{color:#4d4d4d; font-size:24px;font-family:"微软雅黑"; font-weight:100;
+text-align:center;line-height:50px;}
+#NewsDetail p.tag{text-align:center; line-height:45px; color:#4c4c4c; font-size:14px;font-family:"微软雅黑";
+border-bottom:1px dashed #e6e6e6;}
+#NewsDetail p.tag span{padding:0px 15px;}
+#NewsDetail p.tag span font{color:#ff0000;}
+
+#NewsDetail div.NewsDetailCon {color:#000;font-size:14px; line-height:40px;font-family:"微软雅黑";
+padding-top:10px;}

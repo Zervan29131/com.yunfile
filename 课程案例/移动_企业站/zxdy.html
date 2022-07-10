@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>咨询单页</title>
+    <meta content="yes" name="apple-mobile-web-app-capable"><!-- 这meta的作用就是删除默认的苹果工具栏和菜单栏允许全屏模式浏览-->
+    <meta name="apple-touch-fullscreen" content="yes"><!-- 开启对web app程序的支持  -->
+    <meta content="telephone=no,email=no" name="format-detection"><!-- iPhone会自动把你这个文字加链接样式、并且点击这个数字还会自动拨号！telephone=no就忽略页面中的数字识别为电话号码 ,email=no 忽略识别邮箱 -->
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+    <link rel="stylesheet" href="font/css/font-awesome.min.css"/>
+    <script src="js/reset.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/zepto.min.js"></script>
+    <!--search-->
+    <script type="text/javascript" src="js/seach2.js"></script>
+    <!--back-->
+    <script src="js/back.js"></script>
+    <style>
+        .goods-more-a a{
+            border-bottom: 1px solid #c8c8c8;
+        }
+        .header{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 5;
+        }
+        .icona{
+            margin-top: 1.8rem;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .hdbg{
+            margin-top: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+<div class="wapper">
+    <!--header-->
+    <div class="header bag-1c9d43">
+        <div class="header-top text-center text-fff  relative">
+            <a href="" class="blockbj2"></a>
+            <span class="f36">活动介绍</span>
+            <a href="#" class="fktp2 relative">
+            </a>
+        </div>
+    </div><br>
+    <div class="znsousu clearFloat relative p-lr-25 m-b-12">
+        <input type="text" class="stext" placeholder=" 请输入内容" autofocus  required/>
+        <input type="submit" class="ssubmit absolute bag-1c9d43" value="搜索"/>
+    </div>
+
+    <div id="actionSheet_wrap">
+        <div class="weui_mask_transition relative" id="mask" style="display: none;">
+            <div class="icona">
+                <a href=""><img src="images/qq.png" alt=""/></a>
+                <a href=""><img src="images/friend.png" alt=""/></a>
+                <a href=""><img src="images/txwb.png" alt=""/></a>
+                <a href=""><img src="images/qqkj.png" alt=""/></a>
+                <a href=""><img src="images/wx.png" alt=""/></a>
+                <a href=""><img src="images/wxt.png" alt=""/></a>
+            </div>
+        </div>
+    </div>
+    <!--share-->
+    <script type="text/javascript" src="js/share.js"></script>
+    <!--header end-->
+    <div class="hdbg">
+        <!--content-list2-->
+        <div class="content-list3 p-lr-25">
+            <h3 class="f34 fb text-3c">文章标题文章标题文章标题 <span class="zxspan">发布时间：2015-06-24</span></h3><br>
+            <div class="pagep">
+                <p>
+                    <img src="images/shufa2.jpg" alt=""/><br>
+
+                    正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正
+                </p>
+            </div>
+            <br>
+            <h3 class="xhydh3"><i class="fa fa-file-text-o"></i>&nbsp;&nbsp;相关阅读</h3>
+            <div class="goods-more-a clearFloat">
+                <a href="" class="p-t-20 p-b-20">
+                    <span>修文县“桃源八寨”国家农业科技示范园区总...</span>
+                    <span class="floatRight">
+                         <i class="fa fa-angle-right"></i>
+                    </span>
+                    <span class="zxtime">2015-06-26 </span>
+                </a>
+                <a href="" class="p-t-20 p-b-20">
+                    <span>修文县“桃源八寨”国家农业科技示范园区总...</span>
+                    <span class="floatRight">
+                         <i class="fa fa-angle-right"></i>
+                    </span>
+                    <span class="zxtime">2015-06-26 </span>
+                </a>
+                <a href="" class="p-t-20 p-b-20">
+                    <span>修文县“桃源八寨”国家农业科技示范园区总...</span>
+                    <span class="floatRight">
+                         <i class="fa fa-angle-right"></i>
+                    </span>
+                    <span class="zxtime">2015-06-26 </span>
+                </a>
+                <a href="" class="p-t-20 p-b-20">
+                    <span>修文县“桃源八寨”国家农业科技示范园区总...</span>
+                    <span class="floatRight">
+                         <i class="fa fa-angle-right"></i>
+                    </span>
+                    <span class="zxtime">2015-06-26 </span>
+                </a>
+            </div>
+
+            <br>
+        </div>
+
+        <!--content-list2 end-->
+    </div>
+    <!--返回顶部-->
+    <a href="#" id="scrollUp" style="position: fixed; z-index: 100;">
+        <i class="fa fa-angle-up"></i>
+    </a>
+    <!--返回顶部-->
+
+
+
+
+</div>
+
+</body>
+</html>

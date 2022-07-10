@@ -1,0 +1,378 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>please enter your title</title>
+		<meta charset="gbk">
+		<meta name="Author" content="潭州学院-阿飞老师">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+		<script src="js/jquery-2.2.4.min.js"></script>
+		<script src="js/jquery.mobile-1.4.5.min.js"></script>
+		<style type='text/css'>
+			*{ margin:0; padding:0; font-family:'Microsoft yahei';}
+			li{ list-style:none; vertical-align:top;}
+			a{ text-decoration:none; color:#000;}
+			a img{ display:block; border:none;}
+
+			@media all and (max-width:320px){
+				#sale .s-body .left .img{ height:100px !important;}
+				#sale .s-body .right .row1{ height:87px !important;}
+				#sale .s-body .right .rowB{ height:91px !important;}
+			}
+			@media all and (min-width:321px){
+				#sale .s-body .left .img{ height:117px !important;}
+				#sale .s-body .right .row1{ height:95px !important;}
+				#sale .s-body .right .rowB{ height:100px !important;}
+			}
+
+			body,header{ min-width:320px; max-width:540px;}
+			body{ margin:0 auto; font-size:14px; position:relative;}
+			html{ background:#eee;}
+			#h-logo i,#h-search i,nav .list ul li:nth-child(1) a>div i{ background-image:url(img/icon.png);}
+			#mainPage{ padding-top:44px;}
+
+			header{ background:#f6f6f6; height:44px; top:0px; box-sizing:border-box; position:fixed; width:100%; padding:7px 55px 7px 7px; z-index:999;}
+			header #h-search{ color:#666; font-size:12px; line-height:24px; text-indent:20px; position:relative; border:1px solid #666; height:24px; border-radius:5px; box-shadow:0 2px 3px #ddd;}
+			header #h-search i{ display:inline-block; left:3px; top:3px; position:absolute; width:15px; height:18px; background-size:104px 327px; background-position:-59px -276px;}
+			header #h-logo{ width:44px; height:44px; position:absolute; right:4px; top:0px;}
+			header #h-logo a{ display:block; width:100%; height:100%;}
+			header #h-logo i{ display:block; width:25px; height:25px; background-size:104px 327px; background-position:-59px -193px; margin-left:10px;}
+			header #h-logo span{ color:#099FDE; font-size:12px; display:block; text-align:center;}
+
+			#banner{ overflow:hidden; position:relative;}
+			#banner .pic{ overflow:hidden;}
+			#banner .pic ul{ width:1000%; overflow:hidden; margin-left:-100%;}
+			#banner .pic ul li{ float:left; width:10%;}
+			#banner .pic a{ display:block;}
+			#banner .pic a img{ width:100%; display:block;}
+			#banner .tab{  position:absolute; bottom:5px; left:50%; margin-left:-78px; width:156px; height:4px; }
+			#banner .tab ul li{ float:left; margin:0 3px; width:20px; height:4px; border-radius:2px; background:rgba(255,255,255,.5);}
+			#banner .tab ul li.on{ background:#fff;}
+
+			nav{ width:100%; margin:3px 0 5px;}
+			nav .list{ height:90px; border-radius:5px; overflow:hidden; margin:3px 0;}
+			nav .list ul{ height:100%;}
+			nav .list ul li{ width:33.1%; height:100%; position:relative; float:left;}
+			nav .list ul li:nth-child(2){ margin:0 1px;}	
+			nav .list.list4 ul li:nth-child(1) a,nav .list ul li:nth-child(2) a,nav .list ul li:nth-child(3) a{ display:block; height:44.5px; line-height:44.5px;}
+			nav .list ul li a{ display:block; height:100%; color:#fff; text-align:center;}
+			nav .list ul li:nth-child(1) a>div{ width:43px; height:70px; color:#fff; position:absolute; left:50%; margin-left:-21.5px; top:50%; margin-top:-35px; text-align:center;}
+			nav .list ul li:nth-child(1) a>div i{ margin-top:6px; width:43px; height:43px; display:block; background-position:0 -124px; background-size:104px auto;}
+			nav .list.list4 ul li:nth-child(1) a,nav .list ul li:nth-child(2) a:nth-child(1),nav .list ul li:nth-child(3) a:nth-child(1){ margin-bottom:1px;}
+			nav .list.list1 ul li a{ background:#FF697A;}
+			nav .list.list2 ul li a{ background:#3D98FF;}
+			nav .list.list3 ul li a{ background:#44C522;}
+			nav .list.list4 ul li a{ background:#FC9720;}
+			nav .list.list2 ul li:nth-child(1) a>div i{ background-position:0 -284px;}
+			nav .list.list3 ul li:nth-child(1) a>div i{ background-position:0 -180px;}
+
+			#subNav{ border-radius:5px; overflow:hidden;}
+			#subNav ul li{ height:60px; display:flex; display:-webkit-flex; display:-moz-flex; margin-bottom:1px;}
+			#subNav ul li:nth-child(3){ margin-bottom:0px;}
+			#subNav ul li a{ padding-top:12px; height:48px; background:#fff; flex:1; display:block; margin-right:1px; overflow:hidden; text-align:center;}
+			#subNav ul li a:last-child{ margin-right:0px;}
+			#subNav ul li a i{ display:block; width:20px; height:20px; margin:0 auto 0; background-size:20px auto; background-image:url(img/nav.png);}
+			#subNav ul li a span{ font-size:12px;}
+
+			#sale{ background:#fff; margin:5px 0; padding:0 5px 10px; box-sizing:border-box;}
+			#sale .s-head{ width:100%; height:44px;}
+			#sale .s-head h2{ margin-top:16px; width:77px; height:18px; float:left; background-image:url(img/text.png); background-size:79px auto;}
+			#sale .s-head a{ margin-top:12px; display:block; font-size:12px; width:110px; height:20px; text-align:center; line-height:20px; color:#fff; border-radius:10px; float:right; background:-webkit-linear-gradient(left,#ff4e63,#ff6cc9);}
+			#sale .s-body{ display:flex; display:-moz-flex; display:-webkit-flex;}
+			#sale .s-body .left,#sale .s-body .right{ flex:1;}
+			#sale .s-body .left{ margin-right:3px;}
+			#sale .s-body a{ display:block; background:#f9f9f9;}
+			#sale .s-body .left .img{ width:100%; position:relative; overflow:hidden;}
+			#sale .s-body .left .img img{ min-height:100%; position:absolute; width:100%; top:50%; transform:translate(0,-50%); }
+			#sale .s-body .left .img span{ color:#fff; background:#fd3a51; position:absolute; z-index:2; font-size:12px; display:block; width:40px; height:20px; line-height:20px; text-align:center;}
+			#sale .s-body .left .img span:after{ content:''; display:block; width:0px; height:0px; border:12px solid #fd3a51; border-top:20px solid transparent; border-right:12px solid transparent; border-bottom:20px solid transparent; position:absolute; top:-20px; left:40px;}
+			#sale .s-body .left .title{ font-size:14px; line-height:22px; padding:3px; height:44px; overflow:hidden; text-overflow:ellipsis; }
+			#sale .s-body .left .info{ color:#fd3a51; padding-bottom:12px;}
+			#sale .s-body .left .info span{ margin-left:5px; background:#fd3a51; color:#fff; font-size:12px; padding:0 5px; border-radius:10px;}
+			#sale .s-body .right a{ display:block; height:100%;}
+			#sale .s-body .right .row1{ position:relative; height:95px; width:100%; margin-bottom:3px; }
+			#sale .s-body .right .row2,#sale .s-body .right .row3{ position:relative; flex:1;}
+			#sale .s-body .right .rowB{ height:100px; display:flex; display:-moz-flex; display:-webkit-flex;}
+			#sale .s-body .right .row2{ margin-right:3px;}
+			#sale .s-body .right .row1 .s1{ padding-top:5px; margin:0 10px 3px;; font-size:14px; display:block; line-height:18px; color:#fd3a51; font-weight:bold;}
+			#sale .s-body .right .row1 .s2{ margin:0 10px; font-size:12px; display:block; line-height:18px; color:#000;}
+			#sale .s-body .right .row1 img{ width:54px; position:absolute; bottom:0px; right:4px; }
+			#sale .s-body .right .row2 .s1,#sale .s-body .right .row3 .s1{ display:block; font-weight:bold; text-align:center; line-height:20px; padding-top:7px; font-size:14px;}
+			#sale .s-body .right .row2 .s2,#sale .s-body .right .row3 .s2{ display:block; text-align:center; line-height:20px; font-size:12px;}
+			#sale .s-body .right .row2 .s1,#sale .s-body .right .row2 .s2 font{ color:#6aabff;}
+			#sale .s-body .right .row3 .s1,#sale .s-body .right .row3 .s2 font{ color:#53ca72;}
+			#sale .s-body .right .row2 img,#sale .s-body .right .row3 img{ width:50px; position:absolute; left:50%; margin-left:-25px; bottom:3px;}
+		
+			#ad{ background:#fff; margin:5px 0; padding:0 5px 10px; box-sizing:border-box;}
+			#ad .ad-head{ width:100%; height:44px;}
+			#ad .ad-head h2{ margin-top:16px; width:77px; height:18px; float:left; background-image:url(img/text.png); background-size:79px auto; background-position:0px -18px;}
+			#ad .ad-head a{ margin-top:12px; display:block; font-size:12px; width:110px; height:20px; text-align:center; line-height:20px; color:#fff; border-radius:10px; float:right; background:-webkit-linear-gradient(left,#ff4e63,#ff6cc9);}
+			#ad .ad-body img{ width:100%;}
+			#ad .ad-body .top,#ad .ad-body .bottom{ display:flex; display:-moz-flex; display:-webkit-flex;}
+			#ad .ad-body .top .t-left,#ad .ad-body .top .t-right,#ad .ad-body .bottom .b-left,#ad .ad-body .bottom .b-right{ flex:1;}
+		
+			footer{ display:flex; display:-moz-flex; display:-webkit-flex; height:50px; background:#fff;}
+			footer a{ position:relative; display:block; flex:1; height:50px;}
+			footer a i{ position:absolute; left:50%; margin-left:-9px; top:7px; width:18px; height:18px; background-image:url(img/icon.png); background-size:104px 326px;}
+			footer a span{ display:block; text-align:center; font-size:12px; padding-top:28px;}
+		</style>
+	</head>
+	<body>
+		
+		<div id="mainPage">
+			<!-- 顶部搜索框 -->
+			<header>
+				<div id="h-search">
+					<i></i>搜索:目的地/酒店/景点/航班号
+				</div>
+				<div id="h-logo">
+					<a href="">
+						<i></i>
+						<span>我 的</span>
+					</a>
+				</div>
+			</header>
+
+			<!-- banner -->
+			<div id="banner">
+				<div class="pic">
+					<ul>
+						<li><a href=""><img src="img/banner/6.jpg" alt="" /></a></li>
+						<li><a href=""><img src="img/banner/1.jpg" alt="" /></a></li>
+						<li><a href=""><img src="img/banner/2.jpg" alt="" /></a></li>
+						<li><a href=""><img src="img/banner/3.jpg" alt="" /></a></li>
+						<li><a href=""><img src="img/banner/4.jpg" alt="" /></a></li>
+						<li><a href=""><img src="img/banner/5.jpg" alt="" /></a></li>
+						<li><a href=""><img src="img/banner/6.jpg" alt="" /></a></li>
+						<li><a href=""><img src="img/banner/1.jpg" alt="" /></a></li>
+					</ul>
+				</div>
+				<div class="tab">
+					<ul>
+						<li class='on'></li><li></li><li></li><li></li><li></li><li></li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- nav -->
+			<nav>
+				<div class="list list1">
+					<ul>
+						<li>
+							<a href="">
+								<div>
+									<span>酒 店</span>
+									<i></i>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="">海外酒店</a><a href="">特价酒店</a>
+						</li>
+						<li>
+							<a href="">团 购</a><a href="">民宿·客栈</a>
+						</li>
+					</ul>
+				</div>
+				<div class="list list2">
+					<ul>
+						<li>
+							<a href="">
+								<div>
+									<span>机 票</span>
+									<i></i>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="">火车票·抢票</a><a href="">特价机票</a>
+						</li>
+						<li>
+							<a href="">汽车票·船票</a><a href="">专车·租车</a>
+						</li>
+					</ul>
+				</div>
+				<div class="list list3">
+					<ul>
+						<li>
+							<a href="">
+								<div>
+									<span>旅 游</span>
+									<i></i>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="">目的地攻略</a><a href="">周边游</a>
+						</li>
+						<li>
+							<a href="">邮 轮</a><a href="">定制·包团</a>
+						</li>
+					</ul>
+				</div>
+				<div class="list list4">
+					<ul>
+						<li>
+							<a href="">景点·玩乐</a><a href="">礼品卡</a>
+						</li>
+						<li>
+							<a href="">美 食</a><a href="">出境WiFi</a>
+						</li>
+						<li>
+							<a href="">全球购·换汇</a><a href="">保险·签证</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			
+			<!--subNav-->
+			<div id="subNav">
+				<ul>
+					<li>
+						<a href=""><i style='background-position:0 -80px;'></i><span>自由行</span></a>
+						<a href=""><i style='background-position:0 -100px;'></i><span>主题游</span></a>
+						<a href=""><i style='background-position:0 -120px;'></i><span>一日游</span></a>
+						<a href=""><i style='background-position:0 -140px;'></i><span>顶级游</span></a>
+					</li>
+					<li>
+						<a href=""><i style='background-position:0 -160px;'></i><span>酒店+景点</span></a>
+						<a href=""><i style='background-position:0 -180px;'></i><span>亲子·游学</span></a>
+						<a href=""><i style='background-position:0 -200px;'></i><span>外币兑换</span></a>
+						<a href=""><i style='background-position:0 -220px;'></i><span>加盟合作</span></a>
+					</li>
+					<li>
+						<a href=""><i style='background-position:0 -0px;'></i><span>低价拼单</span></a>
+						<a href=""><i style='background-position:0 -20px;'></i><span>机场停车</span></a>
+						<a href=""><i style='background-position:0 -40px;'></i><span>旅游巴士</span></a>
+						<a href=""><i style='background-position:0 -60px;'></i><span>更多服务</span></a>
+					</li>
+				</ul>
+			</div>
+			
+			<!--sale-->
+			<div id="sale">
+				<div class="s-head">
+					<h2></h2>
+					<a href="">领取红包再下单></a>
+				</div>
+				<div class="s-body">
+					<div class="left">
+						<a href="">
+							<div class="img">
+								<span>爆款</span>
+								<img src="img/sale/1.jpg" alt="" />
+							</div>
+							<p class='title'>巴厘岛6日4晚自由行·东航直飞 提前预售 赠VIP机场休息室</p>
+							<p class="info">
+								￥<font style='font-weight:bold;'>4622</font>起<span>省￥1377</span>
+							</p>
+						</a>
+					</div>
+					<div class="right">
+						<div class="row1">
+							<a href="">
+								<span class='s1'>千款特价</span>
+								<span class='s2'>走过路过不要错过</span>
+								<img src="img/sale/2.png" alt="" />
+							</a>
+						</div>
+						<div class='rowB'>
+							<div class="row2">
+								<a href="">
+									<span class="s1">海外精选</span>
+									<span class="s2"><font>百元</font>出境游</span>
+									<img src="img/sale/3.png" alt="" />
+								</a>
+							</div>
+							<div class="row3">
+								<a href="">
+									<span class="s1">周边玩乐</span>
+									<span class="s2"><font>十元</font>度周末</span>
+									<img src="img/sale/4.png" alt="" />
+								</a>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+
+			<!--ad-->
+			<div id="ad">
+				<div class="ad-head">
+					<h2></h2>
+					<a href="">获取更多福利></a>
+				</div>
+				<div class="ad-body">
+					<div class="top">
+						<div class="t-left">
+							<a href=""><img src="img/ad/1.jpg" alt="" /></a>
+						</div>
+						<div class="t-right">
+							<a href=""><img src="img/ad/2.jpg" alt="" /></a>
+							<a href=""><img src="img/ad/3.jpg" alt="" /></a>
+						</div>
+					</div>
+					<div class="bottom">
+						<div class="b-left">
+							<a href=""><img src="img/ad/4.png" alt="" /></a>
+						</div>
+						<div class="b-right">
+							<a href=""><img src="img/ad/5.jpg" alt="" /></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!--footer-->
+			<footer>
+				<a href=""><i style='background-position:-60px -153px;'></i><span>电话预定</span></a>
+				<a href=""><i style='background-position:-60px -173px;'></i><span>下载客户端</span></a>
+				<a href=""><i style='background-position:-60px -308px;'></i><span>我的</span></a>
+			</footer>
+		</div>
+
+		<script>
+		
+			$.mobile.autoInitializePage = false;
+			$(function(){
+				var $banner = $('#banner');
+				var $picUl = $('#banner .pic ul');
+				var $tabLi = $('#banner .tab li');
+				var index = 0;
+				
+				$banner.on("touchstart" , function(e){
+					var startX,startMargin,nowX,x_;
+					startX = e.originalEvent.changedTouches[0].pageX;
+					startMargin = parseInt( $picUl.css('marginLeft') );
+					$(this).off('touchend');
+					$(this).on('touchmove' , function(e){
+						nowX = e.originalEvent.changedTouches[0].pageX;
+						x_ = nowX - startX;
+						$picUl.css('marginLeft' , startMargin + x_ + 'px');
+					});
+					$(this).on('touchend' , function(){
+						$(this).off('touchmove');
+						if ( x_ <= -30 )index ++;
+						else if ( x_ >= 30 )index --;
+						$picUl.stop().animate({
+							marginLeft : -(index+1)*100+'%'
+						},200,function(){
+							if ( index == -1 )
+							{
+								index = $tabLi.length-1;
+								$picUl.css('marginLeft' , -(index+1)*100+'%');
+							}else if ( index == $tabLi.length )
+							{
+								index = 0;
+								$picUl.css('marginLeft' , -(index+1)*100+'%');
+							};
+							$tabLi.eq(index).addClass('on').siblings().removeClass('on');
+						});
+					});
+				});
+				
+			});
+		
+		</script>
+	</body>
+</html>

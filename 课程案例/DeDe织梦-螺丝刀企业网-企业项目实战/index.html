@@ -1,0 +1,386 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<!--声明当前页面的编码集GBK，gb2312(中文编码)，UTF-8(国际编码)-->
+	<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+	<!--这是当前页面的三要素-->
+	<title>好帮手网站首页</title>
+	<meta name="Keywords" content="html,css,透明滑动效果">
+	<meta name="description" content="描述内容">
+	<link rel="stylesheet" href="css/basic.css" />
+	<script src='js/jquery-2.1.4.js'></script>
+ </HEAD>
+ <BODY>
+<!--头部开始-->
+<div id="Top"><div id="MidTop">
+	<a href=""><img src="images/banner.jpg" alt="好帮手-硬体装配制造厂" class="fleft"/></a>
+	<span><img src="images/tel.jpg"  alt="好帮手联系电话" /></span>
+<div style="clear:both"></div>
+
+	<!--导航开始-->
+	<div id="Logo">
+		<ul>
+			<li><a href="" class="first">—&nbsp&nbsp&nbsp&nbsp首页</a></li>
+			<li><a href="">电动螺丝刀</a></li>
+			<li><a href="">气动螺丝刀</a></li>
+			<li><a href="">螺丝机</a></li>
+			<li><a href="">资料下载</a></li>
+			<li><a href="">常见问题</a></li>
+			<li><a href="">售后服务</a></li>
+			<li><a href="">我们优势</a></li>
+			<li><a href="" class="last">联系我们&nbsp&nbsp&nbsp&nbsp—</a></li>
+		</ul>
+	</div>
+	<!--导航结束-->
+</div></div>
+<!--头部结束-->
+
+<!--flash开始-->
+<style type="text/css">
+	*{
+		margin:0;
+		padding:0;
+		list-style:none;
+	}
+	#box{
+		width:1120px;
+		height:350px;
+		margin:20px auto;
+		position:relative;
+		
+	}
+	#box ul{
+		height:350px;
+		overflow:hidden;
+		position:relative;
+	}
+	#box li{
+		position:absolute;
+		left:-100%;
+	}
+	#box .page{
+		position:absolute;
+		bottom:-15px;
+		width:100%;
+		text-align:center;
+		line-height:0;
+	}
+	#box span{
+		width:12px;
+		height:12px;
+		background:#000;
+		display:inline-block;
+		border-radius:50%;
+		cursor:pointer;
+	}
+	#box .active{
+		background:#00B38A;
+	}
+</style>
+
+
+<div id="box">
+	<ul>
+		<li style="left:0;"><img src="images/1.jpg" alt="" /></li>
+		<li><img src="images/2.jpg" alt="" /></li>
+		<li><img src="images/3.jpg" alt="" /></li>
+		<li><img src="images/4.jpg" alt="" /></li>
+		<li><img src="images/5.jpg" alt="" /></li>
+		<li><img src="images/6.jpg" alt="" /></li>
+	</ul>
+
+	<div class="page" onselectstart="return false">
+		<span class="active"></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+	$(function(){
+		var nowIndex = 0;
+		var lastIndex = 0;
+		var timer = null;
+		$(".page span").click(function(){
+			lastIndex = $(this).index();
+			
+			$(this).addClass("active");
+			$("#box .page span").eq(nowIndex).removeClass("active");
+			if (lastIndex>nowIndex){
+				$("#box ul li").eq(nowIndex).stop().animate({left:"-100%"},500);
+				nowIndex = lastIndex;
+				$("#box ul li").eq(lastIndex).css('left','100%').stop().animate({left:'0'},500);
+			}else if(lastIndex<nowIndex){
+				$("#box ul li").eq(nowIndex).stop().animate({left:"100%"},500);
+				nowIndex = lastIndex;
+				$("#box ul li").eq(lastIndex).css('left','-100%').stop().animate({left:'0'},500);
+			}
+
+		});
+		
+		$("#box").hover(function(){
+			clearInterval(timer);
+		},function(){
+			autoPlay();
+		});
+		
+		autoPlay();
+		function autoPlay(){
+			
+			timer = setInterval(function(){
+				lastIndex++;
+				lastIndex %= $(".page span").length;
+				$("#box .page span").eq(lastIndex).addClass("active");
+				$("#box .page span").eq(nowIndex).removeClass("active");
+				
+				$("#box ul li").eq(nowIndex).stop().animate({left:"-100%"},500);
+				
+				nowIndex = lastIndex;
+				$("#box ul li").eq(lastIndex).css('left','100%').stop().animate({left:'0'},500);
+
+			},1000);
+
+		}
+		
+	})
+</script>
+<!--flash结束-->
+
+
+<!--主体内容开始-->
+<div id="Main">
+	<!--product begin-->
+	<img src="images/index_conback1.jpg" />
+	<div id="Product">
+		<p><a href="">MORE+</a><img src="images/productimg.jpg" /> </p>
+
+<div id="procon"><div style="clear:both"></div>
+		<a href="">
+			<img src="images/product.jpg" width="182" height="158"/>
+			<div><p>类型：电动螺丝刀<br/>
+					型号：4500</p>
+				<p class="td"><span>特点：</span>
+					<span  class="des">低压直流马达变频稳压电源更实用更耐用</span>
+				</p></div></a>
+
+				<a href="">
+			<img src="images/product.jpg" width="182" height="158"/>
+			<div><p>类型：电动螺丝刀<br/>
+					型号：4500</p>
+				<p class="td"><span>特点：</span>
+					<span  class="des">低压直流马达变频稳压电源更实用更耐用</span>
+				</p></div></a>
+
+
+				<a href="">
+			<img src="images/product.jpg" width="182" height="158"/>
+			<div><p>类型：电动螺丝刀<br/>
+					型号：4500</p>
+				<p class="td"><span>特点：</span>
+					<span  class="des">低压直流马达变频稳压电源更实用更耐用</span>
+				</p></div></a>
+
+				<a href="">
+			<img src="images/product.jpg" width="182" height="158"/>
+			<div><p>类型：电动螺丝刀<br/>
+					型号：4500</p>
+				<p class="td"><span>特点：</span>
+					<span  class="des">低压直流马达变频稳压电源更实用更耐用</span>
+				</p></div></a>
+
+				<a href="">
+					<img src="images/product.jpg" width="182" height="158"/>
+					<div><p>类型：电动螺丝刀<br/>
+							型号：4500</p>
+					<p class="td"><span>特点：</span>
+						<span  class="des">低压直流马达变频稳压电源更实用更耐用</span>
+					</p></div>
+				</a>
+				<a href="">
+					<img src="images/product.jpg" width="182" height="158"/>
+					<div><p>类型：电动螺丝刀<br/>
+							型号：4500</p>
+					<p class="td"><span>特点：</span>
+						<span  class="des">低压直流马达变频稳压电源更实用更耐用</span>
+					</p></div>
+				</a>
+
+					<a href="">
+					<img src="images/product.jpg" width="182" height="158"/>
+					<div><p>类型：电动螺丝刀<br/>
+							型号：4500</p>
+					<p class="td"><span>特点：</span>
+						<span  class="des">低压直流马达变频稳压电源更实用更耐用</span>
+					</p></div>
+				</a>
+
+
+					<a href="">
+					<img src="images/product.jpg" width="182" height="158"/>
+					<div><p>类型：电动螺丝刀<br/>
+							型号：4500</p>
+					<p class="td"><span>特点：</span>
+						<span  class="des">低压直流马达变频稳压电源更实用更耐用</span>
+					</p></div>
+				</a>
+
+
+					<a href="">
+					<img src="images/product.jpg" width="182" height="158"/>
+					<div><p>类型：电动螺丝刀<br/>
+							型号：4500</p>
+					<p class="td"><span>特点：</span>
+						<span  class="des">低压直流马达变频稳压电源更实用更耐用</span>
+					</p></div>
+				</a>
+
+					<a href="">
+					<img src="images/product.jpg" width="182" height="158"/>
+					<div><p>类型：电动螺丝刀<br/>
+							型号：4500</p>
+					<p class="td"><span>特点：</span>
+						<span  class="des">低压直流马达变频稳压电源更实用更耐用</span>
+					</p></div>
+				</a>
+
+					<a href="">
+					<img src="images/product.jpg" width="182" height="158"/>
+					<div><p>类型：电动螺丝刀<br/>
+							型号：4500</p>
+					<p class="td"><span>特点：</span>
+						<span  class="des">低压直流马达变频稳压电源更实用更耐用</span>
+					</p></div>
+				</a>
+
+					<a href="">
+					<img src="images/product.jpg" width="182" height="158"/>
+					<div><p>类型：电动螺丝刀<br/>
+							型号：4500</p>
+					<p class="td"><span>特点：</span>
+						<span  class="des">低压直流马达变频稳压电源更实用更耐用</span>
+					</p></div>
+				</a>
+
+					<a href="">
+					<img src="images/product.jpg" width="182" height="158"/>
+					<div><p>类型：电动螺丝刀<br/>
+							型号：4500</p>
+					<p class="td"><span>特点：</span>
+						<span  class="des">低压直流马达变频稳压电源更实用更耐用</span>
+					</p></div>
+				</a>
+
+					<a href="">
+					<img src="images/product.jpg" width="182" height="158"/>
+					<div><p>类型：电动螺丝刀<br/>
+							型号：4500</p>
+					<p class="td"><span>特点：</span>
+						<span  class="des">低压直流马达变频稳压电源更实用更耐用</span>
+					</p></div>
+				</a>
+<div style="clear:both"></div></div>
+
+
+	</div>
+	<img src="images/index_conback2.jpg" />
+	<!--product end-->
+
+	<!--性价比开始-->
+	<div id="Value">
+	<img src="images/index_conback1.jpg" />
+	<div id="Valuecon">
+		<img src="images/value.jpg" />
+		<p class="first"><span>1</span>、台湾%原厂研究、开发、制造（34年以上制造经验）。</p>
+		<p><span>2</span>、电源、电动起子全系列经3C认证，以及多国安规认证。</p>
+		<p><span>3</span>、电动起子经台湾工业研究院做冲波测试认证。</p>
+		<p><span>4</span>、电动起子ESD防静电、低阻抗值经台湾相关工业大学测试认证。</p>
+		<p><span>5</span>、具有领导全变频电动起子30年以上先进制造技术（近年为国内外同行业模仿目标）。</p>
+		<p><span>6</span>、原厂产线装配、半自动、全自动，从设计、制造、销售、服务到遍布全国的各地合格授权代理商，一条龙、全系列到位服务。</p>
+	</div>
+	<img src="images/index_conback2.jpg" />
+	</div>
+	<!--性价比结束-->
+
+	<!--新闻区开始-->
+	<div id="News">
+<img src="images/index_conback1.jpg" />
+<div id="NewsCon">
+<!--公司简介开始-->
+<div id="Info"><p class="comm"><a href="">+More</a>关于我们 <font>About</font> </p>
+
+<a href=""><img src="images/xxpic.jpg" align="left"/></a>东莞市高手机电有限公司是电动工具行业的领先品牌，拥有工厂制成改
+善30多年经验和管理团队。东莞市高手机电有限公司品牌致力于提供最优质产品
+和客户体验，努力将“东莞市高手机电有限公司”打造
+成为世界最好的电动工具品牌，树立电动工具行业新标
+准。电动螺丝刀代表先进工艺质量的象征，它能省时，
+省力，精准，是电子产业必不可少的工具。
+</div>
+<!--公司简介结束-->
+
+<!--资料下载开始-->
+<div id="DownLoad"><p class="comm"><a href="">+More</a>资料下载<font>Download</font> 
+</p>
+<ol>
+	<li><a href="">好帮手瑞士马达系列使用说明书</a></li>
+	<li><a href="">好帮手瑞士马达系列使用说明书</a></li>
+	<li><a href="">好帮手瑞士马达系列使用说明书</a></li>
+	<li><a href="">好帮手瑞士马达系列使用说明书用说</a></li>
+	<li><a href="">好帮手瑞士马达系列使用说明书</a></li>
+	<li><a href="">好帮手瑞士马达系列使用说明书</a></li>
+	<li><a href="">好帮手瑞士马达系列使用说明书</a></li>
+	<li><a href="">好帮手瑞士马达系列使用说明书</a></li>
+	<li><a href="">好帮手瑞士马达系列使用说明书</a></li>
+	<li><a href="">好帮手瑞士马达系列使用说明书</a></li>
+</ol>
+</div>
+<!--资料下载结束-->
+
+<!--常见问题开始-->
+<div id="Question"><p class="comm"><a href="">+More</a>常见问题<font>Questions</font> </p>
+
+<ol>
+	<li><a href="">好帮手瑞士马达系列使用说明书说明书</a></li>
+	<li><a href="">好帮手瑞士马达系列使用说明书</a></li>
+	<li><a href="">好帮手瑞士马达系列使用说明书</a></li>
+	<li><a href="">好帮手瑞士马达系列使用说明书</a></li>
+	<li><a href="">好帮手瑞士马达系列使用说明书</a></li>
+	<li><a href="">好帮手瑞士马达系列使用说明书</a></li>
+	<li><a href="">好帮手瑞士马达系列使用说明书</a></li>
+	<li><a href="">好帮手瑞士马达系列使用说明书</a></li>
+	<li><a href="">好帮手瑞士马达系列使用说明书</a></li>
+	<li><a href="">好帮手瑞士马达系列使用说明书</a></li>
+
+</ol>
+</div>
+<!--常见问题结束-->
+<div style="clear:both"></div></div>
+<img src="images/index_conback2.jpg" />
+	</div>
+<!--新闻区结束-->
+
+<!--友情链接开始-->
+<div id="Friend">
+<img src="images/index_conback1.jpg" />
+<div id="FriendCon">
+<p class="comm">友情链接<font>Links</font> </p>
+	<ul>
+		<li><a href="">百度搜索</a></li>
+		<li><a href="">360管家</a></li>
+		<li><a href="">微软之家</a></li>
+		<li><a href="">网客互联</a></li>
+	</ul>
+<div style="clear:both"></div></div>
+<img src="images/index_conback2.jpg" />
+</div>
+<!--友情链接结束-->
+
+<div id="Copy">Copyright 1999-2013 东莞高手机电有限公司 all rights reserved. 粤ICP备12023039号</div>
+</div>
+<!--主体内容结束-->
+  
+ </BODY>
+</HTML>

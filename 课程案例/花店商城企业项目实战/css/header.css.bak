@@ -1,0 +1,448 @@
+*{
+	margin:0px;padding:0px;font-family:'Microsoft YaHei';
+	list-style-type:none;text-decoration:none;
+	}
+/*头部区域开始*/
+img{display:block;}
+.header{
+		width:100%;height:212px;
+		}
+/*logo区域开始*/
+.header .w1000{
+		width:1000px;height:67px;
+		margin:0px auto;padding-top:45px;
+			}
+.header .w1000 .logo{
+		width:391px;height:59px;float:left;
+					}
+.header .w1000 .right{
+		width:215px;height:72px;
+		float:right;margin-top:-13px;
+					}
+.header .w1000 .right .phone{
+		width:44px;height:100%;float:left;
+		}
+.header .w1000 .right .phone img{
+		margin-top:10px;
+}
+.header .w1000 .right .con{
+		width:165px;height:100%;float:left;
+		margin-left:6px;
+		}
+.header .w1000 .right .con .p1{text-align:center;font-size:14px;color:#666;}
+.header .w1000 .right .con .p2{text-align:center;font-size:22px;color:#b90909;font-family:arial;}
+/*logo区域结束*/
+
+/*menu导航区域开始 VIP项目实战第二课*/
+.menu{width:100%;height:71px;border-top:1px solid #f2f2f2;margin-top:28px;}
+.menu .m_w1000{width:1000px;height:71px;margin:0px auto;}
+.menu .m_w1000 ul li{
+		list-style-type:none;width:140px;height:71px;
+		float:left;
+		}
+.menu .m_w1000 ul li .nav a{
+		width:140px;height:71px;display:block;color:#333;text-decoration:none;
+		background:url("../images/bg1.png") no-repeat;
+		background-position:right center;
+		}
+.menu .m_w1000 ul li .nav a:hover{background:#b80909;color:#fff;}
+.menu .m_w1000 ul li .nav .bg{background:#b80909;color:#fff;}
+.menu .m_w1000 ul li .nav a .p1{font-size:14px;text-align:center;padding-top:15px;}
+.menu .m_w1000 ul li .nav a .p2{font-size:12px;text-align:center;font-family:arial;}
+.menu .m_w1000 ul li .subnav{
+		width:400px;height:140px;background:#fff;display:none;position:relative;z-index:1;
+		}
+.menu .m_w1000 ul li .subnav .subCon{
+		width:60px;height:125px;padding-top:15px;
+		padding-left:40px;float:left;
+		}
+.menu .m_w1000 ul li .subnav .subCon a{
+		color:#666;text-decoration:none;font-size:12px;
+		display:block;margin-bottom:8px;margin-right:10px;float:left;
+		}
+.menu .m_w1000 ul li .subnav .subImg{
+		width:280px;height:125px;padding-top:15px;
+		padding-left:20px;float:left;
+		}
+.menu .m_w1000 ul li .subnav .subImg .subImgcon{
+		width:135px;height:140px;float:left;
+		}
+.menu .m_w1000 ul li .subnav .subImg .subImgcon a{
+		text-decoration:none;font-size:12px;color:#666;
+		}
+/*menu导航区域结束*/
+/*header头部区域结束*/
+
+/*banner横幅区域开始*/
+.banner{
+		width:100%;height:616px;background:#cc6666;
+		position:relative;
+		overflow:hidden;
+		}
+.banner .next_left{
+		width:51px;height:51px;
+		position:absolute;left:50px;top:300px;
+		background:url("../images/btns.png");
+		cursor:pointer;
+		}
+.banner .next_left:hover{background-position:0px 51px;}
+.banner .next_right{
+		width:51px;height:51px;
+		position:absolute;right:50px;top:300px;
+		background:url("../images/btns.png") 51px 0px;
+		cursor:pointer;
+		}
+.banner .next_right:hover{background-position:51px 51px;}
+.banner .banner_con{
+		width:100%;height:616px;position:absolute;
+		}
+.banner .banner_con ul li{
+		list-style-type:none;float:left;position:absolute;left:-1921px;top:0px;
+		}
+/*banner横幅区域结束*/
+/*bds-unfold 百度信誉名片开始*/
+#bds_unfold{
+		width:38px;height:37px;position:fixed;right:0px;top:80px;
+		background:url("../images/creditPop.png") 0 74px;display:none;
+		}
+#bds_con{
+		width:0px;height:0px;position:fixed;right:0px;top:80px;background:#fff;
+		}
+#bds_con .con_top{width:222px;height:32px;background:#445fb0;}
+#bds_con .con_center{width:222px;height:89px;border-bottom: 1px dashed #E5E8E3;}
+#bds_con .con_bottom{width:210px;height:85px;background:#F7F7F6;padding-left:12px;padding-top:15px;}
+/*加了padding所以宽高都要减*/
+/*.con_top区域开始*/
+#bds_con .con_top i{
+		width:22px;height:22px;background:url("../images/creditPop.png") 0px -30px;
+		display:inline-block;float:left;margin:5px 10px 0px 20px;
+		}
+#bds_con .con_top span{
+		font-size: 14px;color: #FFF;font-weight: 700;
+		line-height: 32px;float: left;
+		}
+#bds_con .con_top .shouqi{
+		width:44px;height:32px;float:left;margin-left:60px;color: #fff;
+		opacity:0.8;cursor:pointer;
+		}
+#bds_con .con_top .shouqi b{
+		font-size: 12px;  line-height: 32px;float: left;
+		font-style: normal;
+		}
+#bds_con .con_top .shouqi:hover{opacity:1;}
+#bds_con .con_top .shouqi .bdsjt{
+		border:5px solid;
+		border-color:transparent transparent transparent #fff;
+		float:left;margin-top:10px;margin-left:4px;
+		}
+#bds_con .con_txt{width:222px;height:190px;background:#ff99ff;}
+#bds_unfold:hover{background-position:0 37px;}
+/*.con_top区域结束*/
+
+/*.con_center区域开始*/
+#bds_con .con_center h2{font-size:14px;color:#000;padding:12px;}
+#bds_con .con_center .bds_icon{
+		width:40px;height:30px;margin-left:12px;
+		background:url("../images/creditPop.png");float:left;
+		}
+#bds_con .con_center .bds_txt{
+		width:74px;height:30px;border-left:1px solid #E5E8E3;display:block;
+		float:left;margin-left:20px;padding-left:15px;
+		font-size:12px;
+		}
+/*.con_center区域结束*/
+
+/*.con_bottom区域开始*/
+#bds_con .con_bottom .bds_info{font-size:10px;color:#19202A;}
+#bds_con .con_bottom .bds_search{position:relative;height:30px;width:195px;}
+#bds_con .con_bottom .bds_search input{
+		font-size:10px;color:#7A7A7A;width:192px;height:26px;
+		display:block;border: 1px solid #E0E0E0;
+		}
+#bds_con .con_bottom .bds_search .i_search{
+		width:13px;height:14px;display:block;position:absolute;
+		top:6px;right:10px;background:url("../images/creditPop.png")0px -51px;
+		cursor: pointer;
+		}
+#bds_con .con_bottom .bds_check{width:193px;height:20px;margin-top:5px;}
+#bds_con .con_bottom .bds_check span{font-size:12px;color:#333;}
+#bds_con .con_bottom .bds_check a{color:#259BEB;font-size:12px;}
+#bds_con .con_bottom .bds_check a:hover{color:#48B5FF;}
+/*.con_bottom区域结束*/
+
+/*bds-unfold 百度信誉名片结束*/
+
+/*QQ悬浮客服开始*/
+.qq{
+	width:158px;height:230px;position:fixed;
+	right:10px;top:330px;
+	}
+.qq img{display:block;}
+.qq .qq_ewm{
+	width:158px;height:145px;background-color:#d42763;background-image:url("../images/ewm.jpg");
+	background-repeat:no-repeat;background-position:50% 10px;background-size:106px 106px;
+	}
+.qq  .qq_a{width:158px;height:35px;background-color:#d42763;}
+.qq  .qq_a a{
+	display:block;width:126px;height:24px;margin:0px auto;background-color:#d42763;
+	color:#fff;font-size:13px;text-decoration:none;
+	border-bottom:1px solid #df5685;text-align:center;
+	background-image:url("../images/qq.jpg");
+	background-repeat:no-repeat;
+	}
+.qq .qq_bot{width:158px;height:31px;position:relative;}
+.qq .qq_bot .close{
+	width:29px;height:30px;position:absolute;right:0px;top:0px;
+	cursor:pointer;
+	}
+.qq_small{
+	width:33px;height:180px;position:fixed;right:-35px;top:200px;
+	background:url("../images/float-small.png");
+	}
+/*QQ悬浮客服结束*/
+/*lySchool良友商学院开始*/
+.lySchool{
+	width:100%;height:963px;
+	margin-top:20px;
+	}
+.lySchool .buss{
+	width:1002px;height:137px;
+	margin:0px auto;
+	}
+.lySchool .lySchoolShow{
+	width:100%;height:824px;background:#972022;
+	}
+/*showTop区域开始*/
+.lySchool .lySchoolShow .showTop{
+	width:1002px;height:320px;
+	margin:0px auto;padding-top:77px;
+	}
+.lySchool .lySchoolShow .showTop .topLeft{
+	width:750px;height:320px;float:left;
+	}
+.lySchool .lySchoolShow .showTop .topLeft .nav{
+	width:750px;height:50px;cursor:pointer;
+	}
+.lySchool .lySchoolShow .showTop .topLeft .nav ul li{
+	list-style-type:none;float:left;width:250px;height:50px;
+	text-align:center;line-height:50px;font-size:14px;
+	color:#fff;background:url("../images/li-bg.png");
+}
+.lySchool .lySchoolShow .showTop .topLeft .nav ul .bg{
+	background:url("../images/cul-bg.png");
+	}
+.lySchool .lySchoolShow .showTop .topLeft .con{
+	width:750px;height:270px;
+	position:relative;overflow:hidden;
+	}
+.lySchool .lySchoolShow .showTop .topLeft .con .con_img{
+	width:750px;height:271px;
+	}
+.lySchool .lySchoolShow .showTop .topLeft .con .con_img .pic{
+	width:750px;height:271px;
+}
+.lySchool .lySchoolShow .showTop .topLeft .con .con_img .but_li{
+	width:40px;height:10px;position:absolute;bottom:10px;right:15px;
+}
+.lySchool .lySchoolShow .showTop .topLeft .con .con_img .but_li ul li{
+	width:10px;height:10px;background:#fff;border-radius:10px;
+	float:left;list-style-type:none;margin-right:10px;
+	cursor:pointer;
+	}
+.lySchool .lySchoolShow .showTop .topRight{
+	width:252px;height:320px;
+	float:left;position:relative;
+}
+.lySchool .lySchoolShow .showTop .topRight .rightCon{
+	width:252px;height:320px;position:absolute;left:0px;top:0px;
+	overflow:hidden;
+}
+.lySchool .lySchoolShow .showTop .topRight .rightCon ul{
+	width:252px;height:960px;
+	position:relative;
+}
+.lySchool .lySchoolShow .showTop .topRight .rightCon ul li{
+	width:252px;height:320px;background:#fff;cursor:pointer;
+}
+.lySchool .lySchoolShow .showTop .topRight .rightBut{
+	width:22px;height:65px;
+	position:absolute;right:0px;top:75px;
+}
+.lySchool .lySchoolShow .showTop .topRight .rightBut span{
+	width:22px;height:26px;display:block;background:#fff;
+	text-align:center;line-height:26px;color:#666;
+	margin-bottom:5px;cursor:pointer;
+}
+.lySchool .lySchoolShow .showTop .topRight .rightBut span:hover{
+	background:#972022;color:#fff;
+}
+.lySchool .lySchoolShow .showTop .topRight .rightCon img{
+	width:252px;height:170px;
+}
+.lySchool .lySchoolShow .showTop .topRight .rightCon ul li .p1{
+	width:100%;height:29px;font-size:14px;color:#000;
+	text-align:center;padding-top:5px;
+}
+.lySchool .lySchoolShow .showTop .topRight .rightCon ul li .p2{
+	width:204px;height:46px;font-size:12px;color:#666;
+	padding:5px 13px 12px 18px;
+}
+.lySchool .lySchoolShow .showTop .topRight .rightCon ul li .more{
+	width:87px;height:34px;border:1px solid #adadad;color:#666;
+	margin:0px auto;text-align:center;line-height:34px;
+	font-size:12px;
+}
+/*showTop区域结束*/
+
+/*showBottom区域开始*/
+.showBottom{
+	width:1002px;height:315px;overflow:hidden;
+	margin:0px auto;margin-top:15px;
+	}
+.showBottom ul{width:20000px;}
+.showBottom ul li{
+	width:235px;height:315px;float:left;background:#fff;
+	margin-right:21px;
+	}
+.showBottom ul li img{width:235px;height:170px;}
+.showBottom ul li .cjhy{
+	width:197px;height:31px;padding-left:20px;padding-top:27px;
+	border-bottom:1px solid #e1e1e1;text-align:center;
+	}
+.showBottom ul{position:relative;}
+.showBottom ul li a{
+	display:block;margin-left:20px;margin-top:14px;
+	font-size:12px;color:#666;
+	}
+/*showBottom区域结束*/
+/*showBottom btn按钮区域开始*/
+.btn{
+	width:57px;height:22px;
+	margin:25px auto;color:#fff;font-size:12px;
+	}
+.btn .btnLeft{
+	width:26px;height:22px;display:block;background:#c18b8c;
+	float:left;text-align:center;cursor:pointer;
+	}
+.btn .btnRight{
+	width:26px;height:22px;display:block;background:#c18b8c;
+	float:right;text-align:center;line-height:22px;cursor:pointer;
+	}
+.btn .btnLeft:hover{color:#c18b8c;background:#fff;}
+.btn .btnRight:hover{color:#c18b8c;background:#fff;}
+/*showBottom btn按钮区域结束*/
+/*lySchool良友商学院结束*/
+
+/*lyFloral良友花艺开始*/
+.lyFloral{width:100%;height:758px;background:#fff;}
+.lyFloral .lyFloral_img{
+	width:997px;height:75px;
+	margin:0px auto;padding-top:65px;
+	}
+.lyFloral .nav{
+	width:175px;height:24px;
+	margin:10px auto;
+	}
+.lyFloral .nav ul li{
+	width:76px;height:24px;float:left;cursor:pointer;
+	margin-right:10px;font-size:12px;text-align:center;
+	line-height:24px;color:#666;
+	}
+.lyFloral .nav ul .bgcolor{background:#972022;color:#fff;}
+.lyFloral .con{
+	width:1008px;height:466px;
+	margin:38px auto;position:relative;
+}
+.lyFloral .con .prev{
+	width:22px;height:48px;cursor:pointer;
+	position:absolute;left:0px;top:50%;margin-top:-24px;
+	background:url("../images/prev.png");
+}
+.lyFloral .con .pic{
+	width:928px;height:466px;
+	margin:0px auto;overflow:hidden;
+}
+.lyFloral .con .next{
+	width:22px;height:48px;cursor:pointer;
+	position:absolute;right:0px;top:50%;margin-top:-24px;
+	background:url("../images/next.png");
+}
+.lyFloral .con .pic ul{width:2000px;position:relative;}
+.lyFloral .con .pic ul li{
+	width:221px;height:216px;border:1px solid #d0d1d9;
+	position:relative;float:left;
+	margin-right:12px;margin-bottom:30px;
+}
+.lyFloral .con .pic ul li img{width:221px;height:174px;}
+.lyFloral .con .pic ul li p{
+	width:221px;height:42px;text-align:center;
+	line-height:42px;font-size:12px;color:#666;
+	cursor:pointer;
+	}
+.lyFloral .con .pic ul li span{
+	width:0px;height:3px;background:#972022;
+	position:absolute;left:0px;bottom:42px;
+	}
+/*lyFloral良友花艺结束*/
+
+/*zjly区域开始*/
+.zjly{width:100%;height:395px;background:#ebeaea;}
+.zjly .zjlyCon{
+	width:1000px;height:390px;background:url("../images/zjly.png") no-repeat;
+	background-position:0px 65px;
+	margin:0px auto;
+	}
+.zjly .zjlyCon img{padding:100px 0px 0px 1px;float:left;}
+.zjly .zjlyCon p{
+	width:545px;height:115px;float:left;font-size:12px;
+	color:#666;padding-top:175px;padding-left:30px;line-height:24px;
+	}
+.zjly .zjlyCon a{
+	width: 110px;height: 42px;border: 1px solid #858585;color:#666;
+	display: block;float: left;line-height: 42PX;font-size:12px;
+	text-align: center;margin: 19px 0px 0px 30px;
+}
+/*zjly区域结束*/
+/*florid良友花语开始*/
+.florid{
+	width:994px;height:144px;margin:65px auto 0px;
+	}
+.floridCon{
+	width:1002px;height:291px;margin:0px auto;
+	}
+.floridCon ul li{float:left;}
+.floridCon ul .center{margin:0px 30px 0px 30px;}
+.floridCon ul li p{
+	width: 313px;height: 63px;line-height: 63px;color:#666;
+	text-align: center;border-bottom: 1px solid #c5c5c5;font-size: 18px;
+}
+/*florid良友花语结束*/
+
+/*textList文本列表开始*/
+.textList{
+	width: 1038px;height: 191px;margin: 0 auto;padding: 0px 0px 0px 27px;
+}
+.textList ul{
+	width: 312px;height: 161px;float: left;margin-right: 34px;
+	} 
+.textList ul a{font-size:12px;color:#666;}
+.textList ul li{
+	height:27px;line-height:27px;
+	background:url("../images/list_bg.png") no-repeat;
+	background-position:left center;padding-left:10px;
+	}
+.textList ul li span{float:right;}
+/*textList文本列表结束*/
+/*lyMore区域开始*/
+.lyMore{
+	width:1014px;height:30px;border:1px solid red;
+	margin:45px auto 65px;background:url("../images/lyMore.png");
+	}
+.lyMore ul li{
+	width: 67px;height: 27px;border: 1px solid #838383;
+	text-align: center;line-height: 27px;font-size: 12px;
+	float: left;margin-left:125px;
+}
+.lyMore ul ._li{margin-left:272px;}
+.lyMore ul a{font-size:12px;color:#666;}
+/*lyMore区域结束*/

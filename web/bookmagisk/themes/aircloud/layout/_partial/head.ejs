@@ -1,0 +1,25 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-type" Content="text/html;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" Content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+    <meta name="description" content="<%= config.description %>">
+    <meta name="keyword" content="<%= config.keyword %>">
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+
+    <title>
+        <% if (page.title) { %>
+            <%= page.title + ' - ' + config.title %>
+                <% } else{%>
+                    <%= config.title %>
+                        <% } %>
+    </title>
+
+    <!-- Custom CSS -->
+    <%- css('css/aircloud.css') %>
+        <%- css('css/gitment.css') %>
+            <!--<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">-->
+            <link href="//at.alicdn.com/t/font_620856_pl6z7sid89qkt9.css" rel="stylesheet" type="text/css">
+            <!-- ga & ba script hoook -->
+            <script></script>
+</head>
