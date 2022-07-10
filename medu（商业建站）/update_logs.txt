@@ -1,0 +1,7 @@
+update_ver
+diff_fields
+alter_table
+add_config
+motify_config
+update_language
+del_sys_file

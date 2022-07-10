@@ -1,0 +1,47 @@
+{
+    "createTime": "",
+    "logs": {
+        "log1": {
+            "name": "log1'name",
+            "UUID": "",
+            "content": "log1'content",
+            "createTime": "",
+            "finishTime": "",
+            "deleteTime": "",
+            "steps": {
+                "step1": "",
+                "step2": "",
+                "step3": ""
+            }
+
+        },
+        "log2": {
+            "name": "log2'name",
+            "UUID": "",
+            "content": "log2'content",
+            "createTime": "",
+            "finishTime": "",
+            "deleteTime": "",
+            "steps": {
+                "step1": "",
+                "step2": "",
+                "step3": ""
+            }
+
+        },
+        "log3": {
+            "name": "log3'name",
+            "UUID": "",
+            "content": "log3'content",
+            "createTime": "",
+            "finishTime": "",
+            "deleteTime": "",
+            "steps": {
+                "step1": "",
+                "step2": "",
+                "step3": ""
+            }
+
+        }
+    }
+}

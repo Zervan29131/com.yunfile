@@ -1,0 +1,5 @@
+C:\Users\Thaumy\Desktop\curd\curd\obj\Debug\net5.0\curd.csprojAssemblyReference.cache
+C:\Users\Thaumy\Desktop\curd\curd\obj\Debug\net5.0\curd.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Thaumy\Desktop\curd\curd\obj\Debug\net5.0\curd.AssemblyInfoInputs.cache
+C:\Users\Thaumy\Desktop\curd\curd\obj\Debug\net5.0\curd.AssemblyInfo.cs
+C:\Users\Thaumy\Desktop\curd\curd\obj\Debug\net5.0\curd.csproj.CoreCompileInputs.cache
